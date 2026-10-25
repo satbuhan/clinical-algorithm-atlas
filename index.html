@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clinical Algorithm Atlas</title>
+<meta name="description" content="A growing atlas of interactive, referenced clinical-algorithm web tools — each one converted from an authored flowchart, with the clinical reasoning and literature behind every step.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css?v=1">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+</head>
+<body>
+
+<header class="masthead">
+  <p class="masthead__eyebrow">Clinical Algorithm Atlas</p>
+  <h1>Interactive, referenced clinical algorithms — one flowchart at a time.</h1>
+  <p class="lede">
+    Each tool below keeps an authored flowchart exactly as drawn — every box,
+    decision point, and dose unchanged — and attaches what the step means,
+    why the protocol calls for it, and the sources behind it.
+  </p>
+  <p class="byline">
+    An ongoing collaboration between <strong>Dr. Özgür Karcıoğlu</strong> and
+    <strong>Dr. Satuk Buğra Han Bozatlı</strong>.
+  </p>
+</header>
+
+<div class="toolbar">
+  <input class="search" id="search" type="search" placeholder="Search the atlas…" autocomplete="off">
+  <div class="chips" id="chips"></div>
+</div>
+
+<p class="empty" id="count" style="padding:0 24px 8px;max-width:980px;margin:0 auto;"></p>
+
+<main class="grid" id="grid" aria-label="Tools in the atlas"></main>
+
+<section class="method">
+  <div class="method__inner">
+    <h2>How these are built</h2>
+    <p>
+      Every algorithm stays byte-for-byte as the authors drew it — boxes,
+      decision diamonds, drug names, and doses are never paraphrased or
+      "corrected" without the author team's sign-off. Only explanatory
+      content is added: what a step means, why it's there, and a citation
+      for every claim, each independently checked against a primary source
+      rather than taken on trust.
+    </p>
+    <p>
+      Full build methodology (for anyone — person or AI assistant — adding
+      the next tool):
+      <a href="https://github.com/satbuhan/aortic-dissection-protocol/blob/main/METHODOLOGY.md" target="_blank" rel="noopener">METHODOLOGY.md</a>.
+    </p>
+  </div>
+</section>
+
+<footer class="site">
+  <span>CC BY-NC-SA 4.0</span>
+  <a href="https://github.com/satbuhan" target="_blank" rel="noopener">github.com/satbuhan</a>
+  <span>Academic / educational reference tools, not a substitute for institutional protocol or bedside clinical judgement.</span>
+</footer>
+
+<script src="assets/data.js?v=1"></script>
+<script src="assets/app.js?v=1"></script>
+</body>
+</html>
