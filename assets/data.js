@@ -3,8 +3,9 @@
 // for the gallery itself to pick it up.
 
 const SPECIALTIES = {
-  cardio: { label: "Cardiovascular Emergencies", short: "Cardiovascular", tagClass: "cardio" },
-  psych:  { label: "Behavioral & Psychiatric Emergencies", short: "Behavioral", tagClass: "psych" }
+  cardio:      { label: "Cardiovascular Emergencies", short: "Cardiovascular", tagClass: "cardio" },
+  psych:       { label: "Behavioral & Psychiatric Emergencies", short: "Behavioral", tagClass: "psych" },
+  infectious:  { label: "Infectious Disease & Respiratory", short: "Infectious Disease", tagClass: "infectious" }
 };
 
 const TOOLS = [
@@ -29,5 +30,16 @@ const TOOLS = [
     repo: "https://github.com/satbuhan/agitation-delirium-protocol",
     thumb: "assets/thumbs/agitation-delirium.png",
     added: "2026-10-25"
+  },
+  {
+    id: "influenza-antiviral",
+    title: "Influenza Antiviral Selection",
+    subtitle: "Baloxavir Marboxil vs Oseltamivir",
+    specialty: "infectious",
+    summary: "Interactive, referenced walkthrough of the algorithm for choosing between baloxavir marboxil and oseltamivir in influenza, including severe illness and viral pneumonia, stratified by severity and complication risk.",
+    url: "https://satbuhan.github.io/influenza-antiviral-protocol/",
+    repo: "https://github.com/satbuhan/influenza-antiviral-protocol",
+    thumb: "assets/thumbs/influenza-antiviral.png",
+    added: "2026-10-26"
   }
 ];

@@ -16,6 +16,8 @@
   --tag-cardio-wash: rgba(140, 51, 38, 0.08);
   --tag-psych: #3E6B4F;
   --tag-psych-wash: rgba(62, 107, 79, 0.09);
+  --tag-infectious: #8A6D1E;
+  --tag-infectious-wash: rgba(138, 109, 30, 0.09);
 
   --radius-card: 10px;
   --radius-chip: 999px;
@@ -161,6 +163,7 @@ a { color: inherit; }
 }
 .card__tag.cardio { background: var(--tag-cardio-wash); color: var(--tag-cardio); }
 .card__tag.psych { background: var(--tag-psych-wash); color: var(--tag-psych); }
+.card__tag.infectious { background: var(--tag-infectious-wash); color: var(--tag-infectious); }
 .card h2 {
   font-family: var(--font-serif);
   font-size: 19px;
