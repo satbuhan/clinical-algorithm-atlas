@@ -16,6 +16,7 @@ step, and the algorithm itself kept byte-for-byte as drawn.
 | [Acute Aortic Dissection — Initial Medical Management](https://satbuhan.github.io/aortic-dissection-protocol/) | Cardiovascular Emergencies | [aortic-dissection-protocol](https://github.com/satbuhan/aortic-dissection-protocol) |
 | [Butyrophenone Selection — Acute Agitation & Hyperactive Delirium](https://satbuhan.github.io/agitation-delirium-protocol/) | Behavioral & Psychiatric Emergencies | [agitation-delirium-protocol](https://github.com/satbuhan/agitation-delirium-protocol) |
 | [Influenza Antiviral Selection — Baloxavir Marboxil vs Oseltamivir](https://satbuhan.github.io/influenza-antiviral-protocol/) | Infectious Disease & Respiratory | [influenza-antiviral-protocol](https://github.com/satbuhan/influenza-antiviral-protocol) |
+| [Dexketoprofen vs Ibuprofen — Selecting an NSAID for Acute Pain](https://satbuhan.github.io/nsaid-pain-protocol/) | Analgesia & Pain Management | [nsaid-pain-protocol](https://github.com/satbuhan/nsaid-pain-protocol) |
 
 ## What this repo is
 

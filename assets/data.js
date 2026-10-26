@@ -5,7 +5,8 @@
 const SPECIALTIES = {
   cardio:      { label: "Cardiovascular Emergencies", short: "Cardiovascular", tagClass: "cardio" },
   psych:       { label: "Behavioral & Psychiatric Emergencies", short: "Behavioral", tagClass: "psych" },
-  infectious:  { label: "Infectious Disease & Respiratory", short: "Infectious Disease", tagClass: "infectious" }
+  infectious:  { label: "Infectious Disease & Respiratory", short: "Infectious Disease", tagClass: "infectious" },
+  pain:        { label: "Analgesia & Pain Management", short: "Pain Management", tagClass: "pain" }
 };
 
 const TOOLS = [
@@ -40,6 +41,17 @@ const TOOLS = [
     url: "https://satbuhan.github.io/influenza-antiviral-protocol/",
     repo: "https://github.com/satbuhan/influenza-antiviral-protocol",
     thumb: "assets/thumbs/influenza-antiviral.png",
+    added: "2026-10-26"
+  },
+  {
+    id: "nsaid-pain",
+    title: "Dexketoprofen vs Ibuprofen",
+    subtitle: "Selecting an NSAID for Acute Pain",
+    specialty: "pain",
+    summary: "Interactive, referenced walkthrough of the algorithm for choosing and safely using an NSAID — dexketoprofen or ibuprofen — for acute pain, with contraindications, high-risk features, route selection, and reassessment thresholds.",
+    url: "https://satbuhan.github.io/nsaid-pain-protocol/",
+    repo: "https://github.com/satbuhan/nsaid-pain-protocol",
+    thumb: "assets/thumbs/nsaid-pain.png",
     added: "2026-10-26"
   }
 ];
