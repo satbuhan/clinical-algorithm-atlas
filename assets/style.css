@@ -198,6 +198,26 @@ a { color: inherit; }
   font-size: 14px;
 }
 
+/* ---------- Recently viewed shortcut ---------- */
+.recent {
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--rule);
+}
+.recent__title {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 16px;
+}
+.recent__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 22px;
+  padding-bottom: 20px;
+}
+
 /* ---------- Grouped-by-category sections ---------- */
 .grid--grouped {
   display: block;
@@ -299,7 +319,7 @@ footer.site a:hover { text-decoration: underline; }
   .masthead { padding: 40px 18px 22px; }
   .toolbar { padding: 0 18px 22px; }
   .grid { padding: 0 18px 48px; grid-template-columns: 1fr; }
-  .group__grid { grid-template-columns: 1fr; }
+  .group__grid, .recent__grid { grid-template-columns: 1fr; }
   .method__inner { padding: 28px 18px; }
   footer.site { padding: 20px 18px 44px; }
 }

@@ -26,6 +26,28 @@
     }
   }
 
+  const RECENT_KEY = "atlas_recent_views";
+  const RECENT_MAX = 5;
+
+  function loadRecent() {
+    try {
+      const raw = localStorage.getItem(RECENT_KEY);
+      const arr = raw ? JSON.parse(raw) : [];
+      return Array.isArray(arr) ? arr : [];
+    } catch (e) {
+      return [];
+    }
+  }
+
+  function recordView(id) {
+    try {
+      const next = [id, ...loadRecent().filter((x) => x !== id)].slice(0, RECENT_MAX);
+      localStorage.setItem(RECENT_KEY, JSON.stringify(next));
+    } catch (e) {
+      /* private browsing / storage disabled — ignore */
+    }
+  }
+
   function fmtDate(iso) {
     const d = new Date(iso + "T00:00:00");
     return d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
@@ -52,7 +74,7 @@
   function cardHtml(tool) {
     const spec = SPECIALTIES[tool.specialty];
     return `
-      <a class="card" href="${tool.url}" target="_blank" rel="noopener">
+      <a class="card" data-id="${tool.id}" href="${tool.url}" target="_blank" rel="noopener">
         <img class="card__thumb" src="${tool.thumb}" alt="" loading="lazy">
         <div class="card__body">
           <span class="card__tag ${spec.tagClass}">${spec.short}</span>
@@ -64,6 +86,18 @@
           </div>
         </div>
       </a>`;
+  }
+
+  function recentHtml() {
+    const items = loadRecent()
+      .map((id) => TOOLS.find((t) => t.id === id))
+      .filter(Boolean);
+    if (!items.length) return "";
+    return `
+      <section class="recent">
+        <h2 class="recent__title">Recently viewed</h2>
+        <div class="recent__grid">${items.map(cardHtml).join("")}</div>
+      </section>`;
   }
 
   function groupHtml(group, isCollapsed) {
@@ -95,7 +129,7 @@
         .filter((g) => g.items.length);
 
       grid.classList.add("grid--grouped");
-      grid.innerHTML = groups.map((g) => groupHtml(g, collapsed[g.key] === true)).join("");
+      grid.innerHTML = recentHtml() + groups.map((g) => groupHtml(g, collapsed[g.key] === true)).join("");
       countEl.textContent = `${TOOLS.length} tool${TOOLS.length === 1 ? "" : "s"} in the atlas, across ${groups.length} categor${groups.length === 1 ? "y" : "ies"}`;
       return;
     }
@@ -143,6 +177,13 @@
     },
     true
   );
+  // Event delegation: works for cards in the recent strip, the grouped
+  // sections, and flat search/filter results alike, across every re-render.
+  grid.addEventListener("click", (e) => {
+    const card = e.target.closest(".card[data-id]");
+    if (!card) return;
+    recordView(card.dataset.id);
+  });
 
   renderChips();
   render();
