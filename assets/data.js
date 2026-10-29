@@ -7,7 +7,8 @@ const SPECIALTIES = {
   psych:       { label: "Behavioral & Psychiatric Emergencies", short: "Behavioral", tagClass: "psych" },
   infectious:  { label: "Infectious Disease & Respiratory", short: "Infectious Disease", tagClass: "infectious" },
   pain:        { label: "Analgesia & Pain Management", short: "Pain Management", tagClass: "pain" },
-  gi:          { label: "Gastrointestinal Haemorrhage & Anticoagulant Reversal", short: "GI Bleeding", tagClass: "gi" }
+  gi:          { label: "Gastrointestinal Haemorrhage & Anticoagulant Reversal", short: "GI Bleeding", tagClass: "gi" },
+  obesity:     { label: "Obesity in Emergency & Critical Care", short: "Obesity", tagClass: "obesity" }
 };
 
 const TOOLS = [
@@ -64,6 +65,17 @@ const TOOLS = [
     url: "https://satbuhan.github.io/anticoagulant-reversal-protocol/",
     repo: "https://github.com/satbuhan/anticoagulant-reversal-protocol",
     thumb: "assets/thumbs/anticoagulant-reversal.png",
+    added: "2026-10-29"
+  },
+  {
+    id: "obesity-critical-care",
+    title: "The Adult with Obesity",
+    subtitle: "In Emergency and Critical Care",
+    specialty: "obesity",
+    summary: "Interactive, referenced two-step summary for the adult with obesity in emergency and critical care — a trigger bundle, then nine concurrent physiological domains (airway, induction, ventilation, circulation, kidney, antimicrobials, thromboprophylaxis, nutrition, liberation from ventilation), each scaled to its own weight descriptor rather than to BMI.",
+    url: "https://satbuhan.github.io/obesity-critical-care-protocol/",
+    repo: "https://github.com/satbuhan/obesity-critical-care-protocol",
+    thumb: "assets/thumbs/obesity-critical-care.png",
     added: "2026-10-29"
   }
 ];
