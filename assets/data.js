@@ -6,7 +6,8 @@ const SPECIALTIES = {
   cardio:      { label: "Cardiovascular Emergencies", short: "Cardiovascular", tagClass: "cardio" },
   psych:       { label: "Behavioral & Psychiatric Emergencies", short: "Behavioral", tagClass: "psych" },
   infectious:  { label: "Infectious Disease & Respiratory", short: "Infectious Disease", tagClass: "infectious" },
-  pain:        { label: "Analgesia & Pain Management", short: "Pain Management", tagClass: "pain" }
+  pain:        { label: "Analgesia & Pain Management", short: "Pain Management", tagClass: "pain" },
+  gi:          { label: "Gastrointestinal Haemorrhage & Anticoagulant Reversal", short: "GI Bleeding", tagClass: "gi" }
 };
 
 const TOOLS = [
@@ -53,5 +54,16 @@ const TOOLS = [
     repo: "https://github.com/satbuhan/nsaid-pain-protocol",
     thumb: "assets/thumbs/nsaid-pain.png",
     added: "2026-10-26"
+  },
+  {
+    id: "anticoagulant-reversal",
+    title: "Anticoagulant Reversal",
+    subtitle: "In Gastrointestinal Haemorrhage",
+    specialty: "gi",
+    summary: "Interactive, referenced walkthrough of the decision-making algorithm for anticoagulant reversal in GI bleeding — stable vs unstable triage, and the four agent-specific reversal pathways (VKA, dabigatran, factor Xa inhibitors, heparin).",
+    url: "https://satbuhan.github.io/anticoagulant-reversal-protocol/",
+    repo: "https://github.com/satbuhan/anticoagulant-reversal-protocol",
+    thumb: "assets/thumbs/anticoagulant-reversal.png",
+    added: "2026-10-29"
   }
 ];
