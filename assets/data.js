@@ -8,7 +8,8 @@ const SPECIALTIES = {
   infectious:  { label: "Infectious Disease & Respiratory", short: "Infectious Disease", tagClass: "infectious" },
   pain:        { label: "Analgesia & Pain Management", short: "Pain Management", tagClass: "pain" },
   gi:          { label: "Gastrointestinal Haemorrhage & Anticoagulant Reversal", short: "GI Bleeding", tagClass: "gi" },
-  obesity:     { label: "Obesity in Emergency & Critical Care", short: "Obesity", tagClass: "obesity" }
+  obesity:     { label: "Obesity in Emergency & Critical Care", short: "Obesity", tagClass: "obesity" },
+  tox:         { label: "Toxicology & Overdose Management", short: "Toxicology", tagClass: "tox" }
 };
 
 const TOOLS = [
@@ -76,6 +77,17 @@ const TOOLS = [
     url: "https://satbuhan.github.io/obesity-critical-care-protocol/",
     repo: "https://github.com/satbuhan/obesity-critical-care-protocol",
     thumb: "assets/thumbs/obesity-critical-care.png",
+    added: "2026-10-29"
+  },
+  {
+    id: "dapagliflozin-overdose",
+    title: "Dapagliflozin / SGLT2 Inhibitor",
+    subtitle: "Overdose & Acute Illness Management",
+    specialty: "tox",
+    summary: "Interactive, referenced walkthrough of the algorithm for suspected dapagliflozin overdose or acute illness in an SGLT2 inhibitor user — ketone-led recognition of euglycaemic ketoacidosis regardless of the glucose value, the hypoglycaemia/co-ingestant check, and why dialysis does not help in overdose.",
+    url: "https://satbuhan.github.io/dapagliflozin-overdose-protocol/",
+    repo: "https://github.com/satbuhan/dapagliflozin-overdose-protocol",
+    thumb: "assets/thumbs/dapagliflozin-overdose.png",
     added: "2026-10-29"
   }
 ];

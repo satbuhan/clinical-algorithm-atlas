@@ -24,6 +24,8 @@
   --tag-gi-wash: rgba(29, 107, 107, 0.09);
   --tag-obesity: #A1592E;
   --tag-obesity-wash: rgba(161, 89, 46, 0.09);
+  --tag-tox: #3C5A73;
+  --tag-tox-wash: rgba(60, 90, 115, 0.09);
 
   --radius-card: 10px;
   --radius-chip: 999px;
@@ -173,6 +175,7 @@ a { color: inherit; }
 .card__tag.pain { background: var(--tag-pain-wash); color: var(--tag-pain); }
 .card__tag.gi { background: var(--tag-gi-wash); color: var(--tag-gi); }
 .card__tag.obesity { background: var(--tag-obesity-wash); color: var(--tag-obesity); }
+.card__tag.tox { background: var(--tag-tox-wash); color: var(--tag-tox); }
 .card h2 {
   font-family: var(--font-serif);
   font-size: 19px;
