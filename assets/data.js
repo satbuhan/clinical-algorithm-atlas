@@ -9,7 +9,8 @@ const SPECIALTIES = {
   pain:        { label: "Analgesia & Pain Management", short: "Pain Management", tagClass: "pain" },
   gi:          { label: "Gastrointestinal Haemorrhage & Anticoagulant Reversal", short: "GI Bleeding", tagClass: "gi" },
   obesity:     { label: "Obesity in Emergency & Critical Care", short: "Obesity", tagClass: "obesity" },
-  tox:         { label: "Toxicology & Overdose Management", short: "Toxicology", tagClass: "tox" }
+  tox:         { label: "Toxicology & Overdose Management", short: "Toxicology", tagClass: "tox" },
+  procedural:  { label: "Procedural Anaesthesia & Wound Care", short: "Procedural Care", tagClass: "procedural" }
 };
 
 const TOOLS = [
@@ -88,6 +89,17 @@ const TOOLS = [
     url: "https://satbuhan.github.io/dapagliflozin-overdose-protocol/",
     repo: "https://github.com/satbuhan/dapagliflozin-overdose-protocol",
     thumb: "assets/thumbs/dapagliflozin-overdose.png",
+    added: "2026-10-29"
+  },
+  {
+    id: "lidocaine-prilocaine",
+    title: "Lidocaine vs Prilocaine",
+    subtitle: "Local Anaesthesia for Laceration Repair",
+    specialty: "procedural",
+    summary: "Interactive, referenced walkthrough of the algorithm for choosing between lidocaine and prilocaine-containing local anaesthesia for laceration repair, derived from a systematic review with GRADE and MCID appraisal — prilocaine contraindication screening, the topical-cream time/wound gate, IVRA for extensive hand/forearm injury, and methaemoglobinaemia/LAST monitoring.",
+    url: "https://satbuhan.github.io/lidocaine-prilocaine-protocol/",
+    repo: "https://github.com/satbuhan/lidocaine-prilocaine-protocol",
+    thumb: "assets/thumbs/lidocaine-prilocaine.png",
     added: "2026-10-29"
   }
 ];

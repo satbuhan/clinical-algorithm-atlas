@@ -17,6 +17,10 @@ step, and the algorithm itself kept byte-for-byte as drawn.
 | [Butyrophenone Selection — Acute Agitation & Hyperactive Delirium](https://satbuhan.github.io/agitation-delirium-protocol/) | Behavioral & Psychiatric Emergencies | [agitation-delirium-protocol](https://github.com/satbuhan/agitation-delirium-protocol) |
 | [Influenza Antiviral Selection — Baloxavir Marboxil vs Oseltamivir](https://satbuhan.github.io/influenza-antiviral-protocol/) | Infectious Disease & Respiratory | [influenza-antiviral-protocol](https://github.com/satbuhan/influenza-antiviral-protocol) |
 | [Dexketoprofen vs Ibuprofen — Selecting an NSAID for Acute Pain](https://satbuhan.github.io/nsaid-pain-protocol/) | Analgesia & Pain Management | [nsaid-pain-protocol](https://github.com/satbuhan/nsaid-pain-protocol) |
+| [Anticoagulant Reversal in Gastrointestinal Haemorrhage](https://satbuhan.github.io/anticoagulant-reversal-protocol/) | GI Haemorrhage & Anticoagulant Reversal | [anticoagulant-reversal-protocol](https://github.com/satbuhan/anticoagulant-reversal-protocol) |
+| [The Adult with Obesity in Emergency and Critical Care](https://satbuhan.github.io/obesity-critical-care-protocol/) | Obesity in Emergency & Critical Care | [obesity-critical-care-protocol](https://github.com/satbuhan/obesity-critical-care-protocol) |
+| [Dapagliflozin / SGLT2 Inhibitor — Overdose & Acute Illness Management](https://satbuhan.github.io/dapagliflozin-overdose-protocol/) | Toxicology & Overdose Management | [dapagliflozin-overdose-protocol](https://github.com/satbuhan/dapagliflozin-overdose-protocol) |
+| [Lidocaine vs Prilocaine — Local Anaesthesia for Laceration Repair](https://satbuhan.github.io/lidocaine-prilocaine-protocol/) | Procedural Anaesthesia & Wound Care | [lidocaine-prilocaine-protocol](https://github.com/satbuhan/lidocaine-prilocaine-protocol) |
 
 ## What this repo is
 
