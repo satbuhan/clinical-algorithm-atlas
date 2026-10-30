@@ -112,5 +112,16 @@ const TOOLS = [
     repo: "https://github.com/satbuhan/pte-thrombolysis-protocol",
     thumb: "assets/thumbs/pte-thrombolysis.png",
     added: "2026-10-30"
+  },
+  {
+    id: "lmwh-nste-acs",
+    title: "LMWH Selection & Renal Dosing",
+    subtitle: "In Unstable Angina / NSTEMI",
+    specialty: "cardio",
+    summary: "Interactive, referenced walkthrough of the algorithm for choosing and dosing a parenteral anticoagulant in NSTE-ACS, derived from a 104-reference systematic review — the invasive-vs-conservative gate behind UFH vs fondaparinux, the enoxaparin/dalteparin/nadroparin priority order, and renal-function-tiered LMWH dosing down to the switch back to UFH below CrCl 15 mL/min.",
+    url: "https://satbuhan.github.io/lmwh-nste-acs-protocol/",
+    repo: "https://github.com/satbuhan/lmwh-nste-acs-protocol",
+    thumb: "assets/thumbs/lmwh-nste-acs.png",
+    added: "2026-10-31"
   }
 ];
