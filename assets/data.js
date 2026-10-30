@@ -101,5 +101,16 @@ const TOOLS = [
     repo: "https://github.com/satbuhan/lidocaine-prilocaine-protocol",
     thumb: "assets/thumbs/lidocaine-prilocaine.png",
     added: "2026-10-29"
+  },
+  {
+    id: "pte-thrombolysis",
+    title: "Reperfusion Therapy",
+    subtitle: "In Acute Pulmonary Thromboembolism",
+    specialty: "cardio",
+    summary: "Interactive, referenced walkthrough of the decision algorithm for thrombolytic and catheter-based reperfusion in acute PE, derived from a 73-reference narrative review — the haemodynamic-instability and RV-dysfunction/troponin gates, HI-PEITHO-informed severity criteria for catheter-directed therapy, full-dose systemic fibrinolysis dosing, and rescue reperfusion after failed lysis or arrest.",
+    url: "https://satbuhan.github.io/pte-thrombolysis-protocol/",
+    repo: "https://github.com/satbuhan/pte-thrombolysis-protocol",
+    thumb: "assets/thumbs/pte-thrombolysis.png",
+    added: "2026-10-30"
   }
 ];

@@ -21,6 +21,7 @@ step, and the algorithm itself kept byte-for-byte as drawn.
 | [The Adult with Obesity in Emergency and Critical Care](https://satbuhan.github.io/obesity-critical-care-protocol/) | Obesity in Emergency & Critical Care | [obesity-critical-care-protocol](https://github.com/satbuhan/obesity-critical-care-protocol) |
 | [Dapagliflozin / SGLT2 Inhibitor — Overdose & Acute Illness Management](https://satbuhan.github.io/dapagliflozin-overdose-protocol/) | Toxicology & Overdose Management | [dapagliflozin-overdose-protocol](https://github.com/satbuhan/dapagliflozin-overdose-protocol) |
 | [Lidocaine vs Prilocaine — Local Anaesthesia for Laceration Repair](https://satbuhan.github.io/lidocaine-prilocaine-protocol/) | Procedural Anaesthesia & Wound Care | [lidocaine-prilocaine-protocol](https://github.com/satbuhan/lidocaine-prilocaine-protocol) |
+| [Reperfusion Therapy in Acute Pulmonary Thromboembolism](https://satbuhan.github.io/pte-thrombolysis-protocol/) | Cardiovascular Emergencies | [pte-thrombolysis-protocol](https://github.com/satbuhan/pte-thrombolysis-protocol) |
 
 ## What this repo is
 
