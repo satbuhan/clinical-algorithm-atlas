@@ -1,0 +1,93 @@
+{
+  "generated": "2026-10-31",
+  "terms": {
+    "ct angiography": [
+      {
+        "tool": "aortic-dissection-protocol",
+        "title": "Acute Aortic Dissection",
+        "subtitle": "Initial Medical Management",
+        "url": "https://satbuhan.github.io/aortic-dissection-protocol/",
+        "match": "CT angiography",
+        "full": "computed tomography angiography",
+        "def": "A contrast-enhanced CT scan that outlines the inside of the vessel lumen — fast enough and detailed enough to be the first-line test for suspected dissection.",
+        "nodeId": "trigger"
+      },
+      {
+        "tool": "anticoagulant-reversal-protocol",
+        "title": "Anticoagulant Reversal",
+        "subtitle": "In Gastrointestinal Haemorrhage",
+        "url": "https://satbuhan.github.io/anticoagulant-reversal-protocol/",
+        "match": "CT angiography",
+        "full": "computed tomography angiography",
+        "def": "Contrast-enhanced CT imaging of the vasculature, used here to localise an ongoing lower GI bleeding source before an endoscopic or interventional-radiology procedure is chosen.",
+        "nodeId": "unstable_mgmt"
+      }
+    ],
+    "aki": [
+      {
+        "tool": "aortic-dissection-protocol",
+        "title": "Acute Aortic Dissection",
+        "subtitle": "Initial Medical Management",
+        "url": "https://satbuhan.github.io/aortic-dissection-protocol/",
+        "match": "AKI",
+        "full": "acute kidney injury",
+        "def": "A sudden drop in kidney function. Here, a reason to individualise rather than enforce the SBP <120 target by default, since the kidney may already be under-perfused.",
+        "nodeId": "monitor"
+      },
+      {
+        "tool": "nsaid-pain-protocol",
+        "title": "Dexketoprofen vs Ibuprofen",
+        "subtitle": "Selecting an NSAID for Acute Pain",
+        "url": "https://satbuhan.github.io/nsaid-pain-protocol/",
+        "match": "AKI",
+        "full": "acute kidney injury",
+        "def": "A sudden drop in kidney function. NSAIDs remove a compensatory renal-prostaglandin mechanism, so AKI (or a low eGFR, or hypovolaemia) is a reason to avoid them rather than merely dose-reduce.",
+        "nodeId": "contraindications_info"
+      }
+    ],
+    "ppi": [
+      {
+        "tool": "nsaid-pain-protocol",
+        "title": "Dexketoprofen vs Ibuprofen",
+        "subtitle": "Selecting an NSAID for Acute Pain",
+        "url": "https://satbuhan.github.io/nsaid-pain-protocol/",
+        "match": "PPI",
+        "full": "proton pump inhibitor",
+        "def": "An acid-suppressing drug added alongside an NSAID in patients with GI risk factors (prior ulcer, anticoagulant/antiplatelet use, age) to reduce the chance of NSAID-associated ulceration.",
+        "nodeId": "dose_adjust"
+      },
+      {
+        "tool": "anticoagulant-reversal-protocol",
+        "title": "Anticoagulant Reversal",
+        "subtitle": "In Gastrointestinal Haemorrhage",
+        "url": "https://satbuhan.github.io/anticoagulant-reversal-protocol/",
+        "match": "PPI",
+        "full": "proton pump inhibitor",
+        "def": "An acid-suppressing drug given at high dose after endoscopic haemostasis for upper GI bleeding, to create a less acidic environment that stabilises clot formation over the treated lesion.",
+        "nodeId": "post_haemostasis"
+      }
+    ],
+    "mcid": [
+      {
+        "tool": "nsaid-pain-protocol",
+        "title": "Dexketoprofen vs Ibuprofen",
+        "subtitle": "Selecting an NSAID for Acute Pain",
+        "url": "https://satbuhan.github.io/nsaid-pain-protocol/",
+        "match": "MCID",
+        "full": "minimal clinically important difference",
+        "def": "The smallest change in a pain score a patient would perceive as meaningful. This page anchors it to roughly 10 mm on a 100 mm visual analogue scale — a slightly conservative rounding of Kelly's empirically measured ≈12 mm minimum clinically significant difference.",
+        "nodeId": "dose_adjust"
+      },
+      {
+        "tool": "lidocaine-prilocaine-protocol",
+        "title": "Lidocaine vs Prilocaine",
+        "subtitle": "Local Anaesthesia for Laceration Repair",
+        "url": "https://satbuhan.github.io/lidocaine-prilocaine-protocol/",
+        "match": "MCID",
+        "full": "minimal clinically important difference",
+        "def": "The smallest change in an outcome (here, roughly 1.3 points on a 0–10 pain scale, or a standardized effect size of about 0.5) that a patient would consider meaningful — used to judge whether a statistically real difference actually matters clinically.",
+        "nodeId": "evidence_note"
+      }
+    ]
+  }
+}

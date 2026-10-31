@@ -61,7 +61,31 @@ assets/thumbs/        a static preview image per tool (a cropped
 3. Add one entry to the `TOOLS` array in `assets/data.js` — `id`, `title`,
    `subtitle`, `specialty` (add a new key to `SPECIALTIES` in the same
    file if it's a new domain), `summary`, `url`, `repo`, `thumb`, `added`.
-4. Commit and push. No other file changes needed.
+4. Commit and push. No other file changes needed for the gallery.
+5. If the new tool's `GLOSSARY` might share a term with an existing tool's
+   (same concept, not just the same string — see below), run
+   `python3 tools/gen_concepts.py` and review/commit the updated
+   `assets/concepts.json`. Every tool picks up the change automatically;
+   no edits are needed in any tool's own repo.
+
+### Cross-atlas concept index
+
+`assets/concepts.json` maps a `GLOSSARY` term to every tool that
+independently defines it, so that term's click-to-expand definition in
+each of those tools grows an "Also covered in: <other tool> →" line that
+deep-links straight to the relevant box there. Every tool fetches this
+one file at runtime (best-effort, non-blocking — nothing breaks if it's
+unreachable); see each tool's own `METHODOLOGY.md` ("Cross-atlas concept
+links") for the runtime side.
+
+`tools/gen_concepts.py` regenerates it by requiring every sibling repo's
+`assets/content.js` (so all tool repos need to be cloned next to this one
+— see the script's own docstring) and keeping only terms that appear in
+2+ tools. It flags candidates; it does not decide for you. A shared
+string isn't always the same clinical concept (e.g. "lipid emulsion" as a
+drug vehicle in one tool vs. the LAST-rescue antidote in another), so
+read each new pair's `def` text before trusting it, and add any false
+positive to the script's `EXCLUDE_PAIRS`.
 
 ### Running it locally
 
