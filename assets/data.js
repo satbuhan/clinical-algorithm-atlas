@@ -10,7 +10,8 @@ const SPECIALTIES = {
   gi:          { label: "Gastrointestinal Haemorrhage & Anticoagulant Reversal", short: "GI Bleeding", tagClass: "gi" },
   obesity:     { label: "Obesity in Emergency & Critical Care", short: "Obesity", tagClass: "obesity" },
   tox:         { label: "Toxicology & Overdose Management", short: "Toxicology", tagClass: "tox" },
-  procedural:  { label: "Procedural Anaesthesia & Wound Care", short: "Procedural Care", tagClass: "procedural" }
+  procedural:  { label: "Procedural Anaesthesia & Wound Care", short: "Procedural Care", tagClass: "procedural" },
+  neuro:       { label: "Neurotrauma & Critical Care Neurology", short: "Neurotrauma", tagClass: "neuro" }
 };
 
 const TOOLS = [
@@ -123,5 +124,16 @@ const TOOLS = [
     repo: "https://github.com/satbuhan/lmwh-nste-acs-protocol",
     thumb: "assets/thumbs/lmwh-nste-acs.png",
     added: "2026-10-31"
+  },
+  {
+    id: "ketamine-head-injury",
+    title: "Ketamine in Head Injury",
+    subtitle: "Safety Analysis & Complication Management",
+    specialty: "neuro",
+    summary: "Interactive, referenced walkthrough of the algorithm for using ketamine in head injury, derived from a 98-reference systematic review — the three indication pathways (induction/RSI, ICU sedation, analgesia), the shock-index-gated induction dose, and management of hypotension, emergence reactions, seizures, ICP rise, and laryngospasm.",
+    url: "https://satbuhan.github.io/ketamine-head-injury-protocol/",
+    repo: "https://github.com/satbuhan/ketamine-head-injury-protocol",
+    thumb: "assets/thumbs/ketamine-head-injury.png",
+    added: "2026-11-02"
   }
 ];

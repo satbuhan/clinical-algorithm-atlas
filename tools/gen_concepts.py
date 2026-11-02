@@ -62,6 +62,7 @@ REPOS = [
     "lidocaine-prilocaine-protocol",
     "pte-thrombolysis-protocol",
     "lmwh-nste-acs-protocol",
+    "ketamine-head-injury-protocol",
 ]
 
 # Reviewed by hand: (repo, lowercased term) pairs that share a GLOSSARY

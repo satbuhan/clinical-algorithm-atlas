@@ -28,6 +28,8 @@
   --tag-tox-wash: rgba(60, 90, 115, 0.09);
   --tag-procedural: #8B4B5C;
   --tag-procedural-wash: rgba(139, 75, 92, 0.09);
+  --tag-neuro: #4B4E85;
+  --tag-neuro-wash: rgba(75, 78, 133, 0.09);
 
   --radius-card: 10px;
   --radius-chip: 999px;
@@ -179,6 +181,7 @@ a { color: inherit; }
 .card__tag.obesity { background: var(--tag-obesity-wash); color: var(--tag-obesity); }
 .card__tag.tox { background: var(--tag-tox-wash); color: var(--tag-tox); }
 .card__tag.procedural { background: var(--tag-procedural-wash); color: var(--tag-procedural); }
+.card__tag.neuro { background: var(--tag-neuro-wash); color: var(--tag-neuro); }
 .card h2 {
   font-family: var(--font-serif);
   font-size: 19px;
