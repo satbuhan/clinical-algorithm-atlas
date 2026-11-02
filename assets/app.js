@@ -9,18 +9,24 @@
 
   const state = { filter: "all", q: "" };
 
-  function loadCollapsed() {
+  // Groups default to CLOSED on a first visit — with 8 categories across a
+  // growing tool count, defaulting to open meant scrolling past every
+  // other category's full card grid just to reach the last one. A viewer
+  // opens the category they want via its arrow; which categories they've
+  // opened is remembered (key = "opened", not "collapsed") so a return
+  // visit keeps their open panels open rather than re-collapsing them.
+  function loadOpened() {
     try {
-      const raw = localStorage.getItem("atlas_collapsed_groups");
+      const raw = localStorage.getItem("atlas_opened_groups");
       return raw ? JSON.parse(raw) : {};
     } catch (e) {
       return {};
     }
   }
 
-  function saveCollapsed(map) {
+  function saveOpened(map) {
     try {
-      localStorage.setItem("atlas_collapsed_groups", JSON.stringify(map));
+      localStorage.setItem("atlas_opened_groups", JSON.stringify(map));
     } catch (e) {
       /* private browsing / storage disabled — ignore */
     }
@@ -100,9 +106,9 @@
       </section>`;
   }
 
-  function groupHtml(group, isCollapsed) {
+  function groupHtml(group, isOpen) {
     return `
-      <details class="group" data-key="${group.key}"${isCollapsed ? "" : " open"}>
+      <details class="group" data-key="${group.key}"${isOpen ? " open" : ""}>
         <summary class="group__summary">
           <span class="group__title">${group.label}</span>
           <span class="group__count">${group.items.length} tool${group.items.length === 1 ? "" : "s"}</span>
@@ -119,7 +125,7 @@
     const grouped = state.filter === "all" && !state.q;
 
     if (grouped) {
-      const collapsed = loadCollapsed();
+      const opened = loadOpened();
       const groups = Object.keys(SPECIALTIES)
         .map((k) => ({
           key: k,
@@ -129,7 +135,7 @@
         .filter((g) => g.items.length);
 
       grid.classList.add("grid--grouped");
-      grid.innerHTML = recentHtml() + groups.map((g) => groupHtml(g, collapsed[g.key] === true)).join("");
+      grid.innerHTML = recentHtml() + groups.map((g) => groupHtml(g, opened[g.key] === true)).join("");
       countEl.textContent = `${TOOLS.length} tool${TOOLS.length === 1 ? "" : "s"} in the atlas, across ${groups.length} categor${groups.length === 1 ? "y" : "ies"}`;
       return;
     }
@@ -171,9 +177,9 @@
     (e) => {
       const d = e.target.closest(".group");
       if (!d) return;
-      const collapsed = loadCollapsed();
-      collapsed[d.dataset.key] = !d.open;
-      saveCollapsed(collapsed);
+      const opened = loadOpened();
+      opened[d.dataset.key] = d.open;
+      saveOpened(opened);
     },
     true
   );

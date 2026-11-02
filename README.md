@@ -11,18 +11,20 @@ step, and the algorithm itself kept byte-for-byte as drawn.
 
 ## Tools in the atlas
 
-| Tool | Specialty | Repo |
+| Tool | Category | Repo |
 |---|---|---|
-| [Acute Aortic Dissection — Initial Medical Management](https://satbuhan.github.io/aortic-dissection-protocol/) | Cardiovascular Emergencies | [aortic-dissection-protocol](https://github.com/satbuhan/aortic-dissection-protocol) |
-| [Butyrophenone Selection — Acute Agitation & Hyperactive Delirium](https://satbuhan.github.io/agitation-delirium-protocol/) | Behavioral & Psychiatric Emergencies | [agitation-delirium-protocol](https://github.com/satbuhan/agitation-delirium-protocol) |
+| [Acute Aortic Dissection — Initial Medical Management](https://satbuhan.github.io/aortic-dissection-protocol/) | Cardiopulmonary Emergencies | [aortic-dissection-protocol](https://github.com/satbuhan/aortic-dissection-protocol) |
+| [Reperfusion Therapy in Acute Pulmonary Thromboembolism](https://satbuhan.github.io/pte-thrombolysis-protocol/) | Cardiopulmonary Emergencies | [pte-thrombolysis-protocol](https://github.com/satbuhan/pte-thrombolysis-protocol) |
+| [LMWH Selection & Renal Dosing in Unstable Angina / NSTEMI](https://satbuhan.github.io/lmwh-nste-acs-protocol/) | Cardiopulmonary Emergencies | [lmwh-nste-acs-protocol](https://github.com/satbuhan/lmwh-nste-acs-protocol) |
+| [Anticoagulant Reversal in Gastrointestinal Haemorrhage](https://satbuhan.github.io/anticoagulant-reversal-protocol/) | Gastrointestinal Emergencies | [anticoagulant-reversal-protocol](https://github.com/satbuhan/anticoagulant-reversal-protocol) |
+| [Ketamine in Head Injury — Safety Analysis & Complication Management](https://satbuhan.github.io/ketamine-head-injury-protocol/) | Neurological Emergencies & Critical Care | [ketamine-head-injury-protocol](https://github.com/satbuhan/ketamine-head-injury-protocol) |
+| [Midazolam versus Clonazepam — Seizures, Acute Agitation & Anxiety](https://satbuhan.github.io/midazolam-clonazepam-protocol/) | Neurological Emergencies & Critical Care | [midazolam-clonazepam-protocol](https://github.com/satbuhan/midazolam-clonazepam-protocol) |
 | [Influenza Antiviral Selection — Baloxavir Marboxil vs Oseltamivir](https://satbuhan.github.io/influenza-antiviral-protocol/) | Infectious Disease & Respiratory | [influenza-antiviral-protocol](https://github.com/satbuhan/influenza-antiviral-protocol) |
-| [Dexketoprofen vs Ibuprofen — Selecting an NSAID for Acute Pain](https://satbuhan.github.io/nsaid-pain-protocol/) | Analgesia & Pain Management | [nsaid-pain-protocol](https://github.com/satbuhan/nsaid-pain-protocol) |
-| [Anticoagulant Reversal in Gastrointestinal Haemorrhage](https://satbuhan.github.io/anticoagulant-reversal-protocol/) | GI Haemorrhage & Anticoagulant Reversal | [anticoagulant-reversal-protocol](https://github.com/satbuhan/anticoagulant-reversal-protocol) |
-| [The Adult with Obesity in Emergency and Critical Care](https://satbuhan.github.io/obesity-critical-care-protocol/) | Obesity in Emergency & Critical Care | [obesity-critical-care-protocol](https://github.com/satbuhan/obesity-critical-care-protocol) |
+| [Butyrophenone Selection — Acute Agitation & Hyperactive Delirium](https://satbuhan.github.io/agitation-delirium-protocol/) | Behavioral & Psychiatric Emergencies | [agitation-delirium-protocol](https://github.com/satbuhan/agitation-delirium-protocol) |
+| [Dexketoprofen vs Ibuprofen — Selecting an NSAID for Acute Pain](https://satbuhan.github.io/nsaid-pain-protocol/) | Analgesia & Procedural Care | [nsaid-pain-protocol](https://github.com/satbuhan/nsaid-pain-protocol) |
+| [Lidocaine vs Prilocaine — Local Anaesthesia for Laceration Repair](https://satbuhan.github.io/lidocaine-prilocaine-protocol/) | Analgesia & Procedural Care | [lidocaine-prilocaine-protocol](https://github.com/satbuhan/lidocaine-prilocaine-protocol) |
 | [Dapagliflozin / SGLT2 Inhibitor — Overdose & Acute Illness Management](https://satbuhan.github.io/dapagliflozin-overdose-protocol/) | Toxicology & Overdose Management | [dapagliflozin-overdose-protocol](https://github.com/satbuhan/dapagliflozin-overdose-protocol) |
-| [Lidocaine vs Prilocaine — Local Anaesthesia for Laceration Repair](https://satbuhan.github.io/lidocaine-prilocaine-protocol/) | Procedural Anaesthesia & Wound Care | [lidocaine-prilocaine-protocol](https://github.com/satbuhan/lidocaine-prilocaine-protocol) |
-| [Reperfusion Therapy in Acute Pulmonary Thromboembolism](https://satbuhan.github.io/pte-thrombolysis-protocol/) | Cardiovascular Emergencies | [pte-thrombolysis-protocol](https://github.com/satbuhan/pte-thrombolysis-protocol) |
-| [LMWH Selection & Renal Dosing in Unstable Angina / NSTEMI](https://satbuhan.github.io/lmwh-nste-acs-protocol/) | Cardiovascular Emergencies | [lmwh-nste-acs-protocol](https://github.com/satbuhan/lmwh-nste-acs-protocol) |
+| [The Adult with Obesity in Emergency and Critical Care](https://satbuhan.github.io/obesity-critical-care-protocol/) | Obesity in Emergency & Critical Care | [obesity-critical-care-protocol](https://github.com/satbuhan/obesity-critical-care-protocol) |
 
 ## What this repo is
 

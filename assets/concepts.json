@@ -87,6 +87,16 @@
         "full": "minimal clinically important difference",
         "def": "The smallest change in an outcome (here, roughly 1.3 points on a 0–10 pain scale, or a standardized effect size of about 0.5) that a patient would consider meaningful — used to judge whether a statistically real difference actually matters clinically.",
         "nodeId": "evidence_note"
+      },
+      {
+        "tool": "midazolam-clonazepam-protocol",
+        "title": "Midazolam versus Clonazepam",
+        "subtitle": "Seizures, Acute Agitation & Anxiety",
+        "url": "https://satbuhan.github.io/midazolam-clonazepam-protocol/",
+        "match": "MCID",
+        "full": "minimal clinically important difference",
+        "def": "The smallest size of effect, expressed here as Cohen's d, that this review treated as clinically meaningful rather than merely statistically detectable: below 0.2 is below the threshold, 0.2–0.49 small, 0.5–0.79 moderate, and 0.8 or more large.",
+        "nodeId": null
       }
     ]
   }

@@ -2,16 +2,22 @@
 // Add a new tool here when it's published — no other file needs editing
 // for the gallery itself to pick it up.
 
+// Grouped by organ system / clinical domain first (cardiopulmonary, GI,
+// neuro — the primary mental model a clinician searches by), with the
+// remaining tools that don't sit under one organ system kept as their own
+// categories below. Re-grouped 2026-11-02 at Dr. Özgür Karcıoğlu's request,
+// to keep the hub's grouped view legible as more tools are added — expect
+// this list to keep evolving as new tools don't fit cleanly (that's fine,
+// adjust it then rather than forcing a fit now).
 const SPECIALTIES = {
-  cardio:      { label: "Cardiovascular Emergencies", short: "Cardiovascular", tagClass: "cardio" },
-  psych:       { label: "Behavioral & Psychiatric Emergencies", short: "Behavioral", tagClass: "psych" },
-  infectious:  { label: "Infectious Disease & Respiratory", short: "Infectious Disease", tagClass: "infectious" },
-  pain:        { label: "Analgesia & Pain Management", short: "Pain Management", tagClass: "pain" },
-  gi:          { label: "Gastrointestinal Haemorrhage & Anticoagulant Reversal", short: "GI Bleeding", tagClass: "gi" },
-  obesity:     { label: "Obesity in Emergency & Critical Care", short: "Obesity", tagClass: "obesity" },
-  tox:         { label: "Toxicology & Overdose Management", short: "Toxicology", tagClass: "tox" },
-  procedural:  { label: "Procedural Anaesthesia & Wound Care", short: "Procedural Care", tagClass: "procedural" },
-  neuro:       { label: "Neurotrauma & Critical Care Neurology", short: "Neurotrauma", tagClass: "neuro" }
+  cardio:               { label: "Cardiopulmonary Emergencies", short: "Cardiopulmonary", tagClass: "cardio" },
+  gi:                    { label: "Gastrointestinal Emergencies", short: "Gastrointestinal", tagClass: "gi" },
+  neuro:                { label: "Neurological Emergencies & Critical Care", short: "Neurology", tagClass: "neuro" },
+  infectious:           { label: "Infectious Disease & Respiratory", short: "Infectious Disease", tagClass: "infectious" },
+  psych:                { label: "Behavioral & Psychiatric Emergencies", short: "Behavioral", tagClass: "psych" },
+  analgesia_procedural: { label: "Analgesia & Procedural Care", short: "Analgesia & Procedural", tagClass: "analgesia_procedural" },
+  tox:                  { label: "Toxicology & Overdose Management", short: "Toxicology", tagClass: "tox" },
+  obesity:              { label: "Obesity in Emergency & Critical Care", short: "Obesity", tagClass: "obesity" }
 };
 
 const TOOLS = [
@@ -52,7 +58,7 @@ const TOOLS = [
     id: "nsaid-pain",
     title: "Dexketoprofen vs Ibuprofen",
     subtitle: "Selecting an NSAID for Acute Pain",
-    specialty: "pain",
+    specialty: "analgesia_procedural",
     summary: "Interactive, referenced walkthrough of the algorithm for choosing and safely using an NSAID — dexketoprofen or ibuprofen — for acute pain, with contraindications, high-risk features, route selection, and reassessment thresholds.",
     url: "https://satbuhan.github.io/nsaid-pain-protocol/",
     repo: "https://github.com/satbuhan/nsaid-pain-protocol",
@@ -96,7 +102,7 @@ const TOOLS = [
     id: "lidocaine-prilocaine",
     title: "Lidocaine vs Prilocaine",
     subtitle: "Local Anaesthesia for Laceration Repair",
-    specialty: "procedural",
+    specialty: "analgesia_procedural",
     summary: "Interactive, referenced walkthrough of the algorithm for choosing between lidocaine and prilocaine-containing local anaesthesia for laceration repair, derived from a systematic review with GRADE and MCID appraisal — prilocaine contraindication screening, the topical-cream time/wound gate, IVRA for extensive hand/forearm injury, and methaemoglobinaemia/LAST monitoring.",
     url: "https://satbuhan.github.io/lidocaine-prilocaine-protocol/",
     repo: "https://github.com/satbuhan/lidocaine-prilocaine-protocol",
@@ -134,6 +140,17 @@ const TOOLS = [
     url: "https://satbuhan.github.io/ketamine-head-injury-protocol/",
     repo: "https://github.com/satbuhan/ketamine-head-injury-protocol",
     thumb: "assets/thumbs/ketamine-head-injury.png",
+    added: "2026-11-02"
+  },
+  {
+    id: "midazolam-clonazepam",
+    title: "Midazolam versus Clonazepam",
+    subtitle: "Seizures, Acute Agitation & Anxiety",
+    specialty: "neuro",
+    summary: "Interactive, referenced walkthrough of the decision algorithm for choosing between midazolam and clonazepam in seizure emergencies, acute agitation, and acute anxiety or panic — two parallel diagrams covering first-line benzodiazepine selection, second-line antiseizure medication, and escalation to refractory status epilepticus.",
+    url: "https://satbuhan.github.io/midazolam-clonazepam-protocol/",
+    repo: "https://github.com/satbuhan/midazolam-clonazepam-protocol",
+    thumb: "assets/thumbs/midazolam-clonazepam.png",
     added: "2026-11-02"
   }
 ];
