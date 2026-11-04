@@ -17,7 +17,8 @@ const SPECIALTIES = {
   psych:                { label: "Behavioral & Psychiatric Emergencies", short: "Behavioral", tagClass: "psych" },
   analgesia_procedural: { label: "Analgesia & Procedural Care", short: "Analgesia & Procedural", tagClass: "analgesia_procedural" },
   tox:                  { label: "Toxicology & Overdose Management", short: "Toxicology", tagClass: "tox" },
-  obesity:              { label: "Obesity in Emergency & Critical Care", short: "Obesity", tagClass: "obesity" }
+  obesity:              { label: "Obesity in Emergency & Critical Care", short: "Obesity", tagClass: "obesity" },
+  trauma:               { label: "Trauma & Surgical Emergencies", short: "Trauma", tagClass: "trauma" }
 };
 
 const TOOLS = [
@@ -162,6 +163,17 @@ const TOOLS = [
     url: "https://satbuhan.github.io/vasopressor-shock-protocol/",
     repo: "https://github.com/satbuhan/vasopressor-shock-protocol",
     thumb: "assets/thumbs/vasopressor-shock.png",
+    added: "2026-11-04"
+  },
+  {
+    id: "wbct-trauma",
+    title: "Whole-Body CT in Traumatic Shock",
+    subtitle: "A Stepwise Decision Algorithm",
+    specialty: "trauma",
+    summary: "Interactive, referenced walkthrough of the decision algorithm for whole-body CT (WBCT) in traumatic circulatory shock — the life-threat and environment-safety gates that decide whether to scan at all, a metabolic (not blood-pressure-only) definition of shock, the single-pass acquisition protocol, and the three immediate-action pathways once the scan is interpreted.",
+    url: "https://satbuhan.github.io/wbct-trauma-protocol/",
+    repo: "https://github.com/satbuhan/wbct-trauma-protocol",
+    thumb: "assets/thumbs/wbct-trauma.png",
     added: "2026-11-04"
   }
 ];

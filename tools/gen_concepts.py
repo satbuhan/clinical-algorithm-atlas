@@ -65,6 +65,7 @@ REPOS = [
     "ketamine-head-injury-protocol",
     "midazolam-clonazepam-protocol",
     "vasopressor-shock-protocol",
+    "wbct-trauma-protocol",
 ]
 
 # Reviewed by hand: (repo, lowercased term) pairs that share a GLOSSARY
