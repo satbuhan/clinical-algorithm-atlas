@@ -152,5 +152,16 @@ const TOOLS = [
     repo: "https://github.com/satbuhan/midazolam-clonazepam-protocol",
     thumb: "assets/thumbs/midazolam-clonazepam.png",
     added: "2026-11-02"
+  },
+  {
+    id: "vasopressor-shock",
+    title: "Vasopressor Agent Selection",
+    subtitle: "Aminergic Agents in Shock States",
+    specialty: "cardio",
+    summary: "Interactive, referenced walkthrough of the algorithm for selecting a vasopressor (aminergic) agent across the four shock types — septic/vasodilatory, cardiogenic, haemorrhagic/hypovolaemic, and obstructive — from first-line norepinephrine through the MAP ≥ 65 mmHg target reassessment to second-line and rescue agents in refractory shock.",
+    url: "https://satbuhan.github.io/vasopressor-shock-protocol/",
+    repo: "https://github.com/satbuhan/vasopressor-shock-protocol",
+    thumb: "assets/thumbs/vasopressor-shock.png",
+    added: "2026-11-04"
   }
 ];

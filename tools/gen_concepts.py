@@ -64,6 +64,7 @@ REPOS = [
     "lmwh-nste-acs-protocol",
     "ketamine-head-injury-protocol",
     "midazolam-clonazepam-protocol",
+    "vasopressor-shock-protocol",
 ]
 
 # Reviewed by hand: (repo, lowercased term) pairs that share a GLOSSARY
