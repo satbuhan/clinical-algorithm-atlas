@@ -175,5 +175,16 @@ const TOOLS = [
     repo: "https://github.com/satbuhan/wbct-trauma-protocol",
     thumb: "assets/thumbs/wbct-trauma.png",
     added: "2026-11-04"
+  },
+  {
+    id: "epinephrine-revisited",
+    title: "Epinephrine/Adrenaline Revisited",
+    subtitle: "Contemporary Decision-Making Algorithm",
+    specialty: "cardio",
+    summary: "Interactive, referenced walkthrough of the manuscript's own Figure 1 — three parallel decision lanes for epinephrine in anaphylaxis, cardiac arrest, and the three major shock subtypes (septic, cardiogenic, obstructive), plus a fourth panel of adverse-effect monitoring obligations and an evidence-strengths/limitations summary that applies across all of them.",
+    url: "https://satbuhan.github.io/epinephrine-revisited-protocol/",
+    repo: "https://github.com/satbuhan/epinephrine-revisited-protocol",
+    thumb: "assets/thumbs/epinephrine-revisited.png",
+    added: "2026-11-06"
   }
 ];
