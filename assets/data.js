@@ -197,5 +197,16 @@ const TOOLS = [
     repo: "https://github.com/satbuhan/ketamine-indications-protocol",
     thumb: "assets/thumbs/ketamine-indications.png",
     added: "2026-11-06"
+  },
+  {
+    id: "tenecteplase-alteplase-stemi",
+    title: "Tenecteplase versus Alteplase",
+    subtitle: "Fibrinolysis in STEMI When Timely Primary PCI Is Not Available",
+    specialty: "cardio",
+    summary: "Interactive, referenced walkthrough of the systematic review's own Figure 2 — fibrinolytic agent selection and weight/age-based dosing for ST-segment elevation myocardial infarction when timely primary PCI is not available, from eligibility and transfer-delay gating through age-adjusted tenecteplase dosing to the 60–90 minute reperfusion reassessment and rescue PCI.",
+    url: "https://satbuhan.github.io/tenecteplase-alteplase-stemi-protocol/",
+    repo: "https://github.com/satbuhan/tenecteplase-alteplase-stemi-protocol",
+    thumb: "assets/thumbs/tenecteplase-alteplase-stemi.png",
+    added: "2026-11-06"
   }
 ];

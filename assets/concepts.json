@@ -119,6 +119,38 @@
         "full": "minimal clinically important difference",
         "def": "The smallest size of effect, expressed here as Cohen's d, that this review treated as clinically meaningful rather than merely statistically detectable: below 0.2 is below the threshold, 0.2–0.49 small, 0.5–0.79 moderate, and 0.8 or more large.",
         "nodeId": null
+      },
+      {
+        "tool": "tenecteplase-alteplase-stemi-protocol",
+        "title": "Tenecteplase versus Alteplase",
+        "subtitle": "Fibrinolysis in STEMI When Timely Primary PCI Is Not Available",
+        "url": "https://satbuhan.github.io/tenecteplase-alteplase-stemi-protocol/",
+        "match": "MCID",
+        "full": "minimal clinically important difference",
+        "def": "The smallest difference that patients and clinicians would consider meaningful. This review prespecified an absolute standardised effect size (Cohen's d) of 0.20 as the MCID threshold for judging whether a statistically significant finding was also clinically important.",
+        "nodeId": null
+      }
+    ],
+    "ufh": [
+      {
+        "tool": "anticoagulant-reversal-protocol",
+        "title": "Anticoagulant Reversal",
+        "subtitle": "In Gastrointestinal Haemorrhage",
+        "url": "https://satbuhan.github.io/anticoagulant-reversal-protocol/",
+        "match": "UFH",
+        "full": "unfractionated heparin",
+        "def": "An injectable anticoagulant that potentiates antithrombin's inhibition of both thrombin and factor Xa. Fully neutralised by protamine sulfate, unlike LMWH.",
+        "nodeId": "heparin_pathway"
+      },
+      {
+        "tool": "tenecteplase-alteplase-stemi-protocol",
+        "title": "Tenecteplase versus Alteplase",
+        "subtitle": "Fibrinolysis in STEMI When Timely Primary PCI Is Not Available",
+        "url": "https://satbuhan.github.io/tenecteplase-alteplase-stemi-protocol/",
+        "match": "UFH",
+        "full": "unfractionated heparin",
+        "def": "An adjunctive anticoagulant option alongside fibrinolysis, used either instead of or historically before age- and renal-adjusted enoxaparin.",
+        "nodeId": null
       }
     ],
     "rsi": [
@@ -162,6 +194,28 @@
         "match": "esketamine",
         "full": "S-(+)-ketamine",
         "def": "The more potent enantiomer of racemic ketamine, with roughly three-fold greater NMDA receptor affinity; licensed in several countries for treatment-resistant depression.",
+        "nodeId": null
+      }
+    ],
+    "grade": [
+      {
+        "tool": "midazolam-clonazepam-protocol",
+        "title": "Midazolam versus Clonazepam",
+        "subtitle": "Seizures, Acute Agitation & Anxiety",
+        "url": "https://satbuhan.github.io/midazolam-clonazepam-protocol/",
+        "match": "GRADE",
+        "full": null,
+        "def": "A structured system for rating how much confidence to place in a body of evidence for a specific outcome — from high down to very low — based on risk of bias, inconsistency, indirectness, imprecision and publication bias.",
+        "nodeId": "evidence-sidebar"
+      },
+      {
+        "tool": "tenecteplase-alteplase-stemi-protocol",
+        "title": "Tenecteplase versus Alteplase",
+        "subtitle": "Fibrinolysis in STEMI When Timely Primary PCI Is Not Available",
+        "url": "https://satbuhan.github.io/tenecteplase-alteplase-stemi-protocol/",
+        "match": "GRADE",
+        "full": "Grading of Recommendations Assessment, Development and Evaluation",
+        "def": "The framework this review used to rate certainty of evidence for each outcome as High, Moderate, Low or Very low, downgrading for risk of bias, inconsistency, indirectness, imprecision or publication bias.",
         "nodeId": null
       }
     ]
