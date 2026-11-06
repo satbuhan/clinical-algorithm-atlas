@@ -45,6 +45,28 @@
         "nodeId": "contraindications_info"
       }
     ],
+    "rass": [
+      {
+        "tool": "agitation-delirium-protocol",
+        "title": "Butyrophenone Selection",
+        "subtitle": "Acute Agitation & Hyperactive Delirium",
+        "url": "https://satbuhan.github.io/agitation-delirium-protocol/",
+        "match": "RASS",
+        "full": "Richmond Agitation-Sedation Scale",
+        "def": "A 10-point scale (−5, unarousable, to +4, combative) used to document and trend a patient's level of agitation or sedation at the bedside. Validated in adult ICU patients; used here to make \"reassess every 10–15 min\" an objective, reproducible check rather than a subjective impression.",
+        "nodeId": null
+      },
+      {
+        "tool": "ketamine-indications-protocol",
+        "title": "Ketamine in Emergency and Critical Care",
+        "subtitle": "Indication-Based Decision Algorithm",
+        "url": "https://satbuhan.github.io/ketamine-indications-protocol/",
+        "match": "RASS",
+        "full": "Richmond Agitation-Sedation Scale",
+        "def": "A validated scale used to grade a patient's level of sedation or agitation; used as the outcome measure in trials comparing ketamine with haloperidol for acute agitation.",
+        "nodeId": "agitation_dose"
+      }
+    ],
     "ppi": [
       {
         "tool": "nsaid-pain-protocol",
@@ -96,6 +118,50 @@
         "match": "MCID",
         "full": "minimal clinically important difference",
         "def": "The smallest size of effect, expressed here as Cohen's d, that this review treated as clinically meaningful rather than merely statistically detectable: below 0.2 is below the threshold, 0.2–0.49 small, 0.5–0.79 moderate, and 0.8 or more large.",
+        "nodeId": null
+      }
+    ],
+    "rsi": [
+      {
+        "tool": "obesity-critical-care-protocol",
+        "title": "The Adult with Obesity",
+        "subtitle": "In Emergency and Critical Care",
+        "url": "https://satbuhan.github.io/obesity-critical-care-protocol/",
+        "match": "RSI",
+        "full": "rapid sequence induction",
+        "def": "A fast-onset induction and paralysis technique used when aspiration risk is high. The review specifically warns against under-dosing rocuronium for RSI by using a fixed adult dose.",
+        "nodeId": null
+      },
+      {
+        "tool": "ketamine-indications-protocol",
+        "title": "Ketamine in Emergency and Critical Care",
+        "subtitle": "Indication-Based Decision Algorithm",
+        "url": "https://satbuhan.github.io/ketamine-indications-protocol/",
+        "match": "RSI",
+        "full": "rapid sequence intubation",
+        "def": "Near-simultaneous administration of an induction agent and a paralytic to secure the airway quickly, minimising aspiration risk; ketamine's role as an RSI induction agent is substantially revised by the 2025 RSI Trial covered in this tool.",
+        "nodeId": "strengths_weaknesses"
+      }
+    ],
+    "esketamine": [
+      {
+        "tool": "ketamine-head-injury-protocol",
+        "title": "Ketamine in Head Injury",
+        "subtitle": "Safety Analysis & Complication Management",
+        "url": "https://satbuhan.github.io/ketamine-head-injury-protocol/",
+        "match": "esketamine",
+        "full": "S(+)-ketamine",
+        "def": "The S(+)-enantiomer of ketamine, roughly twice as potent as the racemic mixture used elsewhere in this algorithm — doses are halved whenever esketamine is substituted — and associated with somewhat fewer cognitive disturbances on emergence.",
+        "nodeId": "branch-a-content"
+      },
+      {
+        "tool": "ketamine-indications-protocol",
+        "title": "Ketamine in Emergency and Critical Care",
+        "subtitle": "Indication-Based Decision Algorithm",
+        "url": "https://satbuhan.github.io/ketamine-indications-protocol/",
+        "match": "esketamine",
+        "full": "S-(+)-ketamine",
+        "def": "The more potent enantiomer of racemic ketamine, with roughly three-fold greater NMDA receptor affinity; licensed in several countries for treatment-resistant depression.",
         "nodeId": null
       }
     ]

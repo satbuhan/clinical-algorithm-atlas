@@ -186,5 +186,16 @@ const TOOLS = [
     repo: "https://github.com/satbuhan/epinephrine-revisited-protocol",
     thumb: "assets/thumbs/epinephrine-revisited.png",
     added: "2026-11-06"
+  },
+  {
+    id: "ketamine-indications",
+    title: "Ketamine in Emergency and Critical Care",
+    subtitle: "Indication-Based Decision Algorithm",
+    specialty: "analgesia_procedural",
+    summary: "Interactive, referenced walkthrough of the manuscript's own Figure 1 — five parallel decision lanes for ketamine across procedural sedation, RSI/airway management, acute agitation, ICU analgosedation, and resuscitation of the haemodynamically unstable patient, plus shared monitoring, special-population, and revised ICP-safety panels that apply across all of them.",
+    url: "https://satbuhan.github.io/ketamine-indications-protocol/",
+    repo: "https://github.com/satbuhan/ketamine-indications-protocol",
+    thumb: "assets/thumbs/ketamine-indications.png",
+    added: "2026-11-06"
   }
 ];
