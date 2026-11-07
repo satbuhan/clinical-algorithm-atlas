@@ -69,6 +69,7 @@ REPOS = [
     "epinephrine-revisited-protocol",
     "ketamine-indications-protocol",
     "tenecteplase-alteplase-stemi-protocol",
+    "cwa-blood-gas-protocol",
 ]
 
 # Reviewed by hand: (repo, lowercased term) pairs that share a GLOSSARY

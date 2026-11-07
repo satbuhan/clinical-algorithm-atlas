@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-06",
+  "generated": "2026-11-07",
   "terms": {
     "ct angiography": [
       {
@@ -153,6 +153,28 @@
         "nodeId": null
       }
     ],
+    "ards": [
+      {
+        "tool": "obesity-critical-care-protocol",
+        "title": "The Adult with Obesity",
+        "subtitle": "In Emergency and Critical Care",
+        "url": "https://satbuhan.github.io/obesity-critical-care-protocol/",
+        "match": "ARDS",
+        "full": "acute respiratory distress syndrome",
+        "def": "Severe, diffuse acute lung injury causing hypoxaemia. Low-tidal-volume, lung-protective ventilation principles apply with or without a formal ARDS diagnosis in patients with obesity.",
+        "nodeId": "domain_ventilation"
+      },
+      {
+        "tool": "cwa-blood-gas-protocol",
+        "title": "Blood Gas-Guided Assessment",
+        "subtitle": "Of the Chemical Warfare Agent Casualty",
+        "url": "https://satbuhan.github.io/cwa-blood-gas-protocol/",
+        "match": "ARDS",
+        "full": "acute respiratory distress syndrome",
+        "def": "Acute, diffuse lung inflammation causing severe hypoxaemia, graded by the Berlin definition using the PaO2/FiO2 ratio.",
+        "nodeId": "panel"
+      }
+    ],
     "rsi": [
       {
         "tool": "obesity-critical-care-protocol",
@@ -173,6 +195,28 @@
         "full": "rapid sequence intubation",
         "def": "Near-simultaneous administration of an induction agent and a paralytic to secure the airway quickly, minimising aspiration risk; ketamine's role as an RSI induction agent is substantially revised by the 2025 RSI Trial covered in this tool.",
         "nodeId": "strengths_weaknesses"
+      }
+    ],
+    "co-oximetry": [
+      {
+        "tool": "lidocaine-prilocaine-protocol",
+        "title": "Lidocaine vs Prilocaine",
+        "subtitle": "Local Anaesthesia for Laceration Repair",
+        "url": "https://satbuhan.github.io/lidocaine-prilocaine-protocol/",
+        "match": "co-oximetry",
+        "full": "",
+        "def": "Multi-wavelength blood-gas analysis that can distinguish methaemoglobin from normal oxyhaemoglobin, unlike standard two-wavelength pulse oximetry — the test that actually confirms methaemoglobinaemia.",
+        "nodeId": "monitor"
+      },
+      {
+        "tool": "cwa-blood-gas-protocol",
+        "title": "Blood Gas-Guided Assessment",
+        "subtitle": "Of the Chemical Warfare Agent Casualty",
+        "url": "https://satbuhan.github.io/cwa-blood-gas-protocol/",
+        "match": "co-oximetry",
+        "full": "",
+        "def": "Multi-wavelength oximetry (laboratory or pulse) that measures carboxyhaemoglobin and methaemoglobin in addition to oxyhaemoglobin — needed because standard two-wavelength pulse oximetry cannot detect these dyshaemoglobins.",
+        "nodeId": "panel"
       }
     ],
     "esketamine": [

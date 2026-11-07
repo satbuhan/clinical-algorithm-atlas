@@ -208,5 +208,16 @@ const TOOLS = [
     repo: "https://github.com/satbuhan/tenecteplase-alteplase-stemi-protocol",
     thumb: "assets/thumbs/tenecteplase-alteplase-stemi.png",
     added: "2026-11-06"
+  },
+  {
+    id: "cwa-blood-gas",
+    title: "Blood Gas-Guided Assessment",
+    subtitle: "Of the Chemical Warfare Agent Casualty",
+    specialty: "tox",
+    summary: "Interactive, referenced walkthrough of the systematic review's own Figure 2 — pattern-matching a single early blood gas, lactate and co-oximetry panel to the dominant chemical warfare agent class (nerve/organophosphate, blood/cyanide, or choking/vesicant), through to class-specific empirical antidote and lung-protective ventilation management, and back to serial reassessment.",
+    url: "https://satbuhan.github.io/cwa-blood-gas-protocol/",
+    repo: "https://github.com/satbuhan/cwa-blood-gas-protocol",
+    thumb: "assets/thumbs/cwa-blood-gas.png",
+    added: "2026-11-07"
   }
 ];
