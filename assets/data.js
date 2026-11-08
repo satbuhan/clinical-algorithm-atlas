@@ -219,5 +219,16 @@ const TOOLS = [
     repo: "https://github.com/satbuhan/cwa-blood-gas-protocol",
     thumb: "assets/thumbs/cwa-blood-gas.png",
     added: "2026-11-07"
+  },
+  {
+    id: "ccb-toxicity",
+    title: "Calcium Channel Blocker Toxicity",
+    subtitle: "Phenotype-Guided Management",
+    specialty: "tox",
+    summary: "Interactive, referenced walkthrough of the scoping review's own phenotype-branched algorithm — bedside echocardiography splitting management into a vasoplegic phenotype (vasopressor-led) and a cardiogenic phenotype (HIE/glucagon-led), escalating through salvage intravenous lipid emulsion to VA-ECMO for refractory shock or cardiac arrest.",
+    url: "https://satbuhan.github.io/ccb-toxicity-protocol/",
+    repo: "https://github.com/satbuhan/ccb-toxicity-protocol",
+    thumb: "assets/thumbs/ccb-toxicity.png",
+    added: "2026-11-08"
   }
 ];

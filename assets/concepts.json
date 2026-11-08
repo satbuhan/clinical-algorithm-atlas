@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-07",
+  "generated": "2026-11-08",
   "terms": {
     "ct angiography": [
       {
@@ -21,6 +21,28 @@
         "full": "computed tomography angiography",
         "def": "Contrast-enhanced CT imaging of the vasculature, used here to localise an ongoing lower GI bleeding source before an endoscopic or interventional-radiology procedure is chosen.",
         "nodeId": "unstable_mgmt"
+      }
+    ],
+    "av block": [
+      {
+        "tool": "aortic-dissection-protocol",
+        "title": "Acute Aortic Dissection",
+        "subtitle": "Initial Medical Management",
+        "url": "https://satbuhan.github.io/aortic-dissection-protocol/",
+        "match": "AV block",
+        "full": "atrioventricular block",
+        "def": "Conduction delay or failure at or below the AV node. First-degree and Mobitz I block carry some safety margin; Mobitz II, 2:1, and third-degree block (\"high-grade\") are the ones that matter here — they leave no AV-nodal reserve to absorb a drug that slows conduction further, risking symptomatic bradycardia or complete heart block.",
+        "nodeId": "criteria"
+      },
+      {
+        "tool": "ccb-toxicity-protocol",
+        "title": "Calcium Channel Blocker Toxicity",
+        "subtitle": "Phenotype-Guided Management",
+        "url": "https://satbuhan.github.io/ccb-toxicity-protocol/",
+        "match": "AV block",
+        "full": "",
+        "def": "Delayed or blocked electrical conduction between the atria and ventricles — a hallmark of cardiogenic-phenotype CCB toxicity from verapamil or diltiazem.",
+        "nodeId": "cardiogenic"
       }
     ],
     "aki": [
@@ -153,6 +175,28 @@
         "nodeId": null
       }
     ],
+    "crrt": [
+      {
+        "tool": "obesity-critical-care-protocol",
+        "title": "The Adult with Obesity",
+        "subtitle": "In Emergency and Critical Care",
+        "url": "https://satbuhan.github.io/obesity-critical-care-protocol/",
+        "match": "CRRT",
+        "full": "continuous renal replacement therapy",
+        "def": "Continuous (rather than intermittent) dialysis used in critically ill patients, typically dosed by a target effluent (filtered fluid) rate per kilogram per hour.",
+        "nodeId": "domain_kidney"
+      },
+      {
+        "tool": "ccb-toxicity-protocol",
+        "title": "Calcium Channel Blocker Toxicity",
+        "subtitle": "Phenotype-Guided Management",
+        "url": "https://satbuhan.github.io/ccb-toxicity-protocol/",
+        "match": "CRRT",
+        "full": "continuous renal replacement therapy",
+        "def": "Continuous dialysis/filtration support, whose filters and circuits can be clogged or interfered with by the hypertriglyceridaemia that high-volume lipid emulsion therapy causes.",
+        "nodeId": "salvage_ile"
+      }
+    ],
     "ards": [
       {
         "tool": "obesity-critical-care-protocol",
@@ -219,6 +263,28 @@
         "nodeId": "panel"
       }
     ],
+    "va-ecmo": [
+      {
+        "tool": "pte-thrombolysis-protocol",
+        "title": "Reperfusion Therapy",
+        "subtitle": "In Acute Pulmonary Thromboembolism",
+        "url": "https://satbuhan.github.io/pte-thrombolysis-protocol/",
+        "match": "VA-ECMO",
+        "full": "venoarterial extracorporeal membrane oxygenation",
+        "def": "A form of mechanical circulatory support that can stabilise a failing right ventricle, buy time for clot resolution, or bridge a patient to surgical or catheter-based reperfusion in refractory shock or cardiac arrest.",
+        "nodeId": "catheter_based"
+      },
+      {
+        "tool": "ccb-toxicity-protocol",
+        "title": "Calcium Channel Blocker Toxicity",
+        "subtitle": "Phenotype-Guided Management",
+        "url": "https://satbuhan.github.io/ccb-toxicity-protocol/",
+        "match": "VA-ECMO",
+        "full": "veno-arterial extracorporeal membrane oxygenation",
+        "def": "Mechanical circulatory support bridging a patient through refractory shock or cardiac arrest until the body clears the ingested drug; does not remove the drug itself.",
+        "nodeId": "refractory_decision"
+      }
+    ],
     "esketamine": [
       {
         "tool": "ketamine-head-injury-protocol",
@@ -261,6 +327,28 @@
         "full": "Grading of Recommendations Assessment, Development and Evaluation",
         "def": "The framework this review used to rate certainty of evidence for each outcome as High, Moderate, Low or Very low, downgrading for risk of bias, inconsistency, indirectness, imprecision or publication bias.",
         "nodeId": null
+      }
+    ],
+    "map": [
+      {
+        "tool": "vasopressor-shock-protocol",
+        "title": "Vasopressor Agent Selection",
+        "subtitle": "Aminergic Agents in Shock States",
+        "url": "https://satbuhan.github.io/vasopressor-shock-protocol/",
+        "match": "MAP",
+        "full": "mean arterial pressure",
+        "def": "The average pressure driving blood flow through the arterial system over a full cardiac cycle (roughly diastolic pressure plus one-third of the pulse pressure). It is the vasopressor-titration target throughout this algorithm, with 65 mmHg as the initial threshold.",
+        "nodeId": "cat-septic"
+      },
+      {
+        "tool": "ccb-toxicity-protocol",
+        "title": "Calcium Channel Blocker Toxicity",
+        "subtitle": "Phenotype-Guided Management",
+        "url": "https://satbuhan.github.io/ccb-toxicity-protocol/",
+        "match": "MAP",
+        "full": "mean arterial pressure",
+        "def": "The average arterial pressure over a cardiac cycle, used here as the resuscitation target for vasopressor titration in vasoplegic-phenotype shock.",
+        "nodeId": "vasoplegic"
       }
     ]
   }
