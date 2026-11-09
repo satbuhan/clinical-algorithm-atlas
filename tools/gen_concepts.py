@@ -72,6 +72,7 @@ REPOS = [
     "cwa-blood-gas-protocol",
     "ccb-toxicity-protocol",
     "haloperidol-adjunct-protocol",
+    "succinylcholine-rocuronium-protocol",
 ]
 
 # Reviewed by hand: (repo, lowercased term) pairs that share a GLOSSARY

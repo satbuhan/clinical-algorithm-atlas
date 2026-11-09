@@ -33,6 +33,7 @@ step, and the algorithm itself kept byte-for-byte as drawn.
 | [Ketamine in Emergency and Critical Care — Indication-Based Decision Algorithm](https://satbuhan.github.io/ketamine-indications-protocol/) | Analgesia & Procedural Care | [ketamine-indications-protocol](https://github.com/satbuhan/ketamine-indications-protocol) |
 | [Dapagliflozin / SGLT2 Inhibitor — Overdose & Acute Illness Management](https://satbuhan.github.io/dapagliflozin-overdose-protocol/) | Toxicology & Overdose Management | [dapagliflozin-overdose-protocol](https://github.com/satbuhan/dapagliflozin-overdose-protocol) |
 | [The Adult with Obesity in Emergency and Critical Care](https://satbuhan.github.io/obesity-critical-care-protocol/) | Obesity in Emergency & Critical Care | [obesity-critical-care-protocol](https://github.com/satbuhan/obesity-critical-care-protocol) |
+| [Selection of a Neuromuscular Blocking Agent — Succinylcholine vs Rocuronium for Rapid Sequence Induction and Intubation](https://satbuhan.github.io/succinylcholine-rocuronium-protocol/) | Airway Management & Rapid Sequence Intubation | [succinylcholine-rocuronium-protocol](https://github.com/satbuhan/succinylcholine-rocuronium-protocol) |
 
 ## What this repo is
 

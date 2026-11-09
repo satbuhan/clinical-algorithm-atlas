@@ -171,6 +171,16 @@
         "full": "minimal clinically important difference",
         "def": "The smallest effect size judged clinically meaningful. This review set its MCID at Cohen's d ≥ 0.50, converting a hazard ratio to an approximate standardised mean difference where needed — the near-direct ketamine-vs-midazolam trial's effect (d ≈ 0.49) sits right at this boundary.",
         "nodeId": "halo_ketamine"
+      },
+      {
+        "tool": "succinylcholine-rocuronium-protocol",
+        "title": "Selection of a Neuromuscular Blocking Agent",
+        "subtitle": "Succinylcholine vs Rocuronium for Rapid Sequence Induction and Intubation",
+        "url": "https://satbuhan.github.io/succinylcholine-rocuronium-protocol/",
+        "match": "MCID",
+        "full": "minimal clinically important difference",
+        "def": "The smallest difference in an outcome that this review's authors judged a patient or clinician would consider meaningful — used throughout to distinguish a statistically significant finding from one large enough to actually change practice (for example, a consensus-defined 30-second threshold for onset time, or 10 minutes for delay to post-intubation sedation).",
+        "nodeId": "analgosedation_decision"
       }
     ],
     "ufh": [
@@ -357,6 +367,16 @@
         "full": "Grading of Recommendations Assessment, Development and Evaluation",
         "def": "The framework used to rate the certainty of evidence for each outcome in this review, from very low to high, based on risk of bias, inconsistency, indirectness, imprecision and publication bias. No outcome in this review reached moderate or high certainty.",
         "nodeId": null
+      },
+      {
+        "tool": "succinylcholine-rocuronium-protocol",
+        "title": "Selection of a Neuromuscular Blocking Agent",
+        "subtitle": "Succinylcholine vs Rocuronium for Rapid Sequence Induction and Intubation",
+        "url": "https://satbuhan.github.io/succinylcholine-rocuronium-protocol/",
+        "match": "GRADE",
+        "full": "Grading of Recommendations, Assessment, Development and Evaluation",
+        "def": "A structured framework for rating how much confidence to place in a body of evidence for a specific outcome (High/Moderate/Low/Very low), accounting for risk of bias, inconsistency, indirectness, imprecision and publication bias.",
+        "nodeId": null
       }
     ],
     "map": [
@@ -422,6 +442,16 @@
         "match": "RoB 2",
         "full": "Cochrane Risk of Bias 2 tool",
         "def": "The instrument used to assess risk of bias across five domains in each of this review's eight included randomised controlled trials, summarised in this review's Table 3.",
+        "nodeId": null
+      },
+      {
+        "tool": "succinylcholine-rocuronium-protocol",
+        "title": "Selection of a Neuromuscular Blocking Agent",
+        "subtitle": "Succinylcholine vs Rocuronium for Rapid Sequence Induction and Intubation",
+        "url": "https://satbuhan.github.io/succinylcholine-rocuronium-protocol/",
+        "match": "RoB 2",
+        "full": "Cochrane Risk of Bias 2",
+        "def": "A structured tool for appraising bias in randomised trials across five domains — the randomisation process, deviations from intended interventions, missing outcome data, measurement of the outcome, and selection of the reported result. In this review, Domain 4 (measurement of the outcome) was the dominant source of downgrading, because succinylcholine's visible fasciculation can unblind the clinician grading intubating conditions.",
         "nodeId": null
       }
     ]

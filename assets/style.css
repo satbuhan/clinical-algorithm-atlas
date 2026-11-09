@@ -30,6 +30,8 @@
   --tag-neuro-wash: rgba(75, 78, 133, 0.09);
   --tag-trauma: #55606B;
   --tag-trauma-wash: rgba(85, 96, 107, 0.09);
+  --tag-airway: #1C6FA8;
+  --tag-airway-wash: rgba(28, 111, 168, 0.09);
 
   --radius-card: 10px;
   --radius-chip: 999px;
@@ -182,6 +184,7 @@ a { color: inherit; }
 .card__tag.tox { background: var(--tag-tox-wash); color: var(--tag-tox); }
 .card__tag.neuro { background: var(--tag-neuro-wash); color: var(--tag-neuro); }
 .card__tag.trauma { background: var(--tag-trauma-wash); color: var(--tag-trauma); }
+.card__tag.airway { background: var(--tag-airway-wash); color: var(--tag-airway); }
 .card h2 {
   font-family: var(--font-serif);
   font-size: 19px;

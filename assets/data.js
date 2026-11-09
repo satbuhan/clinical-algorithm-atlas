@@ -18,7 +18,8 @@ const SPECIALTIES = {
   analgesia_procedural: { label: "Analgesia & Procedural Care", short: "Analgesia & Procedural", tagClass: "analgesia_procedural" },
   tox:                  { label: "Toxicology & Overdose Management", short: "Toxicology", tagClass: "tox" },
   obesity:              { label: "Obesity in Emergency & Critical Care", short: "Obesity", tagClass: "obesity" },
-  trauma:               { label: "Trauma & Surgical Emergencies", short: "Trauma", tagClass: "trauma" }
+  trauma:               { label: "Trauma & Surgical Emergencies", short: "Trauma", tagClass: "trauma" },
+  airway:               { label: "Airway Management & Rapid Sequence Intubation", short: "Airway Management", tagClass: "airway" }
 };
 
 const TOOLS = [
@@ -240,6 +241,17 @@ const TOOLS = [
     url: "https://satbuhan.github.io/haloperidol-adjunct-protocol/",
     repo: "https://github.com/satbuhan/haloperidol-adjunct-protocol",
     thumb: "assets/thumbs/haloperidol-adjunct.png",
+    added: "2026-11-09"
+  },
+  {
+    id: "succinylcholine-rocuronium",
+    title: "Selection of a Neuromuscular Blocking Agent",
+    subtitle: "Succinylcholine vs Rocuronium for Rapid Sequence Induction and Intubation",
+    specialty: "airway",
+    summary: "Interactive, referenced walkthrough of the systematic review's own Figure 1 — choosing succinylcholine or rocuronium for rapid sequence induction and intubation, from contraindication screening, through the airway-rescue strategy, to whether the post-intubation analgosedation system is ready.",
+    url: "https://satbuhan.github.io/succinylcholine-rocuronium-protocol/",
+    repo: "https://github.com/satbuhan/succinylcholine-rocuronium-protocol",
+    thumb: "assets/thumbs/succinylcholine-rocuronium.png",
     added: "2026-11-09"
   }
 ];
