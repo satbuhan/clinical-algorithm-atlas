@@ -230,5 +230,16 @@ const TOOLS = [
     repo: "https://github.com/satbuhan/ccb-toxicity-protocol",
     thumb: "assets/thumbs/ccb-toxicity.png",
     added: "2026-11-08"
+  },
+  {
+    id: "haloperidol-adjunct",
+    title: "Haloperidol Adjunct Selection",
+    subtitle: "Midazolam vs Ketamine in Hyperactive Delirium with Severe Agitation",
+    specialty: "psych",
+    summary: "Interactive, referenced walkthrough of the decision algorithm for choosing midazolam or ketamine as the adjunct added to a haloperidol backbone in hyperactive delirium with severe agitation (excited delirium syndrome) — branching on withdrawal, older age, and airway-rescue readiness, through reassessment, rescue, and post-sedation care.",
+    url: "https://satbuhan.github.io/haloperidol-adjunct-protocol/",
+    repo: "https://github.com/satbuhan/haloperidol-adjunct-protocol",
+    thumb: "assets/thumbs/haloperidol-adjunct.png",
+    added: "2026-11-09"
   }
 ];

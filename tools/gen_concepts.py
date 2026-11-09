@@ -71,6 +71,7 @@ REPOS = [
     "tenecteplase-alteplase-stemi-protocol",
     "cwa-blood-gas-protocol",
     "ccb-toxicity-protocol",
+    "haloperidol-adjunct-protocol",
 ]
 
 # Reviewed by hand: (repo, lowercased term) pairs that share a GLOSSARY

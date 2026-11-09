@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-08",
+  "generated": "2026-11-09",
   "terms": {
     "ct angiography": [
       {
@@ -87,6 +87,16 @@
         "full": "Richmond Agitation-Sedation Scale",
         "def": "A validated scale used to grade a patient's level of sedation or agitation; used as the outcome measure in trials comparing ketamine with haloperidol for acute agitation.",
         "nodeId": "agitation_dose"
+      },
+      {
+        "tool": "haloperidol-adjunct-protocol",
+        "title": "Haloperidol Adjunct Selection",
+        "subtitle": "Midazolam vs Ketamine in Hyperactive Delirium with Severe Agitation",
+        "url": "https://satbuhan.github.io/haloperidol-adjunct-protocol/",
+        "match": "RASS",
+        "full": "Richmond Agitation–Sedation Scale",
+        "def": "A validated 10-point scale (−5 to +4) used in several of this review's included trials to grade agitation severity and define “adequate sedation” as a target score (e.g. RASS ≤ −1).",
+        "nodeId": "reassess"
       }
     ],
     "ppi": [
@@ -151,6 +161,16 @@
         "full": "minimal clinically important difference",
         "def": "The smallest difference that patients and clinicians would consider meaningful. This review prespecified an absolute standardised effect size (Cohen's d) of 0.20 as the MCID threshold for judging whether a statistically significant finding was also clinically important.",
         "nodeId": null
+      },
+      {
+        "tool": "haloperidol-adjunct-protocol",
+        "title": "Haloperidol Adjunct Selection",
+        "subtitle": "Midazolam vs Ketamine in Hyperactive Delirium with Severe Agitation",
+        "url": "https://satbuhan.github.io/haloperidol-adjunct-protocol/",
+        "match": "MCID",
+        "full": "minimal clinically important difference",
+        "def": "The smallest effect size judged clinically meaningful. This review set its MCID at Cohen's d ≥ 0.50, converting a hazard ratio to an approximate standardised mean difference where needed — the near-direct ketamine-vs-midazolam trial's effect (d ≈ 0.49) sits right at this boundary.",
+        "nodeId": "halo_ketamine"
       }
     ],
     "ufh": [
@@ -327,6 +347,16 @@
         "full": "Grading of Recommendations Assessment, Development and Evaluation",
         "def": "The framework this review used to rate certainty of evidence for each outcome as High, Moderate, Low or Very low, downgrading for risk of bias, inconsistency, indirectness, imprecision or publication bias.",
         "nodeId": null
+      },
+      {
+        "tool": "haloperidol-adjunct-protocol",
+        "title": "Haloperidol Adjunct Selection",
+        "subtitle": "Midazolam vs Ketamine in Hyperactive Delirium with Severe Agitation",
+        "url": "https://satbuhan.github.io/haloperidol-adjunct-protocol/",
+        "match": "GRADE",
+        "full": "Grading of Recommendations Assessment, Development and Evaluation",
+        "def": "The framework used to rate the certainty of evidence for each outcome in this review, from very low to high, based on risk of bias, inconsistency, indirectness, imprecision and publication bias. No outcome in this review reached moderate or high certainty.",
+        "nodeId": null
       }
     ],
     "map": [
@@ -349,6 +379,50 @@
         "full": "mean arterial pressure",
         "def": "The average arterial pressure over a cardiac cycle, used here as the resuscitation target for vasopressor titration in vasoplegic-phenotype shock.",
         "nodeId": "vasoplegic"
+      }
+    ],
+    "nmda": [
+      {
+        "tool": "ketamine-indications-protocol",
+        "title": "Ketamine in Emergency and Critical Care",
+        "subtitle": "Indication-Based Decision Algorithm",
+        "url": "https://satbuhan.github.io/ketamine-indications-protocol/",
+        "match": "NMDA",
+        "full": "N-methyl-D-aspartate",
+        "def": "An excitatory glutamate receptor subtype; ketamine's primary action is non-competitive antagonism of this receptor at the phencyclidine binding site within its ion channel.",
+        "nodeId": "pharm_snapshot"
+      },
+      {
+        "tool": "haloperidol-adjunct-protocol",
+        "title": "Haloperidol Adjunct Selection",
+        "subtitle": "Midazolam vs Ketamine in Hyperactive Delirium with Severe Agitation",
+        "url": "https://satbuhan.github.io/haloperidol-adjunct-protocol/",
+        "match": "NMDA",
+        "full": "N-methyl-D-aspartate receptor",
+        "def": "The receptor ketamine non-competitively blocks, producing dissociative sedation while relatively preserving airway reflexes and respiratory drive.",
+        "nodeId": "halo_midazolam_withdrawal"
+      }
+    ],
+    "rob 2": [
+      {
+        "tool": "tenecteplase-alteplase-stemi-protocol",
+        "title": "Tenecteplase versus Alteplase",
+        "subtitle": "Fibrinolysis in STEMI When Timely Primary PCI Is Not Available",
+        "url": "https://satbuhan.github.io/tenecteplase-alteplase-stemi-protocol/",
+        "match": "RoB 2",
+        "full": "revised Cochrane risk-of-bias tool for randomised trials",
+        "def": "The five-domain tool (randomisation process, deviations from intended interventions, missing outcome data, outcome measurement, selection of the reported result) used to appraise this review's randomised evidence.",
+        "nodeId": null
+      },
+      {
+        "tool": "haloperidol-adjunct-protocol",
+        "title": "Haloperidol Adjunct Selection",
+        "subtitle": "Midazolam vs Ketamine in Hyperactive Delirium with Severe Agitation",
+        "url": "https://satbuhan.github.io/haloperidol-adjunct-protocol/",
+        "match": "RoB 2",
+        "full": "Cochrane Risk of Bias 2 tool",
+        "def": "The instrument used to assess risk of bias across five domains in each of this review's eight included randomised controlled trials, summarised in this review's Table 3.",
+        "nodeId": null
       }
     ]
   }
