@@ -2,24 +2,43 @@
 // Add a new tool here when it's published — no other file needs editing
 // for the gallery itself to pick it up.
 
-// Grouped by organ system / clinical domain first (cardiopulmonary, GI,
-// neuro — the primary mental model a clinician searches by), with the
-// remaining tools that don't sit under one organ system kept as their own
-// categories below. Re-grouped 2026-11-02 at Dr. Özgür Karcıoğlu's request,
-// to keep the hub's grouped view legible as more tools are added — expect
-// this list to keep evolving as new tools don't fit cleanly (that's fine,
-// adjust it then rather than forcing a fit now).
+// Grouped by the standard global EM academic/practical taxonomy (the
+// organ-system / domain "chapters" any EM clinician would recognise from
+// Tintinalli's/Rosen's own table of contents), not an ad hoc bucket list —
+// decided jointly with Dr. Özgür Karcıoğlu and Dr. Bozatlı on 2026-11-09
+// after an earlier, looser grouping (and a brief "just 4-5 buckets" idea)
+// both proved unsatisfying. Order below is roughly acuity-first
+// (resuscitation down to supportive/procedural care), which is also the
+// order groups render in on the hub's default grouped view.
+//
+// Every key here currently has at least one real tool under it — deliberate:
+// an empty top-level category reads as a broken filter. Organ-system
+// "chapters" that are real, standard EM domains but have zero tools so far
+// (Obstetric & Gynecologic, Renal & Genitourinary, Hematology & Oncology,
+// Dermatologic, Musculoskeletal (non-traumatic), Environmental Injuries,
+// HEENT) are intentionally NOT listed here — see README.md's "Reserved
+// categories" note for the agreed names to reuse once each gets its first
+// tool, rather than re-litigating names/colors at that point. Pediatric/
+// geriatric populations were explicitly discussed and rejected as a
+// category here — they're a patient-population axis, not an organ system,
+// and would need their own filter dimension instead if ever added.
+//
+// A tool that still doesn't fit cleanly when the next one ships: discuss
+// a change with the author team rather than deciding unilaterally (a gap
+// in the process the first draft of this comment's predecessor admittedly
+// left open — see succinylcholine-rocuronium-protocol's build history).
 const SPECIALTIES = {
-  cardio:               { label: "Cardiopulmonary Emergencies", short: "Cardiopulmonary", tagClass: "cardio" },
-  gi:                    { label: "Gastrointestinal Emergencies", short: "Gastrointestinal", tagClass: "gi" },
-  neuro:                { label: "Neurological Emergencies & Critical Care", short: "Neurology", tagClass: "neuro" },
-  infectious:           { label: "Infectious Disease & Respiratory", short: "Infectious Disease", tagClass: "infectious" },
-  psych:                { label: "Behavioral & Psychiatric Emergencies", short: "Behavioral", tagClass: "psych" },
-  analgesia_procedural: { label: "Analgesia & Procedural Care", short: "Analgesia & Procedural", tagClass: "analgesia_procedural" },
-  tox:                  { label: "Toxicology & Overdose Management", short: "Toxicology", tagClass: "tox" },
-  obesity:              { label: "Obesity in Emergency & Critical Care", short: "Obesity", tagClass: "obesity" },
+  resuscitation:        { label: "Resuscitation & Airway Management", short: "Resuscitation", tagClass: "resuscitation" },
+  cardio:                { label: "Cardiovascular Emergencies", short: "Cardiovascular", tagClass: "cardio" },
+  pulmonary:            { label: "Pulmonary & Respiratory Emergencies", short: "Pulmonary", tagClass: "pulmonary" },
+  neuro:                { label: "Neurological Emergencies", short: "Neurology", tagClass: "neuro" },
   trauma:               { label: "Trauma & Surgical Emergencies", short: "Trauma", tagClass: "trauma" },
-  airway:               { label: "Airway Management & Rapid Sequence Intubation", short: "Airway Management", tagClass: "airway" }
+  psych:                { label: "Psychiatric & Behavioral Emergencies", short: "Behavioral", tagClass: "psych" },
+  tox:                  { label: "Toxicology & Overdose Management", short: "Toxicology", tagClass: "tox" },
+  gi:                    { label: "Gastrointestinal Emergencies", short: "Gastrointestinal", tagClass: "gi" },
+  infectious:           { label: "Infectious Disease Emergencies", short: "Infectious Disease", tagClass: "infectious" },
+  endocrine_metabolic:  { label: "Endocrine & Metabolic Emergencies", short: "Endocrine & Metabolic", tagClass: "endocrine_metabolic" },
+  analgesia_procedural: { label: "Analgesia, Sedation & Procedural Care", short: "Analgesia & Procedural", tagClass: "analgesia_procedural" }
 };
 
 const TOOLS = [
@@ -82,7 +101,7 @@ const TOOLS = [
     id: "obesity-critical-care",
     title: "The Adult with Obesity",
     subtitle: "In Emergency and Critical Care",
-    specialty: "obesity",
+    specialty: "endocrine_metabolic",
     summary: "Interactive, referenced two-step summary for the adult with obesity in emergency and critical care — a trigger bundle, then nine concurrent physiological domains (airway, induction, ventilation, circulation, kidney, antimicrobials, thromboprophylaxis, nutrition, liberation from ventilation), each scaled to its own weight descriptor rather than to BMI.",
     url: "https://satbuhan.github.io/obesity-critical-care-protocol/",
     repo: "https://github.com/satbuhan/obesity-critical-care-protocol",
@@ -115,7 +134,7 @@ const TOOLS = [
     id: "pte-thrombolysis",
     title: "Reperfusion Therapy",
     subtitle: "In Acute Pulmonary Thromboembolism",
-    specialty: "cardio",
+    specialty: "pulmonary",
     summary: "Interactive, referenced walkthrough of the decision algorithm for thrombolytic and catheter-based reperfusion in acute PE, derived from a 73-reference narrative review — the haemodynamic-instability and RV-dysfunction/troponin gates, HI-PEITHO-informed severity criteria for catheter-directed therapy, full-dose systemic fibrinolysis dosing, and rescue reperfusion after failed lysis or arrest.",
     url: "https://satbuhan.github.io/pte-thrombolysis-protocol/",
     repo: "https://github.com/satbuhan/pte-thrombolysis-protocol",
@@ -159,7 +178,7 @@ const TOOLS = [
     id: "vasopressor-shock",
     title: "Vasopressor Agent Selection",
     subtitle: "Aminergic Agents in Shock States",
-    specialty: "cardio",
+    specialty: "resuscitation",
     summary: "Interactive, referenced walkthrough of the algorithm for selecting a vasopressor (aminergic) agent across the four shock types — septic/vasodilatory, cardiogenic, haemorrhagic/hypovolaemic, and obstructive — from first-line norepinephrine through the MAP ≥ 65 mmHg target reassessment to second-line and rescue agents in refractory shock.",
     url: "https://satbuhan.github.io/vasopressor-shock-protocol/",
     repo: "https://github.com/satbuhan/vasopressor-shock-protocol",
@@ -181,7 +200,7 @@ const TOOLS = [
     id: "epinephrine-revisited",
     title: "Epinephrine/Adrenaline Revisited",
     subtitle: "Contemporary Decision-Making Algorithm",
-    specialty: "cardio",
+    specialty: "resuscitation",
     summary: "Interactive, referenced walkthrough of the manuscript's own Figure 1 — three parallel decision lanes for epinephrine in anaphylaxis, cardiac arrest, and the three major shock subtypes (septic, cardiogenic, obstructive), plus a fourth panel of adverse-effect monitoring obligations and an evidence-strengths/limitations summary that applies across all of them.",
     url: "https://satbuhan.github.io/epinephrine-revisited-protocol/",
     repo: "https://github.com/satbuhan/epinephrine-revisited-protocol",
@@ -247,7 +266,7 @@ const TOOLS = [
     id: "succinylcholine-rocuronium",
     title: "Selection of a Neuromuscular Blocking Agent",
     subtitle: "Succinylcholine vs Rocuronium for Rapid Sequence Induction and Intubation",
-    specialty: "airway",
+    specialty: "resuscitation",
     summary: "Interactive, referenced walkthrough of the systematic review's own Figure 1 — choosing succinylcholine or rocuronium for rapid sequence induction and intubation, from contraindication screening, through the airway-rescue strategy, to whether the post-intubation analgosedation system is ready.",
     url: "https://satbuhan.github.io/succinylcholine-rocuronium-protocol/",
     repo: "https://github.com/satbuhan/succinylcholine-rocuronium-protocol",

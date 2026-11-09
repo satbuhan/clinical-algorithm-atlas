@@ -11,29 +11,49 @@ step, and the algorithm itself kept byte-for-byte as drawn.
 
 ## Tools in the atlas
 
+Grouped by the standard global EM academic/practical taxonomy (organ system /
+clinical domain — decided jointly with Dr. Özgür Karcıoğlu on 2026-11-09; see
+"Reserved categories" below for domains with no tool yet).
+
 | Tool | Category | Repo |
 |---|---|---|
-| [Acute Aortic Dissection — Initial Medical Management](https://satbuhan.github.io/aortic-dissection-protocol/) | Cardiopulmonary Emergencies | [aortic-dissection-protocol](https://github.com/satbuhan/aortic-dissection-protocol) |
-| [Reperfusion Therapy in Acute Pulmonary Thromboembolism](https://satbuhan.github.io/pte-thrombolysis-protocol/) | Cardiopulmonary Emergencies | [pte-thrombolysis-protocol](https://github.com/satbuhan/pte-thrombolysis-protocol) |
-| [LMWH Selection & Renal Dosing in Unstable Angina / NSTEMI](https://satbuhan.github.io/lmwh-nste-acs-protocol/) | Cardiopulmonary Emergencies | [lmwh-nste-acs-protocol](https://github.com/satbuhan/lmwh-nste-acs-protocol) |
-| [Vasopressor Agent Selection — Aminergic Agents in Shock States](https://satbuhan.github.io/vasopressor-shock-protocol/) | Cardiopulmonary Emergencies | [vasopressor-shock-protocol](https://github.com/satbuhan/vasopressor-shock-protocol) |
-| [Epinephrine/Adrenaline Revisited — Contemporary Decision-Making Algorithm](https://satbuhan.github.io/epinephrine-revisited-protocol/) | Cardiopulmonary Emergencies | [epinephrine-revisited-protocol](https://github.com/satbuhan/epinephrine-revisited-protocol) |
-| [Tenecteplase versus Alteplase — Fibrinolysis in STEMI When Timely Primary PCI Is Not Available](https://satbuhan.github.io/tenecteplase-alteplase-stemi-protocol/) | Cardiopulmonary Emergencies | [tenecteplase-alteplase-stemi-protocol](https://github.com/satbuhan/tenecteplase-alteplase-stemi-protocol) |
+| [Vasopressor Agent Selection — Aminergic Agents in Shock States](https://satbuhan.github.io/vasopressor-shock-protocol/) | Resuscitation & Airway Management | [vasopressor-shock-protocol](https://github.com/satbuhan/vasopressor-shock-protocol) |
+| [Epinephrine/Adrenaline Revisited — Contemporary Decision-Making Algorithm](https://satbuhan.github.io/epinephrine-revisited-protocol/) | Resuscitation & Airway Management | [epinephrine-revisited-protocol](https://github.com/satbuhan/epinephrine-revisited-protocol) |
+| [Selection of a Neuromuscular Blocking Agent — Succinylcholine vs Rocuronium for Rapid Sequence Induction and Intubation](https://satbuhan.github.io/succinylcholine-rocuronium-protocol/) | Resuscitation & Airway Management | [succinylcholine-rocuronium-protocol](https://github.com/satbuhan/succinylcholine-rocuronium-protocol) |
+| [Acute Aortic Dissection — Initial Medical Management](https://satbuhan.github.io/aortic-dissection-protocol/) | Cardiovascular Emergencies | [aortic-dissection-protocol](https://github.com/satbuhan/aortic-dissection-protocol) |
+| [LMWH Selection & Renal Dosing in Unstable Angina / NSTEMI](https://satbuhan.github.io/lmwh-nste-acs-protocol/) | Cardiovascular Emergencies | [lmwh-nste-acs-protocol](https://github.com/satbuhan/lmwh-nste-acs-protocol) |
+| [Tenecteplase versus Alteplase — Fibrinolysis in STEMI When Timely Primary PCI Is Not Available](https://satbuhan.github.io/tenecteplase-alteplase-stemi-protocol/) | Cardiovascular Emergencies | [tenecteplase-alteplase-stemi-protocol](https://github.com/satbuhan/tenecteplase-alteplase-stemi-protocol) |
+| [Reperfusion Therapy in Acute Pulmonary Thromboembolism](https://satbuhan.github.io/pte-thrombolysis-protocol/) | Pulmonary & Respiratory Emergencies | [pte-thrombolysis-protocol](https://github.com/satbuhan/pte-thrombolysis-protocol) |
+| [Ketamine in Head Injury — Safety Analysis & Complication Management](https://satbuhan.github.io/ketamine-head-injury-protocol/) | Neurological Emergencies | [ketamine-head-injury-protocol](https://github.com/satbuhan/ketamine-head-injury-protocol) |
+| [Midazolam versus Clonazepam — Seizures, Acute Agitation & Anxiety](https://satbuhan.github.io/midazolam-clonazepam-protocol/) | Neurological Emergencies | [midazolam-clonazepam-protocol](https://github.com/satbuhan/midazolam-clonazepam-protocol) |
 | [Whole-Body CT in Traumatic Circulatory Shock](https://satbuhan.github.io/wbct-trauma-protocol/) | Trauma & Surgical Emergencies | [wbct-trauma-protocol](https://github.com/satbuhan/wbct-trauma-protocol) |
+| [Butyrophenone Selection — Acute Agitation & Hyperactive Delirium](https://satbuhan.github.io/agitation-delirium-protocol/) | Psychiatric & Behavioral Emergencies | [agitation-delirium-protocol](https://github.com/satbuhan/agitation-delirium-protocol) |
+| [Haloperidol Adjunct Selection — Midazolam vs Ketamine in Hyperactive Delirium with Severe Agitation](https://satbuhan.github.io/haloperidol-adjunct-protocol/) | Psychiatric & Behavioral Emergencies | [haloperidol-adjunct-protocol](https://github.com/satbuhan/haloperidol-adjunct-protocol) |
+| [Dapagliflozin / SGLT2 Inhibitor — Overdose & Acute Illness Management](https://satbuhan.github.io/dapagliflozin-overdose-protocol/) | Toxicology & Overdose Management | [dapagliflozin-overdose-protocol](https://github.com/satbuhan/dapagliflozin-overdose-protocol) |
 | [Blood Gas-Guided Assessment of the Chemical Warfare Agent Casualty](https://satbuhan.github.io/cwa-blood-gas-protocol/) | Toxicology & Overdose Management | [cwa-blood-gas-protocol](https://github.com/satbuhan/cwa-blood-gas-protocol) |
 | [Calcium Channel Blocker Toxicity — Phenotype-Guided Management](https://satbuhan.github.io/ccb-toxicity-protocol/) | Toxicology & Overdose Management | [ccb-toxicity-protocol](https://github.com/satbuhan/ccb-toxicity-protocol) |
 | [Anticoagulant Reversal in Gastrointestinal Haemorrhage](https://satbuhan.github.io/anticoagulant-reversal-protocol/) | Gastrointestinal Emergencies | [anticoagulant-reversal-protocol](https://github.com/satbuhan/anticoagulant-reversal-protocol) |
-| [Ketamine in Head Injury — Safety Analysis & Complication Management](https://satbuhan.github.io/ketamine-head-injury-protocol/) | Neurological Emergencies & Critical Care | [ketamine-head-injury-protocol](https://github.com/satbuhan/ketamine-head-injury-protocol) |
-| [Midazolam versus Clonazepam — Seizures, Acute Agitation & Anxiety](https://satbuhan.github.io/midazolam-clonazepam-protocol/) | Neurological Emergencies & Critical Care | [midazolam-clonazepam-protocol](https://github.com/satbuhan/midazolam-clonazepam-protocol) |
-| [Influenza Antiviral Selection — Baloxavir Marboxil vs Oseltamivir](https://satbuhan.github.io/influenza-antiviral-protocol/) | Infectious Disease & Respiratory | [influenza-antiviral-protocol](https://github.com/satbuhan/influenza-antiviral-protocol) |
-| [Butyrophenone Selection — Acute Agitation & Hyperactive Delirium](https://satbuhan.github.io/agitation-delirium-protocol/) | Behavioral & Psychiatric Emergencies | [agitation-delirium-protocol](https://github.com/satbuhan/agitation-delirium-protocol) |
-| [Haloperidol Adjunct Selection — Midazolam vs Ketamine in Hyperactive Delirium with Severe Agitation](https://satbuhan.github.io/haloperidol-adjunct-protocol/) | Behavioral & Psychiatric Emergencies | [haloperidol-adjunct-protocol](https://github.com/satbuhan/haloperidol-adjunct-protocol) |
-| [Dexketoprofen vs Ibuprofen — Selecting an NSAID for Acute Pain](https://satbuhan.github.io/nsaid-pain-protocol/) | Analgesia & Procedural Care | [nsaid-pain-protocol](https://github.com/satbuhan/nsaid-pain-protocol) |
-| [Lidocaine vs Prilocaine — Local Anaesthesia for Laceration Repair](https://satbuhan.github.io/lidocaine-prilocaine-protocol/) | Analgesia & Procedural Care | [lidocaine-prilocaine-protocol](https://github.com/satbuhan/lidocaine-prilocaine-protocol) |
-| [Ketamine in Emergency and Critical Care — Indication-Based Decision Algorithm](https://satbuhan.github.io/ketamine-indications-protocol/) | Analgesia & Procedural Care | [ketamine-indications-protocol](https://github.com/satbuhan/ketamine-indications-protocol) |
-| [Dapagliflozin / SGLT2 Inhibitor — Overdose & Acute Illness Management](https://satbuhan.github.io/dapagliflozin-overdose-protocol/) | Toxicology & Overdose Management | [dapagliflozin-overdose-protocol](https://github.com/satbuhan/dapagliflozin-overdose-protocol) |
-| [The Adult with Obesity in Emergency and Critical Care](https://satbuhan.github.io/obesity-critical-care-protocol/) | Obesity in Emergency & Critical Care | [obesity-critical-care-protocol](https://github.com/satbuhan/obesity-critical-care-protocol) |
-| [Selection of a Neuromuscular Blocking Agent — Succinylcholine vs Rocuronium for Rapid Sequence Induction and Intubation](https://satbuhan.github.io/succinylcholine-rocuronium-protocol/) | Airway Management & Rapid Sequence Intubation | [succinylcholine-rocuronium-protocol](https://github.com/satbuhan/succinylcholine-rocuronium-protocol) |
+| [Influenza Antiviral Selection — Baloxavir Marboxil vs Oseltamivir](https://satbuhan.github.io/influenza-antiviral-protocol/) | Infectious Disease Emergencies | [influenza-antiviral-protocol](https://github.com/satbuhan/influenza-antiviral-protocol) |
+| [The Adult with Obesity in Emergency and Critical Care](https://satbuhan.github.io/obesity-critical-care-protocol/) | Endocrine & Metabolic Emergencies | [obesity-critical-care-protocol](https://github.com/satbuhan/obesity-critical-care-protocol) |
+| [Dexketoprofen vs Ibuprofen — Selecting an NSAID for Acute Pain](https://satbuhan.github.io/nsaid-pain-protocol/) | Analgesia, Sedation & Procedural Care | [nsaid-pain-protocol](https://github.com/satbuhan/nsaid-pain-protocol) |
+| [Lidocaine vs Prilocaine — Local Anaesthesia for Laceration Repair](https://satbuhan.github.io/lidocaine-prilocaine-protocol/) | Analgesia, Sedation & Procedural Care | [lidocaine-prilocaine-protocol](https://github.com/satbuhan/lidocaine-prilocaine-protocol) |
+| [Ketamine in Emergency and Critical Care — Indication-Based Decision Algorithm](https://satbuhan.github.io/ketamine-indications-protocol/) | Analgesia, Sedation & Procedural Care | [ketamine-indications-protocol](https://github.com/satbuhan/ketamine-indications-protocol) |
+
+### Reserved categories
+
+Standard, globally-recognised EM domains with no tool yet — names/order agreed
+now so a future tool slots straight in without re-litigating the taxonomy:
+**Obstetric & Gynecologic Emergencies**, **Renal & Genitourinary Disorders**,
+**Hematology & Oncology Emergencies**, **Dermatologic Emergencies**,
+**Musculoskeletal (Non-Traumatic) Emergencies**, **Environmental Injuries**,
+**HEENT Emergencies**. Don't add one of these to `SPECIALTIES` in `data.js`
+until it actually has a tool — an empty filter reads as broken.
+
+Pediatric and geriatric emergencies were discussed and deliberately **not**
+added as a category here — a patient population isn't an organ system, and
+mixing the two axes would force every pediatric tool's card to pick one or
+the other. If/when that's needed, it should be a second, independent filter
+dimension (e.g. a `population` tag per tool), not a `SPECIALTIES` key.
 
 ## What this repo is
 
@@ -70,8 +90,12 @@ assets/thumbs/        a static preview image per tool (a cropped
    paper background `#F4F3EE` at the bottom edge) and save it under
    `assets/thumbs/`.
 3. Add one entry to the `TOOLS` array in `assets/data.js` — `id`, `title`,
-   `subtitle`, `specialty` (add a new key to `SPECIALTIES` in the same
-   file if it's a new domain), `summary`, `url`, `repo`, `thumb`, `added`.
+   `subtitle`, `specialty` (one of the existing `SPECIALTIES` keys if it
+   fits; check the "Reserved categories" list above before inventing a new
+   one — a domain with no tool yet may already have an agreed name/color
+   waiting; if genuinely none fit, discuss a new category with the author
+   team rather than deciding alone), `summary`, `url`, `repo`, `thumb`,
+   `added`.
 4. Commit and push. No other file changes needed for the gallery.
 5. If the new tool's `GLOSSARY` might share a term with an existing tool's
    (same concept, not just the same string — see below), run
