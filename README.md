@@ -110,6 +110,26 @@ assets/thumbs/        a static preview image per tool (a cropped
    `assets/search_index.json`. This is what powers the hub's own search
    box (see "Content search index" below) — skip it and the new tool's
    content is invisible to search until the next regeneration.
+7. Once the tool has shipped and is stable, give it its own Zenodo DOI:
+   Zenodo (Settings → GitHub) → "Sync now" + toggle the new repo on →
+   create a GitHub Release (`v1.0.0`) on it by hand at
+   `github.com/satbuhan/<repo>/releases/new` (this one step can't be done
+   from inside a Claude Code session — GitHub blocks release creation for
+   that session type even with full repo permissions) → once the DOI
+   mints, add it to the repo's own `README.md` badge and `index.html`
+   masthead (copy the pattern from any existing tool, e.g.
+   `succinylcholine-rocuronium-protocol`) → add the record to
+   `tools/fix_zenodo_metadata.py`'s `RECORDS` dict and run it for that one
+   record, **from a machine that can reach zenodo.org** (not from inside
+   a Claude Code session — zenodo.org is outside this session type's
+   network allowlist), with a Zenodo personal access token
+   (`deposit:write` + `deposit:actions` scopes) set as `ZENODO_TOKEN`.
+   This last step matters: left alone, Zenodo's GitHub auto-archival
+   credits "Claude" as the record's author (that's whose name is on the
+   git commits) and gives it a generic `satbuhan/<repo>: v1.0.0` title —
+   neither belongs in a citation. Verify by opening
+   `https://doi.org/<the-new-doi>` and checking the "Citation" box reads
+   correctly.
 
 ### Cross-atlas concept index
 
