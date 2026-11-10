@@ -9,6 +9,8 @@ step, and the algorithm itself kept byte-for-byte as drawn.
 
 **Authors:** Dr. Özgür Karcıoğlu & Dr. Satuk Buğra Han Bozatlı
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24112508.svg)](https://doi.org/10.5281/zenodo.24112508)
+
 ## Tools in the atlas
 
 Grouped by the standard global EM academic/practical taxonomy (organ system /
