@@ -1,6 +1,28 @@
 {
-  "generated": "2026-11-09",
+  "generated": "2026-11-10",
   "terms": {
+    "cyp2d6": [
+      {
+        "tool": "aortic-dissection-protocol",
+        "title": "Acute Aortic Dissection",
+        "subtitle": "Initial Medical Management",
+        "url": "https://satbuhan.github.io/aortic-dissection-protocol/",
+        "match": "CYP2D6",
+        "full": "cytochrome P450 2D6",
+        "def": "The hepatic enzyme chiefly responsible for metabolising metoprolol. Reduced hepatic function — or a genetically slow-metabolizer phenotype — can prolong and intensify its effect unpredictably, which is the pharmacologic reason to favour esmolol when the course needs to stay reversible.",
+        "nodeId": "metoprolol"
+      },
+      {
+        "tool": "geriatric-pain-protocol",
+        "title": "Pharmacological Pain Management in Elderly Patients",
+        "subtitle": "Stepwise Analgesic Decision Algorithm, Age 65+",
+        "url": "https://satbuhan.github.io/geriatric-pain-protocol/",
+        "match": "CYP2D6",
+        "full": "cytochrome P450 2D6",
+        "def": "The hepatic enzyme that activates codeine to morphine and metabolises oxycodone and tramadol; genetic variability in its activity produces poor, normal, or ultra-rapid metabolisers, with correspondingly inadequate analgesia or toxicity risk.",
+        "nodeId": "codeine"
+      }
+    ],
     "ct angiography": [
       {
         "tool": "aortic-dissection-protocol",
@@ -99,6 +121,50 @@
         "nodeId": "reassess"
       }
     ],
+    "qtc": [
+      {
+        "tool": "agitation-delirium-protocol",
+        "title": "Butyrophenone Selection",
+        "subtitle": "Acute Agitation & Hyperactive Delirium",
+        "url": "https://satbuhan.github.io/agitation-delirium-protocol/",
+        "match": "QTc",
+        "full": "corrected QT interval",
+        "def": "The QT interval (time from the start of ventricular depolarisation to the end of repolarisation) adjusted for heart rate, since the raw QT shortens and lengthens with heart rate on its own. A prolonged QTc is the electrophysiological substrate for torsades de pointes.",
+        "nodeId": "reassess_delirium"
+      },
+      {
+        "tool": "geriatric-pain-protocol",
+        "title": "Pharmacological Pain Management in Elderly Patients",
+        "subtitle": "Stepwise Analgesic Decision Algorithm, Age 65+",
+        "url": "https://satbuhan.github.io/geriatric-pain-protocol/",
+        "match": "QTc",
+        "full": "",
+        "def": "The corrected QT interval on an ECG; this algorithm flags both tramadol and the antiemetics used for opioid-induced nausea (ondansetron, haloperidol) as QTc-prolonging.",
+        "nodeId": "tramadol"
+      }
+    ],
+    "egfr": [
+      {
+        "tool": "nsaid-pain-protocol",
+        "title": "Dexketoprofen vs Ibuprofen",
+        "subtitle": "Selecting an NSAID for Acute Pain",
+        "url": "https://satbuhan.github.io/nsaid-pain-protocol/",
+        "match": "eGFR",
+        "full": "estimated glomerular filtration rate",
+        "def": "A calculated estimate of kidney filtering capacity (mL/min/1.73 m²). Below 30 is an absolute NSAID contraindication here; 30–59 is treated as a high-risk feature requiring caution rather than avoidance.",
+        "nodeId": "contraindications_info"
+      },
+      {
+        "tool": "geriatric-pain-protocol",
+        "title": "Pharmacological Pain Management in Elderly Patients",
+        "subtitle": "Stepwise Analgesic Decision Algorithm, Age 65+",
+        "url": "https://satbuhan.github.io/geriatric-pain-protocol/",
+        "match": "eGFR",
+        "full": "estimated glomerular filtration rate",
+        "def": "The lab-estimated kidney-function value this algorithm uses repeatedly (most often the <30 mL/min threshold) to decide which opioids, NSAIDs, or adjuvants are safe to use or must be avoided or dose-reduced.",
+        "nodeId": "paracetamol"
+      }
+    ],
     "ppi": [
       {
         "tool": "nsaid-pain-protocol",
@@ -119,6 +185,16 @@
         "full": "proton pump inhibitor",
         "def": "An acid-suppressing drug given at high dose after endoscopic haemostasis for upper GI bleeding, to create a less acidic environment that stabilises clot formation over the treated lesion.",
         "nodeId": "post_haemostasis"
+      },
+      {
+        "tool": "geriatric-pain-protocol",
+        "title": "Pharmacological Pain Management in Elderly Patients",
+        "subtitle": "Stepwise Analgesic Decision Algorithm, Age 65+",
+        "url": "https://satbuhan.github.io/geriatric-pain-protocol/",
+        "match": "PPI",
+        "full": "proton pump inhibitor",
+        "def": "Gastroprotective co-therapy this algorithm calls for alongside systemic NSAID use in older adults — conditional on identified GI risk in the figure's own wording, but stated as mandatory whenever a systemic NSAID cannot be avoided in the manuscript's own text.",
+        "nodeId": "nsaids"
       }
     ],
     "mcid": [
@@ -181,6 +257,50 @@
         "full": "minimal clinically important difference",
         "def": "The smallest difference in an outcome that this review's authors judged a patient or clinician would consider meaningful — used throughout to distinguish a statistically significant finding from one large enough to actually change practice (for example, a consensus-defined 30-second threshold for onset time, or 10 minutes for delay to post-intubation sedation).",
         "nodeId": "analgosedation_decision"
+      }
+    ],
+    "vas": [
+      {
+        "tool": "nsaid-pain-protocol",
+        "title": "Dexketoprofen vs Ibuprofen",
+        "subtitle": "Selecting an NSAID for Acute Pain",
+        "url": "https://satbuhan.github.io/nsaid-pain-protocol/",
+        "match": "VAS",
+        "full": "visual analogue scale",
+        "def": "A 100 mm line patients mark to rate pain intensity, from \"no pain\" to \"worst pain imaginable\". The standard continuous pain-intensity measure the between-drug effect sizes on this page are anchored to.",
+        "nodeId": "oral_route"
+      },
+      {
+        "tool": "geriatric-pain-protocol",
+        "title": "Pharmacological Pain Management in Elderly Patients",
+        "subtitle": "Stepwise Analgesic Decision Algorithm, Age 65+",
+        "url": "https://satbuhan.github.io/geriatric-pain-protocol/",
+        "match": "VAS",
+        "full": "Visual Analogue Scale",
+        "def": "A validated self-report pain scale named in the manuscript's own text and Key Practice Point 1, but omitted from the figure, which lists VRS instead.",
+        "nodeId": "step1"
+      }
+    ],
+    "nrs": [
+      {
+        "tool": "nsaid-pain-protocol",
+        "title": "Dexketoprofen vs Ibuprofen",
+        "subtitle": "Selecting an NSAID for Acute Pain",
+        "url": "https://satbuhan.github.io/nsaid-pain-protocol/",
+        "match": "NRS",
+        "full": "numerical rating scale",
+        "def": "An 11-point (0–10) verbal or written pain-intensity scale, used interchangeably with the VAS in some of the trials behind this page. A fall of ≥1.3 points is treated as equivalent to a ≥10 mm VAS fall.",
+        "nodeId": "reassess"
+      },
+      {
+        "tool": "geriatric-pain-protocol",
+        "title": "Pharmacological Pain Management in Elderly Patients",
+        "subtitle": "Stepwise Analgesic Decision Algorithm, Age 65+",
+        "url": "https://satbuhan.github.io/geriatric-pain-protocol/",
+        "match": "NRS",
+        "full": "Numeric(al) Rating Scale",
+        "def": "A 0–10 (or here, 1–10) self-reported pain-intensity scale; this algorithm uses it to stratify patients into Mild (1–3), Moderate (4–6), and Severe (7–10) tiers at Step 3.",
+        "nodeId": "step3"
       }
     ],
     "ufh": [

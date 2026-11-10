@@ -40,6 +40,7 @@ clinical domain — decided jointly with Dr. Özgür Karcıoğlu on 2026-11-09; 
 | [Dexketoprofen vs Ibuprofen — Selecting an NSAID for Acute Pain](https://satbuhan.github.io/nsaid-pain-protocol/) | Analgesia, Sedation & Procedural Care | [nsaid-pain-protocol](https://github.com/satbuhan/nsaid-pain-protocol) |
 | [Lidocaine vs Prilocaine — Local Anaesthesia for Laceration Repair](https://satbuhan.github.io/lidocaine-prilocaine-protocol/) | Analgesia, Sedation & Procedural Care | [lidocaine-prilocaine-protocol](https://github.com/satbuhan/lidocaine-prilocaine-protocol) |
 | [Ketamine in Emergency and Critical Care — Indication-Based Decision Algorithm](https://satbuhan.github.io/ketamine-indications-protocol/) | Analgesia, Sedation & Procedural Care | [ketamine-indications-protocol](https://github.com/satbuhan/ketamine-indications-protocol) |
+| [Pharmacological Pain Management in Elderly Patients](https://satbuhan.github.io/geriatric-pain-protocol/) | Analgesia, Sedation & Procedural Care | [geriatric-pain-protocol](https://github.com/satbuhan/geriatric-pain-protocol) |
 
 ### Reserved categories
 

@@ -69,6 +69,7 @@ REPOS = [
     "ccb-toxicity-protocol",
     "haloperidol-adjunct-protocol",
     "succinylcholine-rocuronium-protocol",
+    "geriatric-pain-protocol",
 ]
 
 

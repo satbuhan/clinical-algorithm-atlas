@@ -272,5 +272,16 @@ const TOOLS = [
     repo: "https://github.com/satbuhan/succinylcholine-rocuronium-protocol",
     thumb: "assets/thumbs/succinylcholine-rocuronium.png",
     added: "2026-11-09"
+  },
+  {
+    id: "geriatric-pain",
+    title: "Pharmacological Pain Management in Elderly Patients",
+    subtitle: "Stepwise Analgesic Decision Algorithm, Age 65+",
+    specialty: "analgesia_procedural",
+    summary: "Interactive, referenced walkthrough of the manuscript's own Figure 1 — stepwise pharmacological pain management in older adults, from assessment and red-flag exclusion, through severity-tiered drug selection (mild/moderate/severe), opioid-ADR monitoring, to renal/hepatic/cognitive-impairment caveats and core prescribing principles.",
+    url: "https://satbuhan.github.io/geriatric-pain-protocol/",
+    repo: "https://github.com/satbuhan/geriatric-pain-protocol",
+    thumb: "assets/thumbs/geriatric-pain.png",
+    added: "2026-11-10"
   }
 ];
