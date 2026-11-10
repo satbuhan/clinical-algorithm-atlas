@@ -89,6 +89,18 @@ a { color: inherit; }
   color: var(--ink-faint);
   margin: 14px 0 0;
 }
+
+.masthead p.doi-line {
+  font-size: 13px;
+  color: var(--ink-faint);
+  margin: 6px 0 0;
+}
+.masthead p.doi-line a {
+  color: var(--ink-faint);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.masthead p.doi-line a:hover { color: var(--accent); }
 .masthead p.byline strong { color: var(--ink-soft); font-weight: 600; }
 
 /* ---------- Toolbar: search + filter chips ---------- */
