@@ -91,6 +91,7 @@ RECORDS = {
     "24112640": "Calcium Channel Blocker Toxicity — Phenotype-Guided Management",
     "24112644": "Choosing an Adjunct to Haloperidol in Hyperactive Delirium with Severe Agitation",
     "24112652": "Selection of a Neuromuscular Blocking Agent for Rapid Sequence Induction and Intubation",
+    "24119391": "Pharmacological Pain Management in Elderly Patients",
 }
 
 
