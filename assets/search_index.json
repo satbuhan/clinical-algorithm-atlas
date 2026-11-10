@@ -3050,7 +3050,7 @@
       "type": "tool",
       "nodeId": null,
       "nodeLabel": null,
-      "text": "Pharmacological Pain Management in Elderly Patients Stepwise Analgesic Decision Algorithm, Age 65+"
+      "text": "Pharmacological Pain Management in Elderly Patients Geriatric Analgesic Decision Algorithm, Age 65+"
     },
     {
       "tool": "geriatric-pain-protocol",
