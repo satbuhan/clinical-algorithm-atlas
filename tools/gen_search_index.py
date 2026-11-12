@@ -71,6 +71,7 @@ REPOS = [
     "succinylcholine-rocuronium-protocol",
     "geriatric-pain-protocol",
     "metoclopramide-ondansetron-protocol",
+    "spontaneous-pneumothorax-protocol",
 ]
 
 

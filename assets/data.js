@@ -294,5 +294,16 @@ const TOOLS = [
     repo: "https://github.com/satbuhan/metoclopramide-ondansetron-protocol",
     thumb: "assets/thumbs/metoclopramide-ondansetron.png",
     added: "2026-11-12"
+  },
+  {
+    id: "spontaneous-pneumothorax",
+    title: "Needle Aspiration versus Tube Thoracostomy",
+    subtitle: "Symptom-Led Management of Spontaneous Pneumothorax",
+    specialty: "pulmonary",
+    summary: "Interactive, referenced walkthrough of the systematic review's own Figure 1 — tension/haemodynamic-instability screening, a high-risk-feature screen, a symptom-led fork into conservative care or needle aspiration, a repeat-aspiration reassessment loop (maximum of two attempts), ambulatory or standard small-bore drainage, a 48-hour persistent-air-leak escalation checkpoint, and definitive recurrence prevention.",
+    url: "https://satbuhan.github.io/spontaneous-pneumothorax-protocol/",
+    repo: "https://github.com/satbuhan/spontaneous-pneumothorax-protocol",
+    thumb: "assets/thumbs/spontaneous-pneumothorax.png",
+    added: "2026-11-12"
   }
 ];

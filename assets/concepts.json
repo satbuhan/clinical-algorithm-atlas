@@ -321,6 +321,16 @@
         "full": "Minimal Clinically Important Difference",
         "def": "The smallest difference in an outcome that patients or clinicians would consider meaningful. This review uses a Cohen's d of 0.5 (half a standard deviation) as the cutoff, so a statistically significant finding below that threshold is not treated as clinically important.",
         "nodeId": "chemo-rec"
+      },
+      {
+        "tool": "spontaneous-pneumothorax-protocol",
+        "title": "Needle Aspiration versus Tube Thoracostomy",
+        "subtitle": "Symptom-Led Management of Spontaneous Pneumothorax",
+        "url": "https://satbuhan.github.io/spontaneous-pneumothorax-protocol/",
+        "match": "MCID",
+        "full": "minimal clinically important difference",
+        "def": "The smallest change in an outcome that patients would perceive as beneficial — used here to judge whether a statistically significant difference (such as length of stay) is actually meaningful at the bedside.",
+        "nodeId": null
       }
     ],
     "vas": [
@@ -581,6 +591,16 @@
         "full": "Grading of Recommendations Assessment, Development and Evaluation",
         "def": "A structured framework for rating how confident clinicians should be in a body of evidence, from very low to high certainty, based on risk of bias, inconsistency, indirectness, imprecision and publication bias.",
         "nodeId": "chemo-rec"
+      },
+      {
+        "tool": "spontaneous-pneumothorax-protocol",
+        "title": "Needle Aspiration versus Tube Thoracostomy",
+        "subtitle": "Symptom-Led Management of Spontaneous Pneumothorax",
+        "url": "https://satbuhan.github.io/spontaneous-pneumothorax-protocol/",
+        "match": "GRADE",
+        "full": "Grading of Recommendations Assessment, Development and Evaluation",
+        "def": "A structured framework for rating the certainty of evidence for each outcome (High, Moderate, Low, or Very Low) based on risk of bias, imprecision, inconsistency and other factors.",
+        "nodeId": "conservative-rec"
       }
     ],
     "map": [
@@ -667,6 +687,16 @@
         "full": "Cochrane Risk of Bias 2",
         "def": "The standard Cochrane tool for assessing risk of bias in randomised trials, rating each trial as low risk, some concerns, or high risk across several bias domains.",
         "nodeId": "pediatric-rec"
+      },
+      {
+        "tool": "spontaneous-pneumothorax-protocol",
+        "title": "Needle Aspiration versus Tube Thoracostomy",
+        "subtitle": "Symptom-Led Management of Spontaneous Pneumothorax",
+        "url": "https://satbuhan.github.io/spontaneous-pneumothorax-protocol/",
+        "match": "RoB 2",
+        "full": "Cochrane Risk of Bias 2",
+        "def": "The revised Cochrane tool for assessing risk of bias in randomised trials across five domains (randomisation, deviations from intended interventions, missing data, outcome measurement, and selective reporting).",
+        "nodeId": null
       }
     ],
     "robins-i": [

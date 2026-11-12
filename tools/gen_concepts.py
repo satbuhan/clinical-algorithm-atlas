@@ -75,6 +75,7 @@ REPOS = [
     "succinylcholine-rocuronium-protocol",
     "geriatric-pain-protocol",
     "metoclopramide-ondansetron-protocol",
+    "spontaneous-pneumothorax-protocol",
 ]
 
 # Reviewed by hand: (repo, lowercased term) pairs that share a GLOSSARY
