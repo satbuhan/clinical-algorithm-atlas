@@ -93,6 +93,7 @@ RECORDS = {
     "24112652": "Selection of a Neuromuscular Blocking Agent for Rapid Sequence Induction and Intubation",
     "24119391": "Pharmacological Pain Management in Elderly Patients",
     "24170968": "Metoclopramide versus Ondansetron — Antiemetic Selection by Clinical Setting",
+    "24175215": "Needle Aspiration versus Tube Thoracostomy — Symptom-Led Management of Spontaneous Pneumothorax",
 }
 
 
