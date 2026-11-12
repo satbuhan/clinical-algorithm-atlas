@@ -283,5 +283,16 @@ const TOOLS = [
     repo: "https://github.com/satbuhan/geriatric-pain-protocol",
     thumb: "assets/thumbs/geriatric-pain.png",
     added: "2026-11-10"
+  },
+  {
+    id: "metoclopramide-ondansetron",
+    title: "Metoclopramide versus Ondansetron",
+    subtitle: "Antiemetic Selection by Clinical Setting",
+    specialty: "gi",
+    summary: "Interactive, referenced walkthrough of the systematic review's own Figure 2 — choosing between metoclopramide and ondansetron across six clinical settings (emetogenic chemotherapy, the perioperative period, paediatric gastroenteritis, pregnancy, the undifferentiated ED patient, opioid/uraemic/vestibular/palliative nausea), each with its own GRADE certainty, converging on a drug-specific safety check for QT prolongation and extrapyramidal effects.",
+    url: "https://satbuhan.github.io/metoclopramide-ondansetron-protocol/",
+    repo: "https://github.com/satbuhan/metoclopramide-ondansetron-protocol",
+    thumb: "assets/thumbs/metoclopramide-ondansetron.png",
+    added: "2026-11-12"
   }
 ];

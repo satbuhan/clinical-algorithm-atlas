@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-10",
+  "generated": "2026-11-12",
   "terms": {
     "cyp2d6": [
       {
@@ -15,7 +15,7 @@
       {
         "tool": "geriatric-pain-protocol",
         "title": "Pharmacological Pain Management in Elderly Patients",
-        "subtitle": "Stepwise Analgesic Decision Algorithm, Age 65+",
+        "subtitle": "Geriatric Analgesic Decision Algorithm, Age 65+",
         "url": "https://satbuhan.github.io/geriatric-pain-protocol/",
         "match": "CYP2D6",
         "full": "cytochrome P450 2D6",
@@ -135,12 +135,66 @@
       {
         "tool": "geriatric-pain-protocol",
         "title": "Pharmacological Pain Management in Elderly Patients",
-        "subtitle": "Stepwise Analgesic Decision Algorithm, Age 65+",
+        "subtitle": "Geriatric Analgesic Decision Algorithm, Age 65+",
         "url": "https://satbuhan.github.io/geriatric-pain-protocol/",
         "match": "QTc",
         "full": "",
         "def": "The corrected QT interval on an ECG; this algorithm flags both tramadol and the antiemetics used for opioid-induced nausea (ondansetron, haloperidol) as QTc-prolonging.",
         "nodeId": "tramadol"
+      },
+      {
+        "tool": "metoclopramide-ondansetron-protocol",
+        "title": "Metoclopramide versus Ondansetron",
+        "subtitle": "Antiemetic Selection by Clinical Setting",
+        "url": "https://satbuhan.github.io/metoclopramide-ondansetron-protocol/",
+        "match": "QTc",
+        "full": "Corrected QT interval",
+        "def": "The QT interval on the ECG adjusted for heart rate. Prolongation increases the risk of torsades de pointes — the mechanism behind this algorithm's intravenous-ondansetron caution.",
+        "nodeId": "qt-risk"
+      }
+    ],
+    "akathisia": [
+      {
+        "tool": "agitation-delirium-protocol",
+        "title": "Butyrophenone Selection",
+        "subtitle": "Acute Agitation & Hyperactive Delirium",
+        "url": "https://satbuhan.github.io/agitation-delirium-protocol/",
+        "match": "akathisia",
+        "full": "",
+        "def": "A subjective, distressing sense of inner restlessness and an inability to stay still — an extrapyramidal side effect of dopamine-blocking drugs that is easily mistaken for the agitation being treated, which can trigger a dangerous cycle of re-dosing the very drug causing it.",
+        "nodeId": "safety"
+      },
+      {
+        "tool": "metoclopramide-ondansetron-protocol",
+        "title": "Metoclopramide versus Ondansetron",
+        "subtitle": "Antiemetic Selection by Clinical Setting",
+        "url": "https://satbuhan.github.io/metoclopramide-ondansetron-protocol/",
+        "match": "akathisia",
+        "full": "",
+        "def": "A subjective, distressing sense of inner restlessness and inability to stay still — an extrapyramidal side effect of dopamine-blocking drugs like metoclopramide, easily mistaken for the nausea or agitation being treated.",
+        "nodeId": "ed-rec"
+      }
+    ],
+    "dystonia": [
+      {
+        "tool": "agitation-delirium-protocol",
+        "title": "Butyrophenone Selection",
+        "subtitle": "Acute Agitation & Hyperactive Delirium",
+        "url": "https://satbuhan.github.io/agitation-delirium-protocol/",
+        "match": "dystonia",
+        "full": "",
+        "def": "Sustained, involuntary muscle contraction — of the neck, jaw, or eyes, for instance — another extrapyramidal reaction to dopamine blockade. Treated with an anticholinergic or antihistaminic agent (promethazine serves this purpose above), not with more antipsychotic.",
+        "nodeId": "droperidol_check"
+      },
+      {
+        "tool": "metoclopramide-ondansetron-protocol",
+        "title": "Metoclopramide versus Ondansetron",
+        "subtitle": "Antiemetic Selection by Clinical Setting",
+        "url": "https://satbuhan.github.io/metoclopramide-ondansetron-protocol/",
+        "match": "dystonia",
+        "full": "",
+        "def": "Sustained, involuntary muscle contraction (of the neck, jaw, or eyes, for instance) — another extrapyramidal reaction to dopamine blockade, distinct from akathisia.",
+        "nodeId": "eps-risk"
       }
     ],
     "egfr": [
@@ -157,7 +211,7 @@
       {
         "tool": "geriatric-pain-protocol",
         "title": "Pharmacological Pain Management in Elderly Patients",
-        "subtitle": "Stepwise Analgesic Decision Algorithm, Age 65+",
+        "subtitle": "Geriatric Analgesic Decision Algorithm, Age 65+",
         "url": "https://satbuhan.github.io/geriatric-pain-protocol/",
         "match": "eGFR",
         "full": "estimated glomerular filtration rate",
@@ -189,7 +243,7 @@
       {
         "tool": "geriatric-pain-protocol",
         "title": "Pharmacological Pain Management in Elderly Patients",
-        "subtitle": "Stepwise Analgesic Decision Algorithm, Age 65+",
+        "subtitle": "Geriatric Analgesic Decision Algorithm, Age 65+",
         "url": "https://satbuhan.github.io/geriatric-pain-protocol/",
         "match": "PPI",
         "full": "proton pump inhibitor",
@@ -257,6 +311,16 @@
         "full": "minimal clinically important difference",
         "def": "The smallest difference in an outcome that this review's authors judged a patient or clinician would consider meaningful — used throughout to distinguish a statistically significant finding from one large enough to actually change practice (for example, a consensus-defined 30-second threshold for onset time, or 10 minutes for delay to post-intubation sedation).",
         "nodeId": "analgosedation_decision"
+      },
+      {
+        "tool": "metoclopramide-ondansetron-protocol",
+        "title": "Metoclopramide versus Ondansetron",
+        "subtitle": "Antiemetic Selection by Clinical Setting",
+        "url": "https://satbuhan.github.io/metoclopramide-ondansetron-protocol/",
+        "match": "MCID",
+        "full": "Minimal Clinically Important Difference",
+        "def": "The smallest difference in an outcome that patients or clinicians would consider meaningful. This review uses a Cohen's d of 0.5 (half a standard deviation) as the cutoff, so a statistically significant finding below that threshold is not treated as clinically important.",
+        "nodeId": "chemo-rec"
       }
     ],
     "vas": [
@@ -273,12 +337,22 @@
       {
         "tool": "geriatric-pain-protocol",
         "title": "Pharmacological Pain Management in Elderly Patients",
-        "subtitle": "Stepwise Analgesic Decision Algorithm, Age 65+",
+        "subtitle": "Geriatric Analgesic Decision Algorithm, Age 65+",
         "url": "https://satbuhan.github.io/geriatric-pain-protocol/",
         "match": "VAS",
         "full": "Visual Analogue Scale",
         "def": "A validated self-report pain scale named in the manuscript's own text and Key Practice Point 1, but omitted from the figure, which lists VRS instead.",
         "nodeId": "step1"
+      },
+      {
+        "tool": "metoclopramide-ondansetron-protocol",
+        "title": "Metoclopramide versus Ondansetron",
+        "subtitle": "Antiemetic Selection by Clinical Setting",
+        "url": "https://satbuhan.github.io/metoclopramide-ondansetron-protocol/",
+        "match": "VAS",
+        "full": "Visual Analogue Scale",
+        "def": "A patient-reported symptom-intensity scale, typically a 100 mm line the patient marks between ‘none’ and ‘worst imaginable’, used throughout this review to quantify nausea severity and change over time.",
+        "nodeId": "ed-rec"
       }
     ],
     "nrs": [
@@ -295,7 +369,7 @@
       {
         "tool": "geriatric-pain-protocol",
         "title": "Pharmacological Pain Management in Elderly Patients",
-        "subtitle": "Stepwise Analgesic Decision Algorithm, Age 65+",
+        "subtitle": "Geriatric Analgesic Decision Algorithm, Age 65+",
         "url": "https://satbuhan.github.io/geriatric-pain-protocol/",
         "match": "NRS",
         "full": "Numeric(al) Rating Scale",
@@ -497,6 +571,16 @@
         "full": "Grading of Recommendations, Assessment, Development and Evaluation",
         "def": "A structured framework for rating how much confidence to place in a body of evidence for a specific outcome (High/Moderate/Low/Very low), accounting for risk of bias, inconsistency, indirectness, imprecision and publication bias.",
         "nodeId": null
+      },
+      {
+        "tool": "metoclopramide-ondansetron-protocol",
+        "title": "Metoclopramide versus Ondansetron",
+        "subtitle": "Antiemetic Selection by Clinical Setting",
+        "url": "https://satbuhan.github.io/metoclopramide-ondansetron-protocol/",
+        "match": "GRADE",
+        "full": "Grading of Recommendations Assessment, Development and Evaluation",
+        "def": "A structured framework for rating how confident clinicians should be in a body of evidence, from very low to high certainty, based on risk of bias, inconsistency, indirectness, imprecision and publication bias.",
+        "nodeId": "chemo-rec"
       }
     ],
     "map": [
@@ -573,6 +657,38 @@
         "full": "Cochrane Risk of Bias 2",
         "def": "A structured tool for appraising bias in randomised trials across five domains — the randomisation process, deviations from intended interventions, missing outcome data, measurement of the outcome, and selection of the reported result. In this review, Domain 4 (measurement of the outcome) was the dominant source of downgrading, because succinylcholine's visible fasciculation can unblind the clinician grading intubating conditions.",
         "nodeId": null
+      },
+      {
+        "tool": "metoclopramide-ondansetron-protocol",
+        "title": "Metoclopramide versus Ondansetron",
+        "subtitle": "Antiemetic Selection by Clinical Setting",
+        "url": "https://satbuhan.github.io/metoclopramide-ondansetron-protocol/",
+        "match": "RoB 2",
+        "full": "Cochrane Risk of Bias 2",
+        "def": "The standard Cochrane tool for assessing risk of bias in randomised trials, rating each trial as low risk, some concerns, or high risk across several bias domains.",
+        "nodeId": "pediatric-rec"
+      }
+    ],
+    "robins-i": [
+      {
+        "tool": "tenecteplase-alteplase-stemi-protocol",
+        "title": "Tenecteplase versus Alteplase",
+        "subtitle": "Fibrinolysis in STEMI When Timely Primary PCI Is Not Available",
+        "url": "https://satbuhan.github.io/tenecteplase-alteplase-stemi-protocol/",
+        "match": "ROBINS-I",
+        "full": "Risk Of Bias In Non-randomised Studies of Interventions",
+        "def": "The tool used to appraise the single non-randomised comparative cohort included in this review's direct evidence, which was judged at serious overall risk of bias, mainly from confounding and participant selection.",
+        "nodeId": null
+      },
+      {
+        "tool": "metoclopramide-ondansetron-protocol",
+        "title": "Metoclopramide versus Ondansetron",
+        "subtitle": "Antiemetic Selection by Clinical Setting",
+        "url": "https://satbuhan.github.io/metoclopramide-ondansetron-protocol/",
+        "match": "ROBINS-I",
+        "full": "Risk Of Bias In Non-randomised Studies - of Interventions",
+        "def": "The companion tool to RoB 2 for assessing bias in non-randomised comparative studies; its ratings top out at ‘serious’ or worse because such studies cannot fully control for confounding by indication.",
+        "nodeId": "chemo-rec"
       }
     ]
   }

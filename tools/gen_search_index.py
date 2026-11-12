@@ -70,6 +70,7 @@ REPOS = [
     "haloperidol-adjunct-protocol",
     "succinylcholine-rocuronium-protocol",
     "geriatric-pain-protocol",
+    "metoclopramide-ondansetron-protocol",
 ]
 
 
