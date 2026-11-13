@@ -305,5 +305,16 @@ const TOOLS = [
     repo: "https://github.com/satbuhan/spontaneous-pneumothorax-protocol",
     thumb: "assets/thumbs/spontaneous-pneumothorax.png",
     added: "2026-11-12"
+  },
+  {
+    id: "button-battery",
+    title: "Suspected or Witnessed Button Battery Exposure",
+    subtitle: "Recognition and Management Pathway in a Child",
+    specialty: "gi",
+    summary: "Interactive, referenced walkthrough of the recognition and management pathway for paediatric button battery exposure — ingestion, nasal insertion and aural insertion — immediate actions and pre-removal mitigation, biplane radiographs, a three-way location fork (oesophagus; stomach or beyond the pylorus; nose or ear), each branch's own removal or observation pathway, and discharge safety-netting. First tool in the atlas to encode evidence certainty as box border style (solid/dashed/dotted) rather than colour.",
+    url: "https://satbuhan.github.io/button-battery-protocol/",
+    repo: "https://github.com/satbuhan/button-battery-protocol",
+    thumb: "assets/thumbs/button-battery.png",
+    added: "2026-11-13"
   }
 ];

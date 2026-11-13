@@ -72,6 +72,7 @@ REPOS = [
     "geriatric-pain-protocol",
     "metoclopramide-ondansetron-protocol",
     "spontaneous-pneumothorax-protocol",
+    "button-battery-protocol",
 ]
 
 

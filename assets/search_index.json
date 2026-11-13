@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-12",
+  "generated": "2026-11-13",
   "entries": [
     {
       "tool": "aortic-dissection-protocol",
@@ -3591,6 +3591,168 @@
       "nodeId": "recurrence-rec",
       "nodeLabel": "RECURRENCE PREVENTION",
       "text": "RECURRENCE PREVENTION — Offer definitive VATS with pleurodesis after a second ipsilateral event, or after a first event where bleb burden, occupation or remoteness from care raise the consequences of recurrence — Elective or semi-elective definitive surgical obliteration/scarification of the pleural space via video-assisted thoracoscopic surgery (VATS) with bullectomy and pleurodesis, to prevent future ipsilateral pneumothorax episodes. — Recurrence is governed by underlying pleural biology rather than which device evacuated the first episode (26% vs 27.3% at one year in one trial; 26–50% after drainage alone across the wider literature; frequent five-year retreatment after tube thoracostomy alone; paediatric recurrence driven by older age, radiographic bleb burden and smoking rather than device choice). Only pleural-space obliteration reduces recurrence: VATS with bullectomy and pleurodesis is the definitive intervention, achieving recurrence rates below 5% in most series, with established safety and efficacy in adolescents, young adults and children. Dynamic inflammation-based biomarkers have been studied for first-episode surgical risk stratification, and the choice between operating after a first versus second episode depends on individualised assessment of bleb burden, occupational/recreational exposures and patient preference. — Wording differs between the figure (\"remoteness from care\", \"second ipsilateral event\", \"VATS with pleurodesis\") and the manuscript text (which instead lists \"recreational exposures\" and \"patient preference\", omitted from the figure, and writes \"VATS with bullectomy and pleurodesis\"). — The figure shows this box reached only via the escalation path for persistent air leak — but recurrence-prevention criteria logically apply just as much to patients who resolved via conservative care, successful aspiration, drain removal, or high-risk inpatient drainage; the figure draws no arrows from any of those boxes to this one. — video-assisted thoracoscopic surgery — A minimally invasive surgical technique using a thoracoscope and small incisions, used here for definitive bullectomy and pleurodesis to prevent recurrence."
+    },
+    {
+      "tool": "button-battery-protocol",
+      "title": "Suspected or Witnessed Button Battery Exposure",
+      "url": "https://satbuhan.github.io/button-battery-protocol/",
+      "type": "tool",
+      "nodeId": null,
+      "nodeLabel": null,
+      "text": "Suspected or Witnessed Button Battery Exposure Recognition and Management Pathway in a Child"
+    },
+    {
+      "tool": "button-battery-protocol",
+      "title": "Suspected or Witnessed Button Battery Exposure",
+      "url": "https://satbuhan.github.io/button-battery-protocol/",
+      "type": "node",
+      "nodeId": "entry",
+      "nodeLabel": "SUSPECTED OR WITNESSED BUTTON BATTERY EXPOSURE IN A CHILD",
+      "text": "SUSPECTED OR WITNESSED BUTTON BATTERY EXPOSURE IN A CHILD — Ingestion, nasal insertion or aural insertion – witnessed, suspected, or unexplained drooling, food refusal, vomiting, stridor or haematemesis — Entry criterion for the whole pathway: any child under 18 years (peak median age 18–36 months) with witnessed or suspected button-battery ingestion, nasal insertion, or aural insertion, or presenting with unexplained non-specific or red-flag aerodigestive symptoms. — Up to half of exposures are unwitnessed, and more than half of serious outcomes follow unwitnessed events because of diagnostic delay. Early symptoms overlap with ordinary viral respiratory or gastrointestinal illness, a child who swallowed a 20 mm lithium cell can look deceptively well despite deep mucosal injury already under way, airway symptoms predict tracheo-oesophageal fistula and vocal cord paralysis, and any haematemesis — however small or remote in time — may be a sentinel bleed from an arterio-oesophageal fistula. Society guidance therefore converges on a protocol-driven rather than symptom-driven model of care. — Dysphagia occurs in roughly a third, fever and cough in roughly a quarter, feeding difficulty in 48.1% and respiratory difficulty in 34.6% of pooled ingestion cases — none of this is specific to button-battery exposure, which is precisely why the entry criterion is suspicion-based rather than symptom-based. — odds ratio — A measure of association used throughout this algorithm's evidence base — e.g. oesophageal location carries an OR of 18.66 for any complication versus non-oesophageal locations."
+    },
+    {
+      "tool": "button-battery-protocol",
+      "title": "Suspected or Witnessed Button Battery Exposure",
+      "url": "https://satbuhan.github.io/button-battery-protocol/",
+      "type": "node",
+      "nodeId": "immediate-actions",
+      "nodeLabel": "IMMEDIATE ACTIONS – ANY SETTING [E, N, P]",
+      "text": "IMMEDIATE ACTIONS – ANY SETTING [E, N, P] — • Act on suspicion; do not wait for symptoms or for fasting\n• Transfer at once to a centre with paediatric endoscopy and anaesthesia\n• Nil by mouth apart from a mitigation agent\n• Identify the cell (imprint code, packaging, companion cell) only if this does not delay transfer — Universal first actions in any setting — pre-hospital, primary care or emergency department — on suspicion alone: begin transfer to a facility with paediatric endoscopy and anaesthesia without waiting for symptoms or an anaesthetic fasting interval, keep the child nil by mouth except for an eligible mitigation agent, and check the battery's imprint code only if doing so costs zero delay. — Hydroxide generation at the battery's negative pole raises local tissue pH to 10–13, causing measurable mucosal injury within 15 minutes and full-thickness transmural injury within 2–6 hours experimentally — dwell time is the only variable clinicians can actually control. Even a \"spent\" or discharged cell retains enough residual voltage to injure tissue. Recent oral intake does not justify postponing extraction, and in rural or resource-limited settings delayed recognition and transfer is the dominant driver of bad outcomes. Imprint codes encode chemistry/voltage and diameter (e.g. CR2032 = 20 mm diameter, 3.2 mm thick; CR/BR = 3.0 V, LR/L = 1.5 V) and can help anticipate severity, but must never be chased at the expense of transfer time. — Because this box sits upstream of the anatomical branch point, the figure applies \"transfer at once\" and \"nil by mouth\" to nasal and aural insertions too — yet a series of 176 nasal extractions using a purpose-designed hook needed general anaesthesia in only 6.8% of cases, so the same urgency language covers a substantially lower-acuity group as well. — odds ratio — A measure of association used throughout this algorithm's evidence base — e.g. oesophageal location carries an OR of 18.66 for any complication versus non-oesophageal locations."
+    },
+    {
+      "tool": "button-battery-protocol",
+      "title": "Suspected or Witnessed Button Battery Exposure",
+      "url": "https://satbuhan.github.io/button-battery-protocol/",
+      "type": "node",
+      "nodeId": "mitigation",
+      "nodeLabel": "LOW CERTAINTY – MITIGATION [N, P]",
+      "text": "LOW CERTAINTY – MITIGATION [N, P] — Mainly preclinical evidence. Only if age ≥ 12 months, able to swallow and ingestion ≤ 12 h:\n• Honey 10 mL every 10 min, max. 6 doses (pre-hospital)\n• Sucralfate 1 g/10 mL, 10 mL every 10 min, max. 3 doses (hospital)\nNever delays transfer, imaging or removal; omit if oesophageal dwell may exceed 12 h — Oral administration of a viscous, mucosal-coating agent — honey or a sucralfate suspension — as a temporary bridge before endoscopic removal, restricted to children aged 12 months or older who can swallow and whose ingestion occurred within 12 hours. — Porcine and cadaveric studies showed that honey and sucralfate coat the battery, blunt the local pH rise, and reduce burn depth compared with saline. The 12-hour window exists because gross oesophageal perforation rarely manifests early — only 2% of perforations in one series of 290 severe/fatal cases were diagnosed within 24 hours — whereas beyond 12 hours perforation becomes plausible enough that oral agents are withheld. Honey is contraindicated under 12 months because of infant-botulism risk. Mitigation buys time; it is never a substitute for extraction and must never delay transfer, imaging, endoscopy or anaesthesia. — Home-vs-hospital and age-cutoff wording differs slightly between the figure and the guideline sources it draws on — NASPGHAN allows honey or sucralfate without a strict home/hospital split, and ESPGHAN's own caution threshold for honey is phrased as \"< 1 year\" rather than \"≥ 12 months\" applied identically to both agents; treat the figure's framing as the operative one for this tool. — All dosing and eligibility numbers in this box are guideline-sourced (NASPGHAN 2020 mitigation update; National Capital Poison Center 2018), resting mainly on preclinical animal and cadaveric data — hence the dashed \"LOW CERTAINTY\" border. — European Society for Paediatric Gastroenterology, Hepatology and Nutrition — One of the three guideline sources this algorithm consolidates (tagged [E] on diagram boxes) — its 2021 position paper on button battery ingestion. — North American Society for Pediatric Gastroenterology, Hepatology, and Nutrition — One of the three guideline sources this algorithm consolidates (tagged [N] on diagram boxes) — its 2015 foreign-body clinical report and 2020 mitigation update. — odds ratio — A measure of association used throughout this algorithm's evidence base — e.g. oesophageal location carries an OR of 18.66 for any complication versus non-oesophageal locations."
+    },
+    {
+      "tool": "button-battery-protocol",
+      "title": "Suspected or Witnessed Button Battery Exposure",
+      "url": "https://satbuhan.github.io/button-battery-protocol/",
+      "type": "node",
+      "nodeId": "radiographs",
+      "nodeLabel": "ANTEROPOSTERIOR AND LATERAL RADIOGRAPHS OF NECK, CHEST AND ABDOMEN [E, N, P]",
+      "text": "ANTEROPOSTERIOR AND LATERAL RADIOGRAPHS OF NECK, CHEST AND ABDOMEN [E, N, P] — Before any other investigation: number of cells, anatomical level, double-rim (halo) sign, orientation of the narrow negative pole — Immediate two-view plain radiography spanning the entire neck, chest and abdomen, as the mandatory first-line investigation ahead of any other test, regardless of recent oral intake. — Biplane films localise the battery, exclude a second ingested cell, distinguish a button battery from an ordinary coin via the frontal double-rim (\"halo\") sign and a lateral step-off, and identify the narrower negative pole where hydroxide accumulation and liquefactive necrosis are greatest. Negative-pole orientation predicts which anatomical structures are at risk: anterior proximal-oesophageal orientation threatens the trachea (tracheo-oesophageal fistula), inferior thyroid artery and recurrent laryngeal nerve (vocal cord paralysis); posterior orientation risks spondylodiscitis; mid-oesophageal position carries the highest risk to the aorta. Pre-hospital clinical risk scores and AI radiograph classifiers exist but do not replace plain radiography. — Whether an isolated, witnessed nasal or aural insertion also needs full neck/chest/abdomen radiographs (e.g. to exclude an occult co-ingested cell) is not explicitly addressed in the manuscript — not stated. — odds ratio — A measure of association used throughout this algorithm's evidence base — e.g. oesophageal location carries an OR of 18.66 for any complication versus non-oesophageal locations."
+    },
+    {
+      "tool": "button-battery-protocol",
+      "title": "Suspected or Witnessed Button Battery Exposure",
+      "url": "https://satbuhan.github.io/button-battery-protocol/",
+      "type": "node",
+      "nodeId": "where-decision",
+      "nodeLabel": "Where is the battery?",
+      "text": "Where is the battery? — The central three-way triage point: subsequent management is governed almost entirely by anatomical location and elapsed time, not by symptom burden. — Oesophageal lodgement carries an odds ratio of 18.66 for any complication and 15.52 for death compared with non-oesophageal locations; roughly three-quarters of oesophageal impactions lodge in the proximal oesophagus. Most cells that traverse the pylorus pass spontaneously (post-pyloric intestinal perforation occurs in only 2.5% of pooled ingestion cases). Nasal and aural insertions cause rapid local tissue destruction — septal perforation in 14% to roughly one-sixth of nasal impactions across two series — and need urgent otolaryngological extraction rather than endoscopy."
+    },
+    {
+      "tool": "button-battery-protocol",
+      "title": "Suspected or Witnessed Button Battery Exposure",
+      "url": "https://satbuhan.github.io/button-battery-protocol/",
+      "type": "node",
+      "nodeId": "oesophagus-header",
+      "nodeLabel": "OESOPHAGUS",
+      "text": "OESOPHAGUS — Column header for the oesophageal limb — the highest-complication-risk location, requiring emergency removal."
+    },
+    {
+      "tool": "button-battery-protocol",
+      "title": "Suspected or Witnessed Button Battery Exposure",
+      "url": "https://satbuhan.github.io/button-battery-protocol/",
+      "type": "node",
+      "nodeId": "stomach-header",
+      "nodeLabel": "STOMACH OR BEYOND THE PYLORUS",
+      "text": "STOMACH OR BEYOND THE PYLORUS — Column header for cells that have passed the gastro-oesophageal junction — the limb where current guidance diverges most sharply between observation and endoscopy."
+    },
+    {
+      "tool": "button-battery-protocol",
+      "title": "Suspected or Witnessed Button Battery Exposure",
+      "url": "https://satbuhan.github.io/button-battery-protocol/",
+      "type": "node",
+      "nodeId": "nose-ear-header",
+      "nodeLabel": "NOSE OR EAR",
+      "text": "NOSE OR EAR — Column header for insertions rather than ingestions — managed as an ENT emergency with no formal gastrointestinal or poison-centre guideline protocol of its own. — odds ratio — A measure of association used throughout this algorithm's evidence base — e.g. oesophageal location carries an OR of 18.66 for any complication versus non-oesophageal locations."
+    },
+    {
+      "tool": "button-battery-protocol",
+      "title": "Suspected or Witnessed Button Battery Exposure",
+      "url": "https://satbuhan.github.io/button-battery-protocol/",
+      "type": "node",
+      "nodeId": "emergency-removal",
+      "nodeLabel": "EMERGENCY ENDOSCOPIC REMOVAL [E, N, P]",
+      "text": "EMERGENCY ENDOSCOPIC REMOVAL [E, N, P] — Immediately – ideally < 2 h from ingestion – under general anaesthesia with a protected airway — Immediate endoscopic extraction under general anaesthesia with endotracheal airway protection, ideally within 2 hours of ingestion, as fast as safe anaesthetic and endoscopic resources allow, without waiting for standard nil-by-mouth fasting intervals. — Transmural histological oesophageal necrosis develops within 2–6 hours experimentally, and complication odds rise sharply with dwell time (greater than 6 hours predicts complications in pooled data; ≥10 hours carries an odds ratio of 3.71, ≥12 hours 5.12). Endoscopy allows direct visualisation for controlled extraction and grading of mucosal burn depth. Senior anaesthetic/surgical backup, large-bore IV access and prepared blood products are advised when the battery sits in the mid-oesophagus or presentation is delayed. — In centres without immediate paediatric endoscopy, extraction of upper oesophageal cells using an optimised Miller size-3 video laryngoscope blade has been described in a single-centre series — not a substitute for endoscopy where it is available. — Real-world impaction-to-removal intervals run far longer than the 2-hour target in practice (a reported median of 10.5 hours in one series), underscoring how much of the complication burden is driven by pre-hospital and transfer delay rather than in-hospital technique. — odds ratio — A measure of association used throughout this algorithm's evidence base — e.g. oesophageal location carries an OR of 18.66 for any complication versus non-oesophageal locations."
+    },
+    {
+      "tool": "button-battery-protocol",
+      "title": "Suspected or Witnessed Button Battery Exposure",
+      "url": "https://satbuhan.github.io/button-battery-protocol/",
+      "type": "node",
+      "nodeId": "endoscopy-stomach",
+      "nodeLabel": "ENDOSCOPY [E, N, P]",
+      "text": "ENDOSCOPY [E, N, P] — Any symptom, however minor, or a co-ingested magnet — Mandatory endoscopic evaluation and removal, where accessible, for any child with a battery in the stomach or beyond the pylorus who has any symptom at all — however minor — or who has co-ingested a magnet. — A symptomatic child whose battery already lies beyond the oesophagus may be signalling active gastric/distal mucosal injury, or oesophageal injury sustained in transit before the cell reached the stomach — endoscopic series show clinically significant oesophageal or gastric burns even when the battery itself is now gastric. A co-ingested magnet with a metallic battery creates a high risk of trans-mural magnetic attraction, pressure necrosis, fistula and perforation across adjacent bowel loops. Every compared guideline agrees on this one indication. — The figure stacks this box directly above LOCAL PROTOCOL – ASYMPTOMATIC CHILD with a real connecting arrow between them but no explicit decision diamond — read it as: any symptom or co-ingested magnet routes here; genuinely asymptomatic without a magnet routes to the box below. — If a symptomatic battery (or battery-plus-magnet) has already passed beyond the reach of upper endoscopy, the manuscript mentions surgical, CT or ultrasonographic management for intestinal perforation rather than specifying enteroscopy versus surgery — not resolved in the figure. — odds ratio — A measure of association used throughout this algorithm's evidence base — e.g. oesophageal location carries an OR of 18.66 for any complication versus non-oesophageal locations."
+    },
+    {
+      "tool": "button-battery-protocol",
+      "title": "Suspected or Witnessed Button Battery Exposure",
+      "url": "https://satbuhan.github.io/button-battery-protocol/",
+      "type": "node",
+      "nodeId": "ent-removal",
+      "nodeLabel": "LOW CERTAINTY – URGENT ENT REMOVAL",
+      "text": "LOW CERTAINTY – URGENT ENT REMOVAL — Case series and expert opinion; no guideline protocol\n• Remove as an emergency\n• Inspect for nasal septal perforation and tympanic membrane or ossicular injury\n• Septal perforation is the commonest complication of insertion and may appear after discharge: arrange ENT follow-up — Emergency otolaryngological extraction of a nasal or aural button battery, targeted inspection of the nasal septum, tympanic membrane, middle-ear ossicles and facial-nerve function, and scheduled ENT outpatient follow-up after discharge. — Moist nasal and aural cavities complete the same external electrolytic circuit as the oesophagus. Nasal septal perforation — the single commonest complication of insertion — develops within hours to days, occurred in 14% (plus 6% nasal adhesion) in one 159-child series and in roughly one-sixth of a 176-child series with no clean linear relationship to dwell time, and may only become apparent after the child has already been discharged. Aural insertion can destroy the tympanic membrane and ossicles and cause facial-nerve paralysis. — No formal gastrointestinal or poison-centre guideline covers ENT insertion, hence this box carries no [E]/[N]/[P] tag at all — the whole box rests on case series and expert opinion. — In the same 176-case nasal series, general anaesthesia was needed in only 6.8% of extractions using a purpose-designed hook, most patients being boys aged 1–5 years — useful context for how often this \"emergency removal\" actually escalates to a theatre case. — odds ratio — A measure of association used throughout this algorithm's evidence base — e.g. oesophageal location carries an OR of 18.66 for any complication versus non-oesophageal locations."
+    },
+    {
+      "tool": "button-battery-protocol",
+      "title": "Suspected or Witnessed Button Battery Exposure",
+      "url": "https://satbuhan.github.io/button-battery-protocol/",
+      "type": "node",
+      "nodeId": "delayed-diagnosis",
+      "nodeLabel": "LOCAL PROTOCOL – DELAYED DIAGNOSIS [E]",
+      "text": "LOCAL PROTOCOL – DELAYED DIAGNOSIS [E] — Diagnosis or removal > 12 h after ingestion: CT or CT angiography before removal; remove where cardiothoracic support is available — When battery identification or extraction occurs more than 12 hours after ingestion, obtain contrast-enhanced CT or CT angiography before any endoscopic instrumentation to assess vascular integrity, and perform extraction only where cardiothoracic surgical support is available. — Prolonged oesophageal impaction (≥12 hours, odds ratio 5.12 for complications) is the leading risk factor for lethal vascular injury — an aorto-oesophageal or other arterio-oesophageal fistula. Pre-instrumentation CT shows how close necrosis or oedema lies to the aorta or a major artery, so that extraction does not itself precipitate uncontrolled haemorrhage without cardiothoracic surgery standing by. — Figure-vs-logic ordering issue: the figure draws a sequential arrow from EMERGENCY ENDOSCOPIC REMOVAL into this box, even though this box's own content (CT before removal, cardiothoracic readiness during removal) only makes sense if elapsed time is checked BEFORE endoscopy, not after it. Read this box as a gate to evaluate before removal in any case diagnosed late, not as a step that follows removal. — In an actively bleeding child, this imaging step must not delay operative control. — NASPGHAN and the National Capital Poison Center guideline do not specify this particular > 12 h pre-removal CT rule — it is sourced to ESPGHAN specifically. — European Society for Paediatric Gastroenterology, Hepatology and Nutrition — One of the three guideline sources this algorithm consolidates (tagged [E] on diagram boxes) — its 2021 position paper on button battery ingestion. — North American Society for Pediatric Gastroenterology, Hepatology, and Nutrition — One of the three guideline sources this algorithm consolidates (tagged [N] on diagram boxes) — its 2015 foreign-body clinical report and 2020 mitigation update. — odds ratio — A measure of association used throughout this algorithm's evidence base — e.g. oesophageal location carries an OR of 18.66 for any complication versus non-oesophageal locations."
+    },
+    {
+      "tool": "button-battery-protocol",
+      "title": "Suspected or Witnessed Button Battery Exposure",
+      "url": "https://satbuhan.github.io/button-battery-protocol/",
+      "type": "node",
+      "nodeId": "asymptomatic-child",
+      "nodeLabel": "LOCAL PROTOCOL – ASYMPTOMATIC CHILD [E, N, P]",
+      "text": "LOCAL PROTOCOL – ASYMPTOMATIC CHILD [E, N, P] — Guidance diverges (Table 6):\n• Diagnosed ≤ 12 h: observe; repeat radiograph at 7–14 days [E] or if not passed by 10–14 days [P]\n• Young child with a large cell: retrieve if retained (≥ 15 mm, < 6 y, ≥ 4 days [P]; age-based, 2–4 days [N])\n• Delayed diagnosis (> 12 h): consider endoscopy and CT [E]\n• Prior GI surgery or stenosis: lower threshold for endoscopy\n• German guidance: endoscopy in all cases — Institution-specific management of an asymptomatic child, without a co-ingested magnet, whose battery has passed into the stomach or beyond the pylorus — choosing between expectant observation with scheduled repeat radiography versus endoscopic retrieval or screening for transit oesophageal injury, according to whichever cited guideline the local team follows. — No comparative study has tested universal endoscopy against expectant observation in this group, so society recommendations genuinely diverge rather than one being simply wrong. The case for observation rests on a high rate of spontaneous passage once past the gastro-oesophageal junction or pylorus, the rarity of severe gastric or post-pyloric injury in unselected cohorts, and the anaesthetic risk and cost of universal endoscopy. The case for retrieval or screening rests on endoscopic series showing real oesophageal or gastric mucosal burns even in cells now sitting in the stomach, the fact that unwitnessed or delayed presentation cannot exclude a prior oesophageal dwell before the cell transited onward, and the added risk from pre-existing intestinal stenosis or prior GI surgery. — An additional NCPC threshold — \"consider diagnostic endoscopy if a cell ≥ 20 mm in a child < 5 years may have lodged in the oesophagus > 2 h\" — appears in the manuscript's own guideline-comparison table but is omitted from this figure box. — NASPGHAN's \"age-based\" retrieval thresholds for a large retained gastric cell at 2–4 days are not given as explicit numbers anywhere in the manuscript — not stated; the manuscript itself says the source guideline should be consulted for full criteria. — North American Society for Pediatric Gastroenterology, Hepatology, and Nutrition — One of the three guideline sources this algorithm consolidates (tagged [N] on diagram boxes) — its 2015 foreign-body clinical report and 2020 mitigation update. — National Capital Poison Center — One of the three guideline sources this algorithm consolidates (tagged [P] on diagram boxes) — its button battery ingestion triage and treatment guideline. — odds ratio — A measure of association used throughout this algorithm's evidence base — e.g. oesophageal location carries an OR of 18.66 for any complication versus non-oesophageal locations."
+    },
+    {
+      "tool": "button-battery-protocol",
+      "title": "Suspected or Witnessed Button Battery Exposure",
+      "url": "https://satbuhan.github.io/button-battery-protocol/",
+      "type": "node",
+      "nodeId": "at-removal",
+      "nodeLabel": "LOW CERTAINTY – AT REMOVAL [N, P]",
+      "text": "LOW CERTAINTY – AT REMOVAL [N, P] — If no perforation is seen: irrigate with 0.25% sterile acetic acid, 50–150 mL\nRecord negative-pole orientation; grade mucosal injury — Immediately after extraction, inspect endoscopically to exclude perforation, irrigate the injured mucosa with 50–150 mL of 0.25% sterile acetic acid if no perforation is seen, record the negative pole's anatomical orientation, and grade the depth of mucosal injury. — In animal models the alkaline tissue milieu persists in devitalised mucosa even after the battery is removed, so liquefactive necrosis keeps progressing; dilute acetic acid neutralises residual alkalinity, reducing injury progression in porcine studies and showing safety and improved mucosal appearance in a small initial clinical series — though no effect on stricture, fistula or mortality has been demonstrated yet. Recording negative-pole orientation and injury grade at this point directly feeds the post-removal imaging and follow-up decisions in the next box. — Placing \"record negative-pole orientation; grade mucosal injury\" inside this dashed LOW CERTAINTY box visually groups ordinary endoscopic documentation under the preclinical border style — the figure's own caption clarifies that LOW CERTAINTY applies specifically to honey, sucralfate and acetic acid irrigation (and nasal/aural removal), not to documentation itself. — odds ratio — A measure of association used throughout this algorithm's evidence base — e.g. oesophageal location carries an OR of 18.66 for any complication versus non-oesophageal locations."
+    },
+    {
+      "tool": "button-battery-protocol",
+      "title": "Suspected or Witnessed Button Battery Exposure",
+      "url": "https://satbuhan.github.io/button-battery-protocol/",
+      "type": "node",
+      "nodeId": "gastric-position-note",
+      "nodeLabel": "A gastric position does not exclude oesophageal injury sustained in transit",
+      "text": "A gastric position does not exclude oesophageal injury sustained in transit — A standalone caution, drawn as its own box beneath the asymptomatic-child protocol: finding the battery in the stomach on radiograph does not mean the oesophagus was never injured — the cell may simply have already moved on from where it did its damage. — The same oesophageal-injury-in-transit concern that justifies endoscopic screening for the delayed-diagnosis subgroup above applies, in principle, to any gastric cell — endoscopic series have documented real oesophageal or gastric mucosal burns even when the battery's current resting place is the stomach. — Drawn with a solid border in the source figure despite being a caveat rather than an action step — rendered here without a certainty tag, since the figure's three-tier scheme (core/low/local) is defined for guideline-concordant steps, and this box is better read as a plain cross-cutting note. — odds ratio — A measure of association used throughout this algorithm's evidence base — e.g. oesophageal location carries an OR of 18.66 for any complication versus non-oesophageal locations."
+    },
+    {
+      "tool": "button-battery-protocol",
+      "title": "Suspected or Witnessed Button Battery Exposure",
+      "url": "https://satbuhan.github.io/button-battery-protocol/",
+      "type": "node",
+      "nodeId": "after-removal",
+      "nodeLabel": "LOCAL PROTOCOL – AFTER REMOVAL [E, P]",
+      "text": "LOCAL PROTOCOL – AFTER REMOVAL [E, P] — Admit if mucosal injury; oesophagram 1–2 days after removal; CT angiography or MRI according to injury grade or suspected vascular injury; diet and discharge decided by the local team — Post-extraction inpatient observation, a contrast oesophagram at 1–2 days, selective cross-sectional imaging (CT angiography or MRI, the latter safe only after the battery itself is out) matched to injury severity or suspected vascular/airway injury, and a multidisciplinary decision on feeding, discharge timing and stricture-surveillance endoscopy. — Gross perforation usually manifests more than 24 hours after lodgement; tracheo-oesophageal fistula and vocal cord paralysis evolve over days; aorto-oesophageal fistula over days to weeks; spondylodiscitis over weeks; oesophageal stricture over weeks to months (43% in one selected tertiary cohort). But the surveillance-imaging evidence itself is expert-derived rather than comparative — surveys show no consensus on which MRI findings should change management, and routine serial MRI increased length of stay and cost without a demonstrable outcome benefit — which is why imaging and discharge decisions are explicitly handed to local multidisciplinary protocol rather than fixed here. — Preserved tracheo-oesophageal fat plane on MRI had 100% negative predictive value for tracheo-oesophageal fistula in one series, while loss of the fat plane had only 50% positive predictive value — useful for reassurance, much less useful for ruling fistula in. — odds ratio — A measure of association used throughout this algorithm's evidence base — e.g. oesophageal location carries an OR of 18.66 for any complication versus non-oesophageal locations."
+    },
+    {
+      "tool": "button-battery-protocol",
+      "title": "Suspected or Witnessed Button Battery Exposure",
+      "url": "https://satbuhan.github.io/button-battery-protocol/",
+      "type": "node",
+      "nodeId": "discharge",
+      "nodeLabel": "BEFORE DISCHARGE – WRITTEN SAFETY-NETTING FOR THE CAREGIVER [E, P]",
+      "text": "BEFORE DISCHARGE – WRITTEN SAFETY-NETTING FOR THE CAREGIVER [E, P] — Return IMMEDIATELY for haematemesis or melaena (however small), fever, chest, back or abdominal pain, dysphagia, drooling or respiratory deterioration. Vascular complications may present days to weeks after removal; a small sentinel bleed may precede fatal haemorrhage. — Explicit written discharge instructions for parents/caregivers mandating immediate emergency re-presentation for any red-flag haemorrhagic, infectious, gastrointestinal or airway symptom, given to every child leaving this pathway regardless of which of the three anatomical limbs they came through. — Tissue necrosis and peri-vascular inflammation can keep evolving well after battery extraction. Aorto-oesophageal and other arterio-oesophageal fistulae are the leading cause of death in this condition, can present days to weeks after removal — well beyond the index admission — and frequently announce themselves first with a minor, self-limiting sentinel bleed (haematemesis or melaena) before a catastrophic, fatal haemorrhage. Delayed perforation, mediastinitis, tracheo-oesophageal fistula, vocal cord paralysis, spondylodiscitis, stricture and distal bowel perforation or abscess can likewise all present after discharge. — This box's warning text is written around gastrointestinal/vascular complications; it does not separately mention nasal septal perforation, epistaxis, otorrhoea or facial-nerve weakness, even though the figure draws the NOSE OR EAR limb converging into this very box — the preceding ENT-removal box is where that follow-up gets arranged instead. — The figure lists eight red-flag symptom groups; the manuscript's own narrative summary of this same safety-netting advice lists only six in one sentence (omitting abdominal pain, dysphagia and drooling there, though all three appear elsewhere in the manuscript) — this tool follows the fuller, eight-item figure wording. — odds ratio — A measure of association used throughout this algorithm's evidence base — e.g. oesophageal location carries an OR of 18.66 for any complication versus non-oesophageal locations."
     }
   ]
 }
