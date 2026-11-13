@@ -94,6 +94,7 @@ RECORDS = {
     "24119391": "Pharmacological Pain Management in Elderly Patients",
     "24170968": "Metoclopramide versus Ondansetron — Antiemetic Selection by Clinical Setting",
     "24175215": "Needle Aspiration versus Tube Thoracostomy — Symptom-Led Management of Spontaneous Pneumothorax",
+    "24195368": "Suspected or Witnessed Button Battery Exposure in a Child",
 }
 
 
