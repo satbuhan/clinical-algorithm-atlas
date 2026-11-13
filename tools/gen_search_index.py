@@ -73,6 +73,7 @@ REPOS = [
     "metoclopramide-ondansetron-protocol",
     "spontaneous-pneumothorax-protocol",
     "button-battery-protocol",
+    "beta-lactam-infusion-protocol",
 ]
 
 

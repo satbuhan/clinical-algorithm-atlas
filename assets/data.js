@@ -316,5 +316,16 @@ const TOOLS = [
     repo: "https://github.com/satbuhan/button-battery-protocol",
     thumb: "assets/thumbs/button-battery.png",
     added: "2026-11-13"
+  },
+  {
+    id: "beta-lactam-infusion",
+    title: "Beta-Lactam Infusion Strategy",
+    subtitle: "Continuous versus Extended Infusion in Sepsis and Septic Shock",
+    specialty: "infectious",
+    summary: "Interactive, referenced walkthrough of the decision algorithm for selecting and delivering a beta-lactam infusion strategy in adult ICU patients with sepsis or septic shock — an immediate loading dose, a physicochemical-stability check branching continuous versus extended infusion, delivery governance, a therapeutic-drug-monitoring fork, and 48-to-72-hour reassessment. The source condensation's own discrepancy registry — eight genuine figure-versus-manuscript-text inconsistencies, pre-identified rather than discovered here — is carried through as node-level clinical cautions rather than silently resolved.",
+    url: "https://satbuhan.github.io/beta-lactam-infusion-protocol/",
+    repo: "https://github.com/satbuhan/beta-lactam-infusion-protocol",
+    thumb: "assets/thumbs/beta-lactam-infusion.png",
+    added: "2026-11-13"
   }
 ];

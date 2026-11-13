@@ -87,6 +87,16 @@
         "full": "acute kidney injury",
         "def": "A sudden drop in kidney function. NSAIDs remove a compensatory renal-prostaglandin mechanism, so AKI (or a low eGFR, or hypovolaemia) is a reason to avoid them rather than merely dose-reduce.",
         "nodeId": "contraindications_info"
+      },
+      {
+        "tool": "beta-lactam-infusion-protocol",
+        "title": "Beta-Lactam Infusion Strategy",
+        "subtitle": "Continuous versus Extended Infusion in Sepsis and Septic Shock",
+        "url": "https://satbuhan.github.io/beta-lactam-infusion-protocol/",
+        "match": "AKI",
+        "full": "acute kidney injury",
+        "def": "A sudden decline in kidney function. For beta-lactams dosed on the assumption of normal clearance, AKI works in the opposite direction from augmented renal clearance — it can cause drug to accumulate toward neurotoxic concentrations, particularly with cefepime or high-concentration piperacillin or meropenem.",
+        "nodeId": "entry"
       }
     ],
     "rass": [
@@ -601,6 +611,16 @@
         "full": "Grading of Recommendations Assessment, Development and Evaluation",
         "def": "A structured framework for rating the certainty of evidence for each outcome (High, Moderate, Low, or Very Low) based on risk of bias, imprecision, inconsistency and other factors.",
         "nodeId": "conservative-rec"
+      },
+      {
+        "tool": "beta-lactam-infusion-protocol",
+        "title": "Beta-Lactam Infusion Strategy",
+        "subtitle": "Continuous versus Extended Infusion in Sepsis and Septic Shock",
+        "url": "https://satbuhan.github.io/beta-lactam-infusion-protocol/",
+        "match": "GRADE",
+        "full": "Grading of Recommendations Assessment, Development and Evaluation",
+        "def": "A structured framework for rating how much confidence to place in a body of evidence for a specific outcome, based on domains such as risk of bias, inconsistency, indirectness, imprecision, and publication bias. The source manuscript applies GRADE narratively to externally pooled meta-analytic estimates, rather than performing new pooling of its own.",
+        "nodeId": "continuous"
       }
     ],
     "map": [
@@ -719,6 +739,28 @@
         "full": "Risk Of Bias In Non-randomised Studies - of Interventions",
         "def": "The companion tool to RoB 2 for assessing bias in non-randomised comparative studies; its ratings top out at ‘serious’ or worse because such studies cannot fully control for confounding by indication.",
         "nodeId": "chemo-rec"
+      }
+    ],
+    "nnt": [
+      {
+        "tool": "spontaneous-pneumothorax-protocol",
+        "title": "Needle Aspiration versus Tube Thoracostomy",
+        "subtitle": "Symptom-Led Management of Spontaneous Pneumothorax",
+        "url": "https://satbuhan.github.io/spontaneous-pneumothorax-protocol/",
+        "match": "NNT",
+        "full": "number needed to treat",
+        "def": "The number of patients who would need to receive the more effective treatment, instead of the comparator, for one additional patient to benefit.",
+        "nodeId": null
+      },
+      {
+        "tool": "beta-lactam-infusion-protocol",
+        "title": "Beta-Lactam Infusion Strategy",
+        "subtitle": "Continuous versus Extended Infusion in Sepsis and Septic Shock",
+        "url": "https://satbuhan.github.io/beta-lactam-infusion-protocol/",
+        "match": "NNT",
+        "full": "number needed to treat",
+        "def": "The number of patients who would need to receive the intervention, compared with the control, for one additional patient to benefit. For 90-day mortality with prolonged beta-lactam infusion, the largest pooled meta-analysis behind this pathway estimated an NNT of roughly 26 — consistent with a real but modest absolute effect.",
+        "nodeId": "continuous"
       }
     ]
   }
