@@ -803,13 +803,39 @@
 
   function parseResponse(cfg, data) {
     if (cfg.providerId === 'anthropic') {
-      try { return data.content[0].text; } catch (e) { return ''; }
+      // Anthropic's `content` is an array of blocks. Normally a single
+      // text block, but it can legitimately hold more than one (or a
+      // non-text block first), so join every text block rather than
+      // assuming content[0] is the one we want.
+      try {
+        var blocks = data.content || [];
+        return blocks
+          .filter(function (b) { return b && b.type === 'text' && typeof b.text === 'string'; })
+          .map(function (b) { return b.text; })
+          .join('');
+      } catch (e) { return ''; }
     }
     if (cfg.providerId === 'google') {
       try { return data.candidates[0].content.parts.map(function (p) { return p.text || ''; }).join(''); } catch (e) { return ''; }
     }
     // OpenAI-compatible shape: openai, xai, deepseek
     try { return data.choices[0].message.content; } catch (e) { return ''; }
+  }
+
+  // Best-effort explanation for a 200 OK response that carried no usable
+  // text, so a dead end at least says why instead of just "empty" — and
+  // logs the raw payload so it can be inspected in the browser console.
+  function describeEmptyReply(cfg, data) {
+    try { console.warn('[Atlas Chat] got a 200 OK with no usable text; raw response:', data); } catch (e0) { /* no-op */ }
+    try {
+      if (cfg.providerId === 'anthropic' && data && data.stop_reason) {
+        return '(The provider sent no text back. Reason given: ' + data.stop_reason + '. Open the browser console for the full response.)';
+      }
+      if (data && data.choices && data.choices[0] && data.choices[0].finish_reason) {
+        return '(The provider sent no text back. Reason given: ' + data.choices[0].finish_reason + '. Open the browser console for the full response.)';
+      }
+    } catch (e) { /* no-op */ }
+    return '(Empty response from the provider. Open the browser console for the full response.)';
   }
 
   function sendMessage(text) {
@@ -836,7 +862,7 @@
               state.messages.push({ role: 'error', content: extractErrorMessage(data, resp.status) });
             } else {
               var replyText = parseResponse(cfg, data);
-              state.messages.push({ role: 'assistant', content: replyText || '(Empty response from the provider.)' });
+              state.messages.push({ role: 'assistant', content: replyText || describeEmptyReply(cfg, data) });
             }
             state.sending = false;
             renderChatView();
