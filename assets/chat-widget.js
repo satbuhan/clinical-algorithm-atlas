@@ -66,10 +66,10 @@
                 { id: 'apiKey', label: 'API key', type: 'password', placeholder: 'sk-ant-...' }
               ],
               models: [
-                { id: 'claude-opus-5-5', name: 'Claude Opus 5.5' },
+                { id: 'claude-haiku-5-5', name: 'Claude Haiku 5.5 (fast, cheap — default)', isDefault: true },
+                { id: 'claude-sonnet-5', name: 'Claude Sonnet 5' },
                 { id: 'claude-sonnet-5-5', name: 'Claude Sonnet 5.5' },
-                { id: 'claude-sonnet-5', name: 'Claude Sonnet 5', isDefault: true },
-                { id: 'claude-haiku-5-5', name: 'Claude Haiku 5.5' }
+                { id: 'claude-opus-5-5', name: 'Claude Opus 5.5' }
               ]
             }
           ]
@@ -738,8 +738,90 @@
     return 'Request failed with status ' + status + '.';
   }
 
+  // ---------------------------------------------------------------------
+  // Page awareness: this widget sits on top of a specific algorithm tool
+  // (or the hub). Each tool's assets/content.js declares NODES/REFERENCES/
+  // GLOSSARY/VERIFIED as plain top-level `const`s in a classic (non-module)
+  // script, loaded before this file — so, since this file is also a
+  // classic script sharing the same global scope, those identifiers are
+  // readable here directly once content.js has run. `typeof X !== 'undefined'`
+  // is safe to probe for an identifier that may not exist (unlike reading
+  // it directly, which would throw a ReferenceError), so this degrades
+  // cleanly on a page that never defines them — the hub's index.html, or
+  // any future tool that changes its data shape.
+  // ---------------------------------------------------------------------
+
+  var cachedSystemPrompt = null;
+
+  function getPageContext() {
+    var parts = [];
+    try {
+      var h1 = document.querySelector('h1');
+      var title = (h1 && h1.textContent && h1.textContent.trim()) || document.title || '';
+      if (title) parts.push('Page: ' + title);
+    } catch (e) { /* no-op */ }
+
+    try { if (typeof VERIFIED !== 'undefined' && VERIFIED) parts.push('Content last verified: ' + VERIFIED); } catch (e) { /* no-op */ }
+
+    try {
+      if (typeof NODES !== 'undefined' && NODES && NODES.length) {
+        parts.push(
+          '\nThis page walks through an authored clinical algorithm as an interactive flowchart. ' +
+          'Below are its steps (box/diamond id, label, and the authors’ own meaning/rationale/cautions for each) — use this to answer questions about THIS specific algorithm rather than general background knowledge where the two might differ:'
+        );
+        NODES.forEach(function (n) {
+          var bits = ['- [' + n.id + '] ' + (n.label || '')];
+          if (n.sub) bits.push('  Detail shown on the box: ' + n.sub);
+          if (n.meaning) bits.push('  Meaning: ' + n.meaning);
+          if (n.rationale) bits.push('  Rationale: ' + n.rationale);
+          if (n.cautions && n.cautions.length) bits.push('  Caution(s): ' + n.cautions.join(' | '));
+          parts.push(bits.join('\n'));
+        });
+      }
+    } catch (e) { /* no-op */ }
+
+    try {
+      if (typeof REFERENCES !== 'undefined' && REFERENCES && REFERENCES.length) {
+        parts.push(
+          '\nThis page lists ' + REFERENCES.length + ' numbered references in its own References section. ' +
+          'If you cite one, use its on-page number like [' + REFERENCES[0].id + '] rather than inventing a citation.'
+        );
+      }
+    } catch (e) { /* no-op */ }
+
+    try {
+      if (typeof GLOSSARY !== 'undefined' && GLOSSARY && GLOSSARY.length) {
+        var terms = GLOSSARY.map(function (g) { return (g.full || g.match) + ': ' + g.def; });
+        parts.push('\nGlossary terms defined on this page:\n' + terms.join('\n'));
+      }
+    } catch (e) { /* no-op */ }
+
+    var text = parts.join('\n');
+    // Every tool's full node content measured so far fits well under this
+    // (the largest currently is ~24k chars of node text alone); this stays
+    // mainly as a safety ceiling against a future outlier tool, not a cap
+    // that's expected to bite in normal use.
+    var MAX_CHARS = 30000;
+    if (text.length > MAX_CHARS) text = text.slice(0, MAX_CHARS) + '\n[...truncated for length...]';
+    return text;
+  }
+
+  function getSystemPrompt() {
+    if (cachedSystemPrompt !== null) return cachedSystemPrompt;
+    var base =
+      'You are a small embedded assistant on a page from the Clinical Algorithm Atlas, a reference project by ' +
+      'Dr. Özgür Karcıoğlu and Dr. Satuk Buğra Han Bozatlı. This is an educational/academic reference tool, ' +
+      'not a substitute for institutional protocol or bedside clinical judgement — say so if a question seems to be asking you to make a real clinical decision. Be concise.';
+    var pageContext = getPageContext();
+    cachedSystemPrompt = pageContext
+      ? base + '\n\n--- Content of the page this widget is on ---\n' + pageContext
+      : base + '\n\nThis particular page is the atlas hub/index — it lists the individual algorithm tools and has no flowchart content of its own.';
+    return cachedSystemPrompt;
+  }
+
   function buildRequest(cfg, history) {
     var messages = history.map(function (m) { return { role: m.role, content: m.content }; });
+    var systemPrompt = getSystemPrompt();
 
     if (cfg.providerId === 'anthropic') {
       return {
@@ -750,23 +832,24 @@
           'anthropic-version': '2023-06-01',
           'anthropic-dangerous-direct-browser-access': 'true'
         },
-        body: { model: cfg.model, max_tokens: 1024, messages: messages }
+        body: { model: cfg.model, max_tokens: 1024, system: systemPrompt, messages: messages }
       };
     }
 
     if (cfg.providerId === 'openai') {
+      var messagesWithSystem = [{ role: 'system', content: systemPrompt }].concat(messages);
       if (cfg.deploymentId === 'azure') {
         var endpoint = (cfg.fields.endpoint || '').replace(/\/+$/, '');
         return {
           url: endpoint + '/openai/deployments/' + encodeURIComponent(cfg.fields.deploymentName || '') + '/chat/completions?api-version=2024-06-01',
           headers: { 'content-type': 'application/json', 'api-key': cfg.fields.apiKey },
-          body: { messages: messages }
+          body: { messages: messagesWithSystem }
         };
       }
       return {
         url: 'https://api.openai.com/v1/chat/completions',
         headers: { 'content-type': 'application/json', 'Authorization': 'Bearer ' + cfg.fields.apiKey },
-        body: { model: cfg.model, messages: messages }
+        body: { model: cfg.model, messages: messagesWithSystem }
       };
     }
 
@@ -775,6 +858,7 @@
         url: 'https://generativelanguage.googleapis.com/v1beta/models/' + encodeURIComponent(cfg.model) + ':generateContent?key=' + encodeURIComponent(cfg.fields.apiKey),
         headers: { 'content-type': 'application/json' },
         body: {
+          systemInstruction: { parts: [{ text: systemPrompt }] },
           contents: messages.map(function (m) {
             return { role: m.role === 'assistant' ? 'model' : 'user', parts: [{ text: m.content }] };
           })
@@ -786,7 +870,7 @@
       return {
         url: 'https://api.x.ai/v1/chat/completions',
         headers: { 'content-type': 'application/json', 'Authorization': 'Bearer ' + cfg.fields.apiKey },
-        body: { model: cfg.model, messages: messages }
+        body: { model: cfg.model, messages: [{ role: 'system', content: systemPrompt }].concat(messages) }
       };
     }
 
@@ -794,7 +878,7 @@
       return {
         url: 'https://api.deepseek.com/chat/completions',
         headers: { 'content-type': 'application/json', 'Authorization': 'Bearer ' + cfg.fields.apiKey },
-        body: { model: cfg.model, messages: messages }
+        body: { model: cfg.model, messages: [{ role: 'system', content: systemPrompt }].concat(messages) }
       };
     }
 
