@@ -96,6 +96,7 @@ RECORDS = {
     "24175215": "Needle Aspiration versus Tube Thoracostomy — Symptom-Led Management of Spontaneous Pneumothorax",
     "24195368": "Suspected or Witnessed Button Battery Exposure in a Child",
     "24201599": "Beta-Lactam Infusion Strategy in Sepsis and Septic Shock",
+    "24247337": "Antiviral Selection in Primary Influenza Pneumonia: IV Peramivir vs Oral Oseltamivir",
 }
 
 
