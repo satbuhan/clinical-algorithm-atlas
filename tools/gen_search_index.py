@@ -74,6 +74,7 @@ REPOS = [
     "spontaneous-pneumothorax-protocol",
     "button-battery-protocol",
     "beta-lactam-infusion-protocol",
+    "peramivir-oseltamivir-protocol",
 ]
 
 

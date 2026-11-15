@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13",
+  "generated": "2026-11-15",
   "terms": {
     "cyp2d6": [
       {
@@ -207,6 +207,50 @@
         "nodeId": "eps-risk"
       }
     ],
+    "nai": [
+      {
+        "tool": "influenza-antiviral-protocol",
+        "title": "Influenza Antiviral Selection",
+        "subtitle": "Baloxavir Marboxil vs Oseltamivir",
+        "url": "https://satbuhan.github.io/influenza-antiviral-protocol/",
+        "match": "NAI",
+        "full": "neuraminidase inhibitor",
+        "def": "The drug class that includes oseltamivir and zanamivir, which block the viral neuraminidase enzyme needed for new virus particles to leave an infected cell.",
+        "nodeId": "resistance_exception"
+      },
+      {
+        "tool": "peramivir-oseltamivir-protocol",
+        "title": "Antiviral Selection in Primary Influenza Pneumonia",
+        "subtitle": "IV Peramivir vs Oral Oseltamivir",
+        "url": "https://satbuhan.github.io/peramivir-oseltamivir-protocol/",
+        "match": "NAI",
+        "full": "neuraminidase inhibitor",
+        "def": "The antiviral drug class that includes oseltamivir, peramivir, and zanamivir, which block the viral neuraminidase enzyme needed for new virus particles to leave an infected cell.",
+        "nodeId": "immediate_nai"
+      }
+    ],
+    "icu": [
+      {
+        "tool": "influenza-antiviral-protocol",
+        "title": "Influenza Antiviral Selection",
+        "subtitle": "Baloxavir Marboxil vs Oseltamivir",
+        "url": "https://satbuhan.github.io/influenza-antiviral-protocol/",
+        "match": "ICU",
+        "full": "intensive care unit",
+        "def": "A hospital unit providing the highest level of monitoring and organ support for critically ill patients.",
+        "nodeId": null
+      },
+      {
+        "tool": "peramivir-oseltamivir-protocol",
+        "title": "Antiviral Selection in Primary Influenza Pneumonia",
+        "subtitle": "IV Peramivir vs Oral Oseltamivir",
+        "url": "https://satbuhan.github.io/peramivir-oseltamivir-protocol/",
+        "match": "ICU",
+        "full": "intensive care unit",
+        "def": "A hospital unit providing the highest level of monitoring and organ support for critically ill patients.",
+        "nodeId": "iv_peramivir"
+      }
+    ],
     "egfr": [
       {
         "tool": "nsaid-pain-protocol",
@@ -341,6 +385,16 @@
         "full": "minimal clinically important difference",
         "def": "The smallest change in an outcome that patients would perceive as beneficial — used here to judge whether a statistically significant difference (such as length of stay) is actually meaningful at the bedside.",
         "nodeId": null
+      },
+      {
+        "tool": "peramivir-oseltamivir-protocol",
+        "title": "Antiviral Selection in Primary Influenza Pneumonia",
+        "subtitle": "IV Peramivir vs Oral Oseltamivir",
+        "url": "https://satbuhan.github.io/peramivir-oseltamivir-protocol/",
+        "match": "MCID",
+        "full": "minimal clinically important difference",
+        "def": "The smallest difference in an outcome that patients or clinicians would consider meaningful — used here as a threshold (Cohen's d = 0.5) to judge whether a statistically significant finding is actually clinically important.",
+        "nodeId": null
       }
     ],
     "vas": [
@@ -461,6 +515,16 @@
         "full": "acute respiratory distress syndrome",
         "def": "Acute, diffuse lung inflammation causing severe hypoxaemia, graded by the Berlin definition using the PaO2/FiO2 ratio.",
         "nodeId": "panel"
+      },
+      {
+        "tool": "peramivir-oseltamivir-protocol",
+        "title": "Antiviral Selection in Primary Influenza Pneumonia",
+        "subtitle": "IV Peramivir vs Oral Oseltamivir",
+        "url": "https://satbuhan.github.io/peramivir-oseltamivir-protocol/",
+        "match": "ARDS",
+        "full": "acute respiratory distress syndrome",
+        "def": "Severe, diffuse lung injury causing acute hypoxaemic respiratory failure — a recognised complication of severe influenza pneumonia.",
+        "nodeId": "search_complications"
       }
     ],
     "rsi": [
@@ -621,6 +685,16 @@
         "full": "Grading of Recommendations Assessment, Development and Evaluation",
         "def": "A structured framework for rating how much confidence to place in a body of evidence for a specific outcome, based on domains such as risk of bias, inconsistency, indirectness, imprecision, and publication bias. The source manuscript applies GRADE narratively to externally pooled meta-analytic estimates, rather than performing new pooling of its own.",
         "nodeId": "continuous"
+      },
+      {
+        "tool": "peramivir-oseltamivir-protocol",
+        "title": "Antiviral Selection in Primary Influenza Pneumonia",
+        "subtitle": "IV Peramivir vs Oral Oseltamivir",
+        "url": "https://satbuhan.github.io/peramivir-oseltamivir-protocol/",
+        "match": "GRADE",
+        "full": "Grading of Recommendations Assessment, Development and Evaluation",
+        "def": "A structured framework for rating how much confidence to place in a body of evidence, from very low to high certainty.",
+        "nodeId": "evidence_summary"
       }
     ],
     "map": [

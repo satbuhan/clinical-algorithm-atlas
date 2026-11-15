@@ -327,5 +327,16 @@ const TOOLS = [
     repo: "https://github.com/satbuhan/beta-lactam-infusion-protocol",
     thumb: "assets/thumbs/beta-lactam-infusion.png",
     added: "2026-11-13"
+  },
+  {
+    id: "peramivir-oseltamivir",
+    title: "Antiviral Selection in Primary Influenza Pneumonia",
+    subtitle: "IV Peramivir vs Oral Oseltamivir",
+    specialty: "infectious",
+    summary: "Interactive, referenced walkthrough of the decision algorithm for choosing between intravenous peramivir and oral oseltamivir in suspected or confirmed primary influenza pneumonia — immediate neuraminidase-inhibitor therapy, the enteral-route-reliability gate that decides between the two agents, supportive care, a 48-to-72-hour reassessment, and testing for the H275Y resistance substitution on non-response. Sibling to influenza-antiviral-protocol (a different decision: baloxavir vs oseltamivir by drug class), built from its own systematic review with all references independently re-verified from scratch.",
+    url: "https://satbuhan.github.io/peramivir-oseltamivir-protocol/",
+    repo: "https://github.com/satbuhan/peramivir-oseltamivir-protocol",
+    thumb: "assets/thumbs/peramivir-oseltamivir.png",
+    added: "2026-11-15"
   }
 ];

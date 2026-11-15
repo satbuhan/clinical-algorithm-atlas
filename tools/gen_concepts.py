@@ -78,6 +78,7 @@ REPOS = [
     "spontaneous-pneumothorax-protocol",
     "button-battery-protocol",
     "beta-lactam-infusion-protocol",
+    "peramivir-oseltamivir-protocol",
 ]
 
 # Reviewed by hand: (repo, lowercased term) pairs that share a GLOSSARY
