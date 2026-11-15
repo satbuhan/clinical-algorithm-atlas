@@ -29,8 +29,11 @@ SETUP (one time per machine):
   5. Set it as an environment variable so it's not typed into any file:
        export ZENODO_TOKEN="paste-the-token-here"      # macOS/Linux
        $env:ZENODO_TOKEN = "paste-the-token-here"       # Windows PowerShell
-  6. Make sure the 'requests' library is installed:
-       pip3 install requests
+
+  No install step needed -- this script uses only Python's standard
+  library (urllib), not the third-party 'requests' package, specifically
+  so it still runs on a locked-down machine where a software/application
+  control policy blocks pip from installing anything.
 
 USAGE:
   One record (do this first for any record you haven't fixed yet --
@@ -46,9 +49,12 @@ USAGE:
   "Citation" box reads correctly before considering it done.
 """
 
+import json
 import os
 import sys
-import requests
+import urllib.error
+import urllib.parse
+import urllib.request
 
 TOKEN = os.environ.get("ZENODO_TOKEN")
 if not TOKEN:
@@ -57,7 +63,24 @@ if not TOKEN:
     sys.exit(1)
 
 API = "https://zenodo.org/api/deposit/depositions"
-PARAMS = {"access_token": TOKEN}
+
+
+def _call(method, url, body=None):
+    """Make one Zenodo API call with only the standard library (no
+    'requests' install needed). Returns (status_code, response_text)."""
+    sep = "&" if "?" in url else "?"
+    full_url = f"{url}{sep}access_token={urllib.parse.quote(TOKEN)}"
+    data = None
+    headers = {}
+    if body is not None:
+        data = json.dumps(body).encode("utf-8")
+        headers["Content-Type"] = "application/json"
+    req = urllib.request.Request(full_url, data=data, method=method, headers=headers)
+    try:
+        with urllib.request.urlopen(req) as resp:
+            return resp.getcode(), resp.read().decode("utf-8")
+    except urllib.error.HTTPError as e:
+        return e.code, e.read().decode("utf-8", errors="replace")
 
 CREATORS = [
     {"name": "Karcıoğlu, Özgür"},
@@ -104,36 +127,31 @@ def fix_one(record_id, title):
     print(f"--- {record_id} ---")
 
     # 1. unlock for editing
-    r = requests.post(f"{API}/{record_id}/actions/edit", params=PARAMS)
-    if r.status_code not in (200, 201, 202, 400):
+    status, text = _call("POST", f"{API}/{record_id}/actions/edit")
+    if status not in (200, 201, 202, 400):
         # 400 here usually just means "already in edit mode", which is fine
-        print(f"  edit-unlock FAILED: {r.status_code} {r.text[:300]}")
+        print(f"  edit-unlock FAILED: {status} {text[:300]}")
         return False
 
     # 2. fetch current metadata so we only change creators + title
-    r = requests.get(f"{API}/{record_id}", params=PARAMS)
-    if r.status_code != 200:
-        print(f"  fetch FAILED: {r.status_code} {r.text[:300]}")
+    status, text = _call("GET", f"{API}/{record_id}")
+    if status != 200:
+        print(f"  fetch FAILED: {status} {text[:300]}")
         return False
-    metadata = r.json().get("metadata", {})
+    metadata = json.loads(text).get("metadata", {})
     metadata["creators"] = CREATORS
     metadata["title"] = title
 
     # 3. write the updated metadata back
-    r = requests.put(
-        f"{API}/{record_id}",
-        params=PARAMS,
-        json={"metadata": metadata},
-        headers={"Content-Type": "application/json"},
-    )
-    if r.status_code != 200:
-        print(f"  update FAILED: {r.status_code} {r.text[:300]}")
+    status, text = _call("PUT", f"{API}/{record_id}", body={"metadata": metadata})
+    if status != 200:
+        print(f"  update FAILED: {status} {text[:300]}")
         return False
 
     # 4. publish the change
-    r = requests.post(f"{API}/{record_id}/actions/publish", params=PARAMS)
-    if r.status_code not in (200, 202):
-        print(f"  publish FAILED: {r.status_code} {r.text[:300]}")
+    status, text = _call("POST", f"{API}/{record_id}/actions/publish")
+    if status not in (200, 202):
+        print(f"  publish FAILED: {status} {text[:300]}")
         return False
 
     print(f"  OK -- {title}")
