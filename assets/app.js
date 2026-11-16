@@ -7,6 +7,7 @@
   const searchEl = $("#search");
   const countEl = $("#count");
   const contentHitsEl = $("#contentHits");
+  const calcListEl = $("#calcList");
 
   const state = { filter: "all", q: "" };
 
@@ -29,6 +30,25 @@
     })
     .catch(() => {
       SEARCH_INDEX = [];
+    });
+
+  // The standalone "Calculators" section below the grid — same registry the
+  // tools themselves fetch (cross-origin, from this hub) to activate a
+  // calculator next to a matching glossary term. Here it's same-origin, so
+  // this just reads the file directly and lists every entry, with no
+  // dependency on any specific tool's content.js. Best-effort, same
+  // contract as SEARCH_INDEX above: nothing else on the page depends on
+  // this resolving.
+  let CALCULATORS = null;
+  fetch("assets/calculators.json")
+    .then((r) => (r.ok ? r.json() : null))
+    .then((data) => {
+      CALCULATORS = (data && data.calculators) || {};
+      renderCalculators();
+    })
+    .catch(() => {
+      CALCULATORS = {};
+      renderCalculators();
     });
 
   // Groups default to CLOSED on a first visit — with 8 categories across a
@@ -226,6 +246,159 @@
     contentHitsEl.innerHTML =
       `<h2 class="content-hits__title">Found inside ${hits.length} box${hits.length === 1 ? "" : "es"}${hits.length > shown.length ? " (showing first " + shown.length + ")" : ""}</h2>` +
       `<div class="content-hits__list">${shown.map((e) => contentHitHtml(e, q)).join("")}</div>`;
+  }
+
+  // ---- Standalone calculators section ----
+  // Same `calculators.json` registry and the same `additive-score` rendering
+  // logic the tool repos use (see anticoagulant-reversal-protocol/assets/
+  // app.js's renderCalculatorInto/renderAdditiveScoreCalculator) — ported
+  // here rather than shared via a <script>, since each repo is independently
+  // deployed and the registry (not the renderer) is the one thing meant to
+  // be shared. A `calc.type` other than "additive-score" falls through to a
+  // plain message instead of breaking, so a future calculator type here
+  // never needs this section rewritten, only a new branch added.
+  function calcCardHtml(calc) {
+    return `
+      <div class="calc-card">
+        <div class="calc-card__head">
+          <h3 class="calc-card__title">${calc.title}</h3>
+          <button type="button" class="calc-trigger" data-calc="${calc.id}">🧮 Open/close calculator</button>
+        </div>
+        <p class="calc-card__meta">${calc.maxScore ? "Max score " + calc.maxScore : ""}${calc.lastVerified ? " · last verified " + fmtDate(calc.lastVerified) : ""}</p>
+        <div class="calc-mount" id="calc-mount-${calc.id}" hidden></div>
+      </div>`;
+  }
+
+  function renderCalculators() {
+    if (!calcListEl) return;
+    if (!CALCULATORS) {
+      calcListEl.innerHTML = `<p class="calc-list__empty">Loading calculators…</p>`;
+      return;
+    }
+    const keys = Object.keys(CALCULATORS);
+    if (!keys.length) {
+      calcListEl.innerHTML = `<p class="calc-list__empty">No calculators published yet.</p>`;
+      return;
+    }
+    calcListEl.innerHTML = keys.map((k) => calcCardHtml(CALCULATORS[k])).join("");
+  }
+
+  // No calculator here ever persists a value (no localStorage, no
+  // module-level cache) — closing one discards it, reopening always starts
+  // blank, so a value never carries over from one patient to the next.
+  function renderCalculatorInto(mountEl, calc) {
+    const isOpen = !mountEl.hidden;
+    if (isOpen) {
+      mountEl.hidden = true;
+      mountEl.innerHTML = "";
+      return;
+    }
+    mountEl.hidden = false;
+    if (calc.type === "additive-score") {
+      renderAdditiveScoreCalculator(mountEl, calc);
+    } else {
+      mountEl.textContent = "This calculator type isn't supported here yet.";
+    }
+  }
+
+  function renderAdditiveScoreCalculator(mountEl, calc) {
+    const box = document.createElement("div");
+    box.className = "calc-box";
+
+    // Plain items are independent checkboxes; an item with kind: "radio" is
+    // a mutually-exclusive set of options (e.g. CHA₂DS₂-VASc's age bands)
+    // rendered as a labelled group sharing one unique `name`.
+    const list = document.createElement("div");
+    list.className = "calc-items";
+    let idx = 0;
+    calc.items.forEach((item) => {
+      if (item.kind === "radio") {
+        const fs = document.createElement("fieldset");
+        fs.className = "calc-radio-group";
+        const legend = document.createElement("legend");
+        legend.textContent = item.label + (item.needsAuthor ? " *" : "");
+        fs.appendChild(legend);
+        const groupName = "calc-" + calc.id + "-group-" + idx++;
+        item.options.forEach((opt) => {
+          const row = document.createElement("label");
+          row.className = "calc-item calc-item--radio";
+          const rb = document.createElement("input");
+          rb.type = "radio";
+          rb.name = groupName;
+          rb.dataset.points = String(opt.points);
+          row.appendChild(rb);
+          const span = document.createElement("span");
+          span.textContent = opt.label;
+          row.appendChild(span);
+          fs.appendChild(row);
+        });
+        list.appendChild(fs);
+      } else {
+        const row = document.createElement("label");
+        row.className = "calc-item";
+        const cb = document.createElement("input");
+        cb.type = "checkbox";
+        cb.dataset.points = String(item.points);
+        cb.id = "calc-" + calc.id + "-" + idx++;
+        row.appendChild(cb);
+        const span = document.createElement("span");
+        span.textContent = item.label + (item.needsAuthor ? " *" : "");
+        row.appendChild(span);
+        list.appendChild(row);
+      }
+    });
+    box.appendChild(list);
+
+    const total = document.createElement("p");
+    total.className = "calc-total";
+    function updateTotal() {
+      let sum = 0;
+      list.querySelectorAll("input[type=checkbox]:checked, input[type=radio]:checked").forEach((el) => {
+        sum += Number(el.dataset.points) || 0;
+      });
+      total.textContent = "Total: " + sum + (calc.maxScore ? " / " + calc.maxScore : "");
+    }
+    list.addEventListener("change", updateTotal);
+    updateTotal();
+    box.appendChild(total);
+
+    if (calc.interpretation) {
+      const note = document.createElement("p");
+      note.className = "calc-note";
+      note.textContent = calc.interpretation;
+      box.appendChild(note);
+    }
+    if (calc.items.some((item) => item.needsAuthor)) {
+      const flag = document.createElement("p");
+      flag.className = "calc-flag";
+      flag.textContent =
+        "* Exact threshold wording is ambiguous across sources for this item; flagged for author confirmation.";
+      box.appendChild(flag);
+    }
+    if (calc.source && calc.source.text) {
+      const src = document.createElement("p");
+      src.className = "calc-source";
+      src.innerHTML =
+        calc.source.text +
+        (calc.source.url
+          ? ' <a href="' + calc.source.url + '" target="_blank" rel="noopener">' + calc.source.url + "</a>"
+          : "");
+      box.appendChild(src);
+    }
+
+    mountEl.innerHTML = "";
+    mountEl.appendChild(box);
+  }
+
+  if (calcListEl) {
+    renderCalculators();
+    calcListEl.addEventListener("click", (e) => {
+      const btn = e.target.closest(".calc-trigger");
+      if (!btn) return;
+      const calc = CALCULATORS && CALCULATORS[btn.dataset.calc];
+      const mount = document.getElementById("calc-mount-" + btn.dataset.calc);
+      if (calc && mount) renderCalculatorInto(mount, calc);
+    });
   }
 
   chipsEl.addEventListener("click", (e) => {

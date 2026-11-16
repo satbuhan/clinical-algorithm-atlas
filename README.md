@@ -183,6 +183,24 @@ against its primary source. Anything genuinely ambiguous in that source
 gets `"needsAuthor": true` on the affected item rather than a confident
 guess.
 
+Added 2026-11-16: a calculator is also two clicks away inside any tool
+that mentions it — but that's one level deep (open a term's definition
+to find the trigger), so two discoverability fixes went in alongside
+CHA₂DS₂-VASc. Inside each tool, a glossary term with a matching
+calculator now gets a small 🧮 badge right in the running prose (see
+`linkify()` in that tool's own `assets/app.js`), not just a trigger
+hidden inside the definition panel — a reader sees the opportunity
+before clicking anything. And here on the hub's own homepage, a
+**"Calculators" section** below the tool grid (`#calcList` in this
+repo's `assets/app.js`) lists every entry in `calculators.json` directly
+— openable on its own, with no flowchart to navigate first — for anyone
+who just wants the score. It ports the same `additive-score`
+(checkbox-sum, optional mutually-exclusive radio groups) rendering
+engine every tool repo carries, kept in sync by hand since each repo
+deploys independently; a future calculator `type` needs a matching
+branch added in both places, same as any other calculator-aware tool
+repo.
+
 ### Content search index
 
 Added 2026-11-10: the search box in the toolbar (previously matching only

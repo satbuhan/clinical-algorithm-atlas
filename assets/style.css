@@ -35,6 +35,8 @@
   --tag-analgesia_procedural: #5A4A7A;
   --tag-analgesia_procedural-wash: rgba(90, 74, 122, 0.09);
 
+  --warn: #8A6D1E;
+
   --radius-card: 10px;
   --radius-chip: 999px;
 
@@ -356,6 +358,127 @@ a { color: inherit; }
   line-height: 1.45;
 }
 
+/* ---------- Standalone calculators ---------- */
+.calculators {
+  border-top: 1px solid var(--rule);
+}
+.calculators__inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+.calculators h2 {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+.calculators__lede {
+  font-size: 14px;
+  color: var(--ink-soft);
+  max-width: 62ch;
+  margin: 0 0 22px;
+}
+.calc-list { display: flex; flex-direction: column; gap: 14px; }
+.calc-list__empty { color: var(--ink-faint); font-size: 14px; margin: 0; }
+.calc-card {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-card);
+  padding: 16px 20px;
+}
+.calc-card__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 16px;
+}
+.calc-card__title {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0;
+}
+.calc-card__meta {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--ink-faint);
+  margin: 6px 0 0;
+}
+
+/* Calculator rendering itself — same markup/classes and the same
+   checkbox-sum / mutually-exclusive-radio-group engine as every tool repo's
+   own calc-trigger/calc-box (see e.g. anticoagulant-reversal-protocol/
+   assets/style.css); kept visually identical on purpose so opening a
+   calculator feels the same whether it's reached from a flowchart or from
+   here. */
+.calc-trigger {
+  all: unset;
+  display: inline-block;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--accent);
+  border: 1px solid var(--accent-soft);
+  border-radius: var(--radius-chip);
+  padding: 6px 14px;
+}
+.calc-trigger:hover, .calc-trigger:focus-visible { background: var(--accent-wash); }
+.calc-mount[hidden] { display: none; }
+.calc-box {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border: 1px dashed var(--rule-strong);
+  border-radius: var(--radius-card);
+  background: var(--paper-raised);
+}
+.calc-items { display: flex; flex-direction: column; gap: 9px; }
+.calc-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 13.5px;
+  line-height: 1.4;
+  color: var(--ink);
+  cursor: pointer;
+}
+.calc-item input { margin-top: 3px; flex: none; }
+.calc-radio-group {
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.calc-radio-group legend {
+  padding: 0 0 2px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.calc-item--radio { padding-left: 5px; }
+.calc-total {
+  margin: 12px 0 0;
+  font-weight: 600;
+  font-size: 14.5px;
+  color: var(--accent);
+}
+.calc-note, .calc-source {
+  margin: 8px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+.calc-source a { color: var(--accent-soft); }
+.calc-flag {
+  margin: 8px 0 0;
+  font-size: 12.5px;
+  color: var(--warn);
+}
+
 /* ---------- Methodology strip ---------- */
 .method {
   border-top: 1px solid var(--rule);
@@ -401,6 +524,8 @@ footer.site a:hover { text-decoration: underline; }
   .grid { padding: 0 18px 48px; grid-template-columns: 1fr; }
   .group__grid, .recent__grid { grid-template-columns: 1fr; }
   .content-hits { padding: 0 18px 40px; }
+  .calculators__inner { padding: 28px 18px; }
+  .calc-card__head { flex-direction: column; align-items: flex-start; }
   .method__inner { padding: 28px 18px; }
   footer.site { padding: 20px 18px 44px; }
 }

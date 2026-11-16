@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=4">
+<link rel="stylesheet" href="assets/style.css?v=5">
 <link rel="stylesheet" href="assets/chat-widget.css?v=2">
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
 </head>
@@ -25,8 +25,8 @@
   <p class="byline">
     An ongoing collaboration between <strong>Dr. Özgür Karcıoğlu</strong> and
     <strong>Dr. Satuk Buğra Han Bozatlı</strong>.
-    <p class="doi-line">DOI: <a href="https://doi.org/10.5281/zenodo.24112508" target="_blank" rel="noopener">10.5281/zenodo.24112508</a></p>
-</p>
+  </p>
+  <p class="doi-line">DOI: <a href="https://doi.org/10.5281/zenodo.24112508" target="_blank" rel="noopener">10.5281/zenodo.24112508</a></p>
 </header>
 
 <div class="toolbar">
@@ -39,6 +39,17 @@
 <main class="grid" id="grid" aria-label="Tools in the atlas"></main>
 
 <section class="content-hits" id="contentHits" aria-label="Matches found inside tool content" hidden></section>
+
+<section class="calculators" aria-label="Standalone calculators">
+  <div class="calculators__inner">
+    <h2>Calculators</h2>
+    <p class="calculators__lede">
+      The same calculators that appear inside the flowcharts above, usable on
+      their own — open one directly if you don't need the full algorithm.
+    </p>
+    <div class="calc-list" id="calcList"></div>
+  </div>
+</section>
 
 <section class="method">
   <div class="method__inner">
@@ -67,7 +78,7 @@
 </footer>
 
 <script src="assets/data.js?v=3"></script>
-<script src="assets/app.js?v=4"></script>
+<script src="assets/app.js?v=5"></script>
 <script defer src="assets/chat-widget.js?v=2"></script>
 </body>
 </html>
