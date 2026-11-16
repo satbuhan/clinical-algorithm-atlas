@@ -25,6 +25,37 @@
       },
       "lastVerified": "2026-11-16",
       "sourceReport": "calculator-sourcebook/calculators/has_bled_clinical_score.md"
+    },
+    "cha2ds2-vasc": {
+      "id": "cha2ds2-vasc",
+      "title": "CHA₂DS₂-VASc score",
+      "type": "additive-score",
+      "aliases": ["CHA₂DS₂-VASc", "CHA₂DS₂-VASc score"],
+      "maxScore": 9,
+      "items": [
+        { "label": "Congestive heart failure or left ventricular dysfunction", "points": 1 },
+        { "label": "Hypertension", "points": 1 },
+        { "label": "Diabetes mellitus", "points": 1 },
+        { "label": "Stroke, TIA, or thromboembolism (prior)", "points": 2 },
+        { "label": "Vascular disease (prior myocardial infarction, peripheral artery disease, or aortic plaque)", "points": 1 },
+        { "label": "Sex category — female", "points": 1 },
+        {
+          "kind": "radio",
+          "label": "Age",
+          "options": [
+            { "label": "Under 65 years", "points": 0 },
+            { "label": "65–74 years", "points": 1 },
+            { "label": "75 years or older", "points": 2 }
+          ]
+        }
+      ],
+      "interpretation": "Derived in a 2009/2010 atrial-fibrillation cohort to stratify thromboembolic risk; a given total can reflect different underlying risk depending on which components contribute to it. The 2024 ESC guideline uses a sex-excluded variant (CHA₂DS₂-VA, max 8) instead of this original formulation.",
+      "source": {
+        "text": "Lip GYH, Nieuwlaat R, Pisters R, Lane DA, Crijns HJGM. Refining clinical risk stratification for predicting stroke and thromboembolism in atrial fibrillation using a novel risk factor-based approach: the Euro Heart Survey on atrial fibrillation. Chest. 2010;137(2):263-272.",
+        "url": "https://doi.org/10.1378/chest.09-1584"
+      },
+      "lastVerified": "2026-11-16",
+      "sourceReport": "calculator-sourcebook/calculators/cha2ds2_vasc_clinical_score.md"
     }
   }
 }
