@@ -155,6 +155,34 @@ drug vehicle in one tool vs. the LAST-rescue antidote in another), so
 read each new pair's `def` text before trusting it, and add any false
 positive to the script's `EXCLUDE_PAIRS`.
 
+### Cross-atlas calculator index
+
+`assets/calculators.json` is a second, separate shared file: a flat,
+hand-authored registry of interactive calculators (additive-score
+calculators like HAS-BLED today; other types — a weight-based dose
+formula, say — can be added as a new `type` later). Unlike
+`concepts.json` above, this file is **not generated** from any tool's
+`content.js` — it's tool-agnostic data, maintained directly here.
+
+Each calculator entry carries its own `aliases`: exact `GLOSSARY` `match`
+strings (case-insensitive) that should trigger it. Any tool whose own
+`GLOSSARY` already defines a matching term lights up that calculator
+automatically, with zero edits to that tool's own repo — this is what
+makes a calculator reusable across the whole atlas going forward: add it
+once here, and every tool that already mentions the term (today's tools
+and tomorrow's alike) gets it for free on next load. Every tool fetches
+this file at runtime, best-effort and non-blocking, same contract as
+`concepts.json`; see each tool's own `METHODOLOGY.md` ("Calculators") for
+the runtime rendering side.
+
+Before adding a calculator here: it must have gone through the same
+citation-verification discipline as every other piece of atlas content
+(see `calculator-sourcebook` for the pre-research staging workflow) —
+never ship a formula or cutoff that hasn't been independently checked
+against its primary source. Anything genuinely ambiguous in that source
+gets `"needsAuthor": true` on the affected item rather than a confident
+guess.
+
 ### Content search index
 
 Added 2026-11-10: the search box in the toolbar (previously matching only

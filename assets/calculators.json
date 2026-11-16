@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "calculators": {
+    "has-bled": {
+      "id": "has-bled",
+      "title": "HAS-BLED score",
+      "type": "additive-score",
+      "aliases": ["HAS-BLED", "HAS-BLED score"],
+      "maxScore": 9,
+      "items": [
+        { "label": "Hypertension (uncontrolled, systolic BP >160 mmHg)", "points": 1 },
+        { "label": "Abnormal renal function (dialysis, renal transplantation, or serum creatinine ≥200 μmol/L)", "points": 1, "needsAuthor": true },
+        { "label": "Abnormal liver function (chronic hepatic disease, or bilirubin >2× ULN with AST/ALT/ALP >3× ULN)", "points": 1 },
+        { "label": "Stroke (previous history, particularly lacunar)", "points": 1 },
+        { "label": "Bleeding history or predisposition (incl. anaemia)", "points": 1 },
+        { "label": "Labile INR (time in therapeutic range <60%)", "points": 1 },
+        { "label": "Elderly (age >65 years)", "points": 1 },
+        { "label": "Drugs — concomitant antiplatelet agents or NSAIDs", "points": 1 },
+        { "label": "Alcohol excess/abuse (≥8 units/week)", "points": 1, "needsAuthor": true }
+      ],
+      "interpretation": "Derived in a 2010 atrial-fibrillation cohort to estimate 1-year major-bleeding risk. Current ESC guidance cautions against using a bleeding-risk score alone to decide whether to start, continue or withhold anticoagulation.",
+      "source": {
+        "text": "Pisters R, Lane DA, Nieuwlaat R, de Vos CB, Crijns HJGM, Lip GYH. A novel user-friendly score (HAS-BLED) to assess 1-year risk of major bleeding in patients with atrial fibrillation: the Euro Heart Survey. Chest. 2010;138(5):1093-1100.",
+        "url": "https://doi.org/10.1378/chest.10-0134"
+      },
+      "lastVerified": "2026-11-16",
+      "sourceReport": "calculator-sourcebook/calculators/has_bled_clinical_score.md"
+    }
+  }
+}
