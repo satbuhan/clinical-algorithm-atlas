@@ -136,16 +136,27 @@
       </a>`;
   }
 
-  function recentHtml() {
+  // Collapsible for the same reason the category groups below are: on a
+  // small phone screen, 2-3 full recent-tool cards at the very top pushed
+  // everything else off the first screenful. Reuses the exact same
+  // <details class="group">/.group__grid markup (and so the same generic
+  // "toggle" listener and opened-state persistence further down) as a
+  // category group, with reserved key "recent" (never a real specialty
+  // key — see assets/data.js SPECIALTIES) — closed by default on a first
+  // visit, same as every category, and remembered the same way afterward.
+  function recentHtml(opened) {
     const items = loadRecent()
       .map((id) => TOOLS.find((t) => t.id === id))
       .filter(Boolean);
     if (!items.length) return "";
     return `
-      <section class="recent">
-        <h2 class="recent__title">Recently viewed</h2>
-        <div class="recent__grid">${items.map(cardHtml).join("")}</div>
-      </section>`;
+      <details class="group recent" data-key="recent"${opened["recent"] === true ? " open" : ""}>
+        <summary class="group__summary">
+          <span class="group__title">Recently viewed</span>
+          <span class="group__count">${items.length} tool${items.length === 1 ? "" : "s"}</span>
+        </summary>
+        <div class="group__grid">${items.map(cardHtml).join("")}</div>
+      </details>`;
   }
 
   function groupHtml(group, isOpen) {
@@ -177,7 +188,7 @@
         .filter((g) => g.items.length);
 
       grid.classList.add("grid--grouped");
-      grid.innerHTML = recentHtml() + groups.map((g) => groupHtml(g, opened[g.key] === true)).join("");
+      grid.innerHTML = recentHtml(opened) + groups.map((g) => groupHtml(g, opened[g.key] === true)).join("");
       countEl.textContent = `${TOOLS.length} tool${TOOLS.length === 1 ? "" : "s"} in the atlas, across ${groups.length} categor${groups.length === 1 ? "y" : "ies"}`;
       return;
     }
