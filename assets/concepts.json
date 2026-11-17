@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-15",
+  "generated": "2026-11-17",
   "terms": {
     "cyp2d6": [
       {
@@ -395,6 +395,16 @@
         "full": "minimal clinically important difference",
         "def": "The smallest difference in an outcome that patients or clinicians would consider meaningful — used here as a threshold (Cohen's d = 0.5) to judge whether a statistically significant finding is actually clinically important.",
         "nodeId": null
+      },
+      {
+        "tool": "cmv-immunosuppressed-protocol",
+        "title": "Ganciclovir and Valganciclovir for CMV Infection in Immunosuppressed Patients",
+        "subtitle": "Prevention and Treatment in SOT and HCT Recipients",
+        "url": "https://satbuhan.github.io/cmv-immunosuppressed-protocol/",
+        "match": "MCID",
+        "full": "minimal clinically important difference",
+        "def": "The smallest effect size the review's authors judged large enough to matter clinically — prespecified in this review as |Cohen's d| ≥ 0.20.",
+        "nodeId": null
       }
     ],
     "vas": [
@@ -695,6 +705,16 @@
         "full": "Grading of Recommendations Assessment, Development and Evaluation",
         "def": "A structured framework for rating how much confidence to place in a body of evidence, from very low to high certainty.",
         "nodeId": "evidence_summary"
+      },
+      {
+        "tool": "cmv-immunosuppressed-protocol",
+        "title": "Ganciclovir and Valganciclovir for CMV Infection in Immunosuppressed Patients",
+        "subtitle": "Prevention and Treatment in SOT and HCT Recipients",
+        "url": "https://satbuhan.github.io/cmv-immunosuppressed-protocol/",
+        "match": "GRADE",
+        "full": "",
+        "def": "A standardised framework (high / moderate / low / very low) for rating how confident reviewers are in an effect estimate.",
+        "nodeId": "leukopenia_neutropenia"
       }
     ],
     "map": [

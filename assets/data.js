@@ -338,5 +338,16 @@ const TOOLS = [
     repo: "https://github.com/satbuhan/peramivir-oseltamivir-protocol",
     thumb: "assets/thumbs/peramivir-oseltamivir.png",
     added: "2026-11-15"
+  },
+  {
+    id: "cmv-immunosuppressed",
+    title: "Ganciclovir and Valganciclovir for CMV Infection in Immunosuppressed Patients",
+    subtitle: "Prevention and Treatment in SOT and HCT Recipients",
+    specialty: "infectious",
+    summary: "Interactive, referenced walkthrough of the decision algorithm for ganciclovir and valganciclovir use in CMV infection and disease in immunosuppressed patients — serostatus/organ-stratified prevention across SOT and HCT recipients, severity-led IV-versus-oral treatment selection, and the weekly monitoring, neutropenia and resistance checkpoints that run alongside treatment. Ninth tool in the atlas with an author-granted citation-verification exception, this one framed around deferring verification to the author team's own clinician review rather than an already-checked prior pass.",
+    url: "https://satbuhan.github.io/cmv-immunosuppressed-protocol/",
+    repo: "https://github.com/satbuhan/cmv-immunosuppressed-protocol",
+    thumb: "assets/thumbs/cmv-immunosuppressed.png",
+    added: "2026-11-17"
   }
 ];
