@@ -69,12 +69,23 @@ a { color: inherit; }
    harmless, rarely-clicked "open in a new tab" link instead. One button
    here on the hub is enough: from the browser, every tool is one tap
    away via its own normal link, so this doesn't need repeating on 28
-   tool pages too. */
+   tool pages too. A small "Tarayıcıda aç" caption sits under the icon
+   since people kept mistaking it for (or asking if it was) the
+   unrelated "← Clinical Algorithm Atlas" return-to-hub pill that only
+   appears on the tool pages, not here. */
 .open-in-browser {
   position: fixed;
   top: 0.75rem;
   right: 0.75rem;
   z-index: 30;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  text-decoration: none;
+  color: var(--ink);
+}
+.open-in-browser__icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -86,10 +97,20 @@ a { color: inherit; }
   box-shadow: 0 2px 6px rgba(31, 36, 32, 0.12);
   font-family: var(--font-sans);
   font-size: 1.1rem;
-  color: var(--ink);
-  text-decoration: none;
 }
-.open-in-browser:hover, .open-in-browser:active { color: var(--accent); border-color: var(--accent); }
+.open-in-browser__label {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  line-height: 1.2;
+  color: var(--ink-soft);
+  background: var(--paper);
+  border: 1px solid var(--rule-strong);
+  border-radius: 999px;
+  padding: 1px 8px;
+  white-space: nowrap;
+}
+.open-in-browser:hover .open-in-browser__icon,
+.open-in-browser:active .open-in-browser__icon { color: var(--accent); border-color: var(--accent); }
 
 /* ---------- Masthead ---------- */
 .masthead {
