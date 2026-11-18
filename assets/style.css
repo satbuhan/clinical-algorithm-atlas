@@ -58,19 +58,24 @@ body {
 }
 a { color: inherit; }
 
-/* "Open in browser" — only ever shown inside the Android app's WebView
-   (app.js un-hides it via a User-Agent check). The app's MainActivity
-   recognises this link's ?open_in_browser=1 marker and hands it to the
-   system browser instead of loading it in the WebView — same hub page,
-   just outside the stripped-down in-app viewer. One button here on the
-   hub is enough: from the browser, every tool is one tap away via its
-   own normal link, so this doesn't need repeating on 28 tool pages too. */
+/* "Open in browser" — points at a tinyurl.com redirect to this same hub
+   page rather than a same-host link. The Android app's WebView already
+   keeps any satbuhan.github.io link in-app but hands any OTHER host to
+   the system browser (exactly like a reference's DOI link does) — so
+   this link reaches the browser with no app changes needed at all, old
+   installs included. Shown unconditionally (not just inside the app):
+   detecting "inside the app" needs a native code change too, which is
+   exactly what this approach avoids, so in a normal browser this is a
+   harmless, rarely-clicked "open in a new tab" link instead. One button
+   here on the hub is enough: from the browser, every tool is one tap
+   away via its own normal link, so this doesn't need repeating on 28
+   tool pages too. */
 .open-in-browser {
   position: fixed;
   top: 0.75rem;
   right: 0.75rem;
   z-index: 30;
-  display: none;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 3rem;
@@ -84,7 +89,6 @@ a { color: inherit; }
   color: var(--ink);
   text-decoration: none;
 }
-.open-in-browser.is-visible { display: inline-flex; }
 .open-in-browser:hover, .open-in-browser:active { color: var(--accent); border-color: var(--accent); }
 
 /* ---------- Masthead ---------- */
