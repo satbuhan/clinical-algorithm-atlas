@@ -56,6 +56,48 @@
       },
       "lastVerified": "2026-11-16",
       "sourceReport": "calculator-sourcebook/calculators/cha2ds2_vasc_clinical_score.md"
+    },
+    "spesi": {
+      "id": "spesi",
+      "title": "sPESI score",
+      "type": "additive-score",
+      "aliases": ["sPESI", "sPESI score"],
+      "maxScore": 6,
+      "items": [
+        { "label": "Age >80 years", "points": 1 },
+        { "label": "History of cancer", "points": 1 },
+        { "label": "Chronic cardiopulmonary disease (heart failure or chronic lung disease)", "points": 1 },
+        { "label": "Heart rate ≥110/min", "points": 1 },
+        { "label": "Systolic blood pressure <100 mmHg", "points": 1 },
+        { "label": "Arterial oxygen saturation <90%", "points": 1 }
+      ],
+      "interpretation": "A score of 0 identifies patients at low 30-day all-cause mortality risk and supports considering outpatient treatment or early discharge; any point (≥1) is \"elevated risk\" under the original derivation — this is a mortality-prognosis tool, not a direct substitute for a haemodynamic risk category. The 2026 multisociety PE guideline retains sPESI (Class 1, Level of Evidence B-R) for identifying low clinical-severity (category A/B) disease.",
+      "source": {
+        "text": "Jiménez D, Aujesky D, Moores L, et al. Simplification of the pulmonary embolism severity index for prognostication in patients with acute symptomatic pulmonary embolism. Arch Intern Med. 2010;170(15):1383-1389.",
+        "url": "https://doi.org/10.1001/archinternmed.2010.199"
+      },
+      "lastVerified": "2026-11-21",
+      "sourceReport": "calculator-sourcebook/calculators/spesi_clinical_score.md"
+    },
+    "bova": {
+      "id": "bova",
+      "title": "Bova score",
+      "type": "additive-score",
+      "aliases": ["Bova", "Bova score"],
+      "maxScore": 7,
+      "items": [
+        { "label": "Systolic blood pressure 90-100 mmHg", "points": 2 },
+        { "label": "Elevated cardiac troponin", "points": 2 },
+        { "label": "RV dysfunction on echocardiography or CT", "points": 2 },
+        { "label": "Heart rate ≥110/min", "points": 1 }
+      ],
+      "interpretation": "Validated only in normotensive PE patients (systolic BP >90 mmHg at presentation). Stage I (0-2 points) = low, Stage II (3-4) = intermediate, Stage III (>4) = high 30-day risk of PE-related complications (death, haemodynamic collapse, or recurrent PE needing escalation) — not all-cause mortality, and not equivalent to simply having both RV dysfunction and an elevated troponin, since the two conditions are scored and weighted differently. The 2026 multisociety PE guideline lists a Bova score ≤4 among the criteria defining low clinical-severity (category C) disease.",
+      "source": {
+        "text": "Bova C, Sanchez O, Prandoni P, Lankeit M, Konstantinides S, Vanni S, Jiménez D. Identification of intermediate-risk patients with acute symptomatic pulmonary embolism. Eur Respir J. 2014;44(3):694-703.",
+        "url": "https://doi.org/10.1183/09031936.00006114"
+      },
+      "lastVerified": "2026-11-21",
+      "sourceReport": "calculator-sourcebook/calculators/bova_clinical_score.md"
     }
   }
 }
