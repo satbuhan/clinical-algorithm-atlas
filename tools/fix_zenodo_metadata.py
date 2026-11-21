@@ -121,6 +121,7 @@ RECORDS = {
     "24201599": "Beta-Lactam Infusion Strategy in Sepsis and Septic Shock",
     "24247337": "Antiviral Selection in Primary Influenza Pneumonia: IV Peramivir vs Oral Oseltamivir",
     "24324068": "Ganciclovir and Valganciclovir for CMV Infection in Immunosuppressed Patients",
+    "24422750": "Semaglutide Overdose: Recognition & Management",
 }
 
 
