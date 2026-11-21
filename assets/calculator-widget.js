@@ -129,16 +129,45 @@
 
     var total = document.createElement("p");
     total.className = "calc-total";
+
+    // Optional live "what does this number mean" readout. calc.tiers is an
+    // array of { min, max, label, level? } — level: "high" gets the same
+    // reserved alarm styling a flowchart node uses for its single most
+    // critical state (see node--alarm); anything else (including omitted)
+    // renders as a neutral/default tier. This is deliberately a two-level
+    // visual system, not a three-colour traffic light — the project's CSS
+    // only defines one semantic warning colour, and the label text itself
+    // (e.g. "Stage II — intermediate risk") carries any finer distinction.
+    // Boundaries and wording must come from the calculator's own cited
+    // source/sourceReport, never invented here.
+    var tierBadge = null;
+    if (Array.isArray(calc.tiers) && calc.tiers.length) {
+      tierBadge = document.createElement("p");
+      tierBadge.className = "calc-tier";
+    }
+
     function updateTotal() {
       var sum = 0;
       list.querySelectorAll("input[type=checkbox]:checked, input[type=radio]:checked").forEach(function (el) {
         sum += Number(el.dataset.points) || 0;
       });
       total.textContent = "Total: " + sum + (calc.maxScore ? " / " + calc.maxScore : "");
+      if (tierBadge) {
+        var tier = calc.tiers.find(function (t) {
+          return sum >= t.min && sum <= t.max;
+        });
+        if (tier) {
+          tierBadge.textContent = tier.label;
+          tierBadge.className = "calc-tier" + (tier.level === "high" ? " calc-tier--high" : "");
+        } else {
+          tierBadge.textContent = "";
+        }
+      }
     }
     list.addEventListener("change", updateTotal);
     updateTotal();
     box.appendChild(total);
+    if (tierBadge) box.appendChild(tierBadge);
 
     if (calc.interpretation) {
       var note = document.createElement("p");

@@ -81,6 +81,21 @@
   font-size: 0.86rem;
   color: var(--accent);
 }
+/* Live tier/risk-band readout for the current total. Two-level system to
+   match the project's own existing warning colour (node--alarm): the single
+   most elevated tier gets --alarm styling, every other tier (low/moderate/
+   whatever the source calls it) shares one neutral style and relies on its
+   own label text to say which band it is. */
+.calc-tier {
+  margin: 0.35rem 0 0;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.82rem;
+  color: var(--accent);
+}
+.calc-tier:empty { display: none; }
+.calc-tier--high { color: var(--alarm); }
+
 .calc-note, .calc-source {
   margin: 0.4rem 0 0;
   font-family: var(--font-sans);

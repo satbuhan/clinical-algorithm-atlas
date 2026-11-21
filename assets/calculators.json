@@ -18,7 +18,11 @@
         { "label": "Drugs — concomitant antiplatelet agents or NSAIDs", "points": 1 },
         { "label": "Alcohol excess/abuse (≥8 units/week)", "points": 1, "needsAuthor": true }
       ],
-      "interpretation": "Derived in a 2010 atrial-fibrillation cohort to estimate 1-year major-bleeding risk. Current ESC guidance cautions against using a bleeding-risk score alone to decide whether to start, continue or withhold anticoagulation.",
+      "tiers": [
+        { "min": 0, "max": 2, "label": "0–2 points — not flagged as high risk by ESC's own threshold" },
+        { "min": 3, "max": 9, "label": "≥3 points — ESC-defined \"high risk\" of major bleeding", "level": "high" }
+      ],
+      "interpretation": "Derived in a 2010 atrial-fibrillation cohort to estimate 1-year major-bleeding risk (original cohort's own bleeding rate: roughly 1.0–1.9 per 100 patient-years at 0–2 points, 3.7–8.7 at 3–4; too few events above 4 for a reliable rate). ESC guidance has long used ≥3 as the \"high risk\" threshold, but also cautions against using a bleeding-risk score alone to decide whether to start, continue or withhold anticoagulation — at ≥3, the usual response is addressing modifiable risk factors and reviewing the patient more often, not withholding anticoagulation outright.",
       "source": {
         "text": "Pisters R, Lane DA, Nieuwlaat R, de Vos CB, Crijns HJGM, Lip GYH. A novel user-friendly score (HAS-BLED) to assess 1-year risk of major bleeding in patients with atrial fibrillation: the Euro Heart Survey. Chest. 2010;138(5):1093-1100.",
         "url": "https://doi.org/10.1378/chest.10-0134"
@@ -49,7 +53,12 @@
           ]
         }
       ],
-      "interpretation": "Derived in a 2009/2010 atrial-fibrillation cohort to stratify thromboembolic risk; a given total can reflect different underlying risk depending on which components contribute to it. The 2024 ESC guideline uses a sex-excluded variant (CHA₂DS₂-VA, max 8) instead of this original formulation.",
+      "tiers": [
+        { "min": 0, "max": 0, "label": "0 points — \"low risk\" per the original paper's own classification" },
+        { "min": 1, "max": 1, "label": "1 point — \"intermediate risk\" per the original paper's own classification" },
+        { "min": 2, "max": 9, "label": "≥2 points — \"high risk\" per the original paper's own classification", "level": "high" }
+      ],
+      "interpretation": "Derived in a 2009/2010 atrial-fibrillation cohort to stratify thromboembolic risk; a given total can reflect different underlying risk depending on which components contribute to it. The original paper's own 0/1/≥2 low/intermediate/high classification is a historical study grouping, not a contemporary treatment algorithm. The 2024 ESC guideline uses a sex-excluded variant (CHA₂DS₂-VA, max 8) instead of this original formulation — so a point coming only from female sex is not interchangeable with a point from another risk factor.",
       "source": {
         "text": "Lip GYH, Nieuwlaat R, Pisters R, Lane DA, Crijns HJGM. Refining clinical risk stratification for predicting stroke and thromboembolism in atrial fibrillation using a novel risk factor-based approach: the Euro Heart Survey on atrial fibrillation. Chest. 2010;137(2):263-272.",
         "url": "https://doi.org/10.1378/chest.09-1584"
@@ -71,6 +80,10 @@
         { "label": "Systolic blood pressure <100 mmHg", "points": 1 },
         { "label": "Arterial oxygen saturation <90%", "points": 1 }
       ],
+      "tiers": [
+        { "min": 0, "max": 0, "label": "0 points — low risk (30-day all-cause mortality)" },
+        { "min": 1, "max": 6, "label": "≥1 point — elevated risk (30-day all-cause mortality)", "level": "high" }
+      ],
       "interpretation": "A score of 0 identifies patients at low 30-day all-cause mortality risk and supports considering outpatient treatment or early discharge; any point (≥1) is \"elevated risk\" under the original derivation — this is a mortality-prognosis tool, not a direct substitute for a haemodynamic risk category. The 2026 multisociety PE guideline retains sPESI (Class 1, Level of Evidence B-R) for identifying low clinical-severity (category A/B) disease.",
       "source": {
         "text": "Jiménez D, Aujesky D, Moores L, et al. Simplification of the pulmonary embolism severity index for prognostication in patients with acute symptomatic pulmonary embolism. Arch Intern Med. 2010;170(15):1383-1389.",
@@ -90,6 +103,11 @@
         { "label": "Elevated cardiac troponin", "points": 2 },
         { "label": "RV dysfunction on echocardiography or CT", "points": 2 },
         { "label": "Heart rate ≥110/min", "points": 1 }
+      ],
+      "tiers": [
+        { "min": 0, "max": 2, "label": "Stage I (0–2) — low risk of 30-day PE-related complications" },
+        { "min": 3, "max": 4, "label": "Stage II (3–4) — intermediate risk of 30-day PE-related complications" },
+        { "min": 5, "max": 7, "label": "Stage III (>4) — high risk of 30-day PE-related complications", "level": "high" }
       ],
       "interpretation": "Validated only in normotensive PE patients (systolic BP >90 mmHg at presentation). Stage I (0-2 points) = low, Stage II (3-4) = intermediate, Stage III (>4) = high 30-day risk of PE-related complications (death, haemodynamic collapse, or recurrent PE needing escalation) — not all-cause mortality, and not equivalent to simply having both RV dysfunction and an elevated troponin, since the two conditions are scored and weighted differently. The 2026 multisociety PE guideline lists a Bova score ≤4 among the criteria defining low clinical-severity (category C) disease.",
       "source": {
