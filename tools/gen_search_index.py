@@ -75,6 +75,8 @@ REPOS = [
     "button-battery-protocol",
     "beta-lactam-infusion-protocol",
     "peramivir-oseltamivir-protocol",
+    "cmv-immunosuppressed-protocol",
+    "semaglutide-overdose-protocol",
 ]
 
 

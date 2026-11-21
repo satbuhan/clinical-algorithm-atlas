@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-15",
+  "generated": "2026-11-21",
   "entries": [
     {
       "tool": "aortic-dissection-protocol",
@@ -1070,7 +1070,7 @@
       "type": "node",
       "nodeId": "severity",
       "nodeLabel": "Two or more severity criteria?",
-      "text": "Two or more severity criteria? — Systolic BP <=110 mmHg; respiratory rate >20/min; heart rate >=100/min; SpO2 <90% on air [7,13] — RV dysfunction and troponin elevation alone identify a large, heterogeneous group in which only a small fraction will actually decompensate; adding these bedside markers of physiological stress enriches for the smaller subgroup in whom a reperfusion trial has actually shown benefit. — Post hoc analysis of the PEITHO population showed that adding simple bedside markers of physiological stress to RV dysfunction and troponin elevation identifies a subgroup at appreciably higher short-term risk, an enrichment strategy subsequently adopted by HI-PEITHO, which required RV dysfunction and elevated troponin plus at least two of the four criteria shown above. One nuance worth flagging here: HI-PEITHO's own published enrolment criteria combined respiratory rate above 20/min and SpO2 below 90% into a single composite item, so the trial actually required two of three independent criteria, not two of four fully independent ones as this box (following the source figure) presents them. The underlying clinical substance — more physiological-stress markers identifies higher-risk patients — is unaffected by this simplification, but it is worth knowing the exact trial threshold differs slightly from how it is drawn here."
+      "text": "Two or more severity criteria? — Systolic BP <=110 mmHg; respiratory rate >20/min; heart rate >=100/min; SpO2 <90% on air [7,13] — RV dysfunction and troponin elevation alone identify a large, heterogeneous group in which only a small fraction will actually decompensate; adding these bedside markers of physiological stress enriches for the smaller subgroup in whom a reperfusion trial has actually shown benefit. — Post hoc analysis of the PEITHO population showed that adding simple bedside markers of physiological stress to RV dysfunction and troponin elevation identifies a subgroup at appreciably higher short-term risk, an enrichment strategy subsequently adopted by HI-PEITHO, which required RV dysfunction and elevated troponin plus at least two of the four criteria shown above. One nuance worth flagging here: HI-PEITHO's own published enrolment criteria combined respiratory rate above 20/min and SpO2 below 90% into a single composite item, so the trial actually required two of three independent criteria, not two of four fully independent ones as this box (following the source figure) presents them. The underlying clinical substance — more physiological-stress markers identifies higher-risk patients — is unaffected by this simplification, but it is worth knowing the exact trial threshold differs slightly from how it is drawn here. The Bova score offers a related, independently validated way to stage this same normotensive intermediate-risk population by 30-day PE-related complication risk, weighting systolic blood pressure, troponin, RV dysfunction and heart rate rather than requiring a fixed count of criteria — a different instrument for a related question, not a restatement of the two-of-four test used above. — Bova score — A four-variable score (systolic BP 90-100 mmHg, elevated troponin, RV dysfunction, heart rate >=110/min) used in normotensive PE patients to stage 30-day risk of PE-related complications. It overlaps with but is not equivalent to the simple RV-dysfunction-and-troponin test above: Bova weights each criterion differently, so a patient positive for both of those findings can still land in a lower stage if the other two criteria are absent."
     },
     {
       "tool": "pte-thrombolysis-protocol",
@@ -3960,6 +3960,285 @@
       "nodeId": "evidence_summary",
       "nodeLabel": "Evidence: peramivir is non-inferior but not superior to oseltamivir; fever resolves ~7–11 h sooner (below MCID); no mortality difference (GRADE low to very low)",
       "text": "Evidence: peramivir is non-inferior but not superior to oseltamivir; fever resolves ~7–11 h sooner (below MCID); no mortality difference (GRADE low to very low) — This closing banner is the review's own bottom line: don't mistake peramivir's IV route or statistically faster fever resolution for clinical superiority over oral oseltamivir. — A 7–11-hour fever advantage (Cohen's d ≈ 0.2–0.4) falls below both the review's own distribution-based minimal-clinically-important-difference threshold (d = 0.5) and its 24-hour absolute anchor, with no reduction in mortality, ICU admission, mechanical ventilation, or hospital stay across the review's included RCTs, cohorts, and prior meta-analyses. Certainty of evidence is rated low to very low for the pneumonia-specific and mortality outcomes specifically (moderate for adverse events). — Formal statistical non-inferiority was established mainly in outpatient, uncomplicated influenza; for hospitalised mortality the review is explicit that observational data “suggests” non-inferiority but “cannot establish equivalence”, and the one pneumonia-specific RCT (n = 40) “cannot exclude clinically meaningful differences in patient-important outcomes.” — GRADE certainty is not uniform across outcomes: mortality and length of hospital/ICU stay are rated very low, fever resolution / symptom alleviation / viral clearance / progression to pneumonia are rated low, and adverse events are rated moderate. — Grading of Recommendations Assessment, Development and Evaluation — A structured framework for rating how much confidence to place in a body of evidence, from very low to high certainty. — intensive care unit — A hospital unit providing the highest level of monitoring and organ support for critically ill patients."
+    },
+    {
+      "tool": "cmv-immunosuppressed-protocol",
+      "title": "Ganciclovir and Valganciclovir for CMV Infection in Immunosuppressed Patients",
+      "url": "https://satbuhan.github.io/cmv-immunosuppressed-protocol/",
+      "type": "tool",
+      "nodeId": null,
+      "nodeLabel": null,
+      "text": "Ganciclovir and Valganciclovir for CMV Infection in Immunosuppressed Patients Prevention and Treatment in SOT and HCT Recipients"
+    },
+    {
+      "tool": "cmv-immunosuppressed-protocol",
+      "title": "Ganciclovir and Valganciclovir for CMV Infection in Immunosuppressed Patients",
+      "url": "https://satbuhan.github.io/cmv-immunosuppressed-protocol/",
+      "type": "node",
+      "nodeId": "entry_population",
+      "nodeLabel": "Immunosuppressed patient (SOT, HCT, HIV,\nhaematological malignancy, other)\nat risk of, or with, CMV infection",
+      "text": "Immunosuppressed patient (SOT, HCT, HIV,\nhaematological malignancy, other)\nat risk of, or with, CMV infection — Covers patients who are either at risk of CMV (not yet infected) or who already have CMV infection or disease, across the review's major immunosuppressed populations: solid organ transplant (SOT) recipients, haematopoietic cell transplant (HCT) recipients, people with advanced HIV, haematological malignancy, and other causes of impaired cell-mediated immunity (e.g. primary immunodeficiency, intensive immunosuppressive or biological therapy). — Impaired cell-mediated immunity is what allows CMV to progress from asymptomatic DNAemia to CMV syndrome, tissue-invasive disease, and indirect complications such as allograft rejection, graft loss, superinfection, and excess mortality — which is why the algorithm opens by naming the at-risk populations rather than a single trigger test. — No age cutoff, immune-function cutoff, or specific CMV laboratory threshold is given for entry into the algorithm — the review's own eligibility criteria accept immunosuppressed patients of any age. — solid organ transplantation — Transplantation of a solid organ (e.g. kidney, liver, lung) as opposed to haematopoietic stem cells. — haematopoietic cell transplantation — Transplantation of blood-forming stem cells, typically after myeloablative or reduced-intensity conditioning. — Detectable CMV DNA in the blood — the surveillance marker used to trigger preemptive therapy and to track treatment response."
+    },
+    {
+      "tool": "cmv-immunosuppressed-protocol",
+      "title": "Ganciclovir and Valganciclovir for CMV Infection in Immunosuppressed Patients",
+      "url": "https://satbuhan.github.io/cmv-immunosuppressed-protocol/",
+      "type": "node",
+      "nodeId": "active_infection_decision",
+      "nodeLabel": "Active CMV infection\nor disease?",
+      "text": "Active CMV infection\nor disease? — The first branch point: patients without active CMV infection or disease go to PREVENTION; patients who already have active infection or disease go to TREATMENT. — The manuscript frames (val)ganciclovir's three main uses as universal prophylaxis, preemptive therapy triggered by surveillance-detected DNAemia, and treatment of established disease — this diamond is where that three-way framing is collapsed into a single prevention-vs-treatment fork. — The manuscript does not define what counts as a positive PCR, actionable DNAemia, or disease severity at this decision, and does not state how a patient already on preemptive therapy (itself listed under Prevention) should be routed if infection becomes active. — A 400 copies/mL figure appears elsewhere in the review (the VIPP trial) but is not presented as this diamond's own universal trigger. — polymerase chain reaction — The molecular test used to quantify CMV viral load (DNAemia) in blood. — Detectable CMV DNA in the blood — the surveillance marker used to trigger preemptive therapy and to track treatment response."
+    },
+    {
+      "tool": "cmv-immunosuppressed-protocol",
+      "title": "Ganciclovir and Valganciclovir for CMV Infection in Immunosuppressed Patients",
+      "url": "https://satbuhan.github.io/cmv-immunosuppressed-protocol/",
+      "type": "node",
+      "nodeId": "prevention_stratify",
+      "nodeLabel": "PREVENTION: risk-stratify by\nD/R serostatus, organ type,\nlymphocyte-depleting induction",
+      "text": "PREVENTION: risk-stratify by\nD/R serostatus, organ type,\nlymphocyte-depleting induction — For patients without active infection, prevention strategy is chosen by donor/recipient (D/R) CMV serostatus, transplant organ type, and whether lymphocyte-depleting induction was used — not by one rule applied to everyone. — The review found opposing results for prophylaxis versus preemptive therapy depending on the population studied (e.g. R+ kidney vs D+/R− liver recipients), attributed to differences in surveillance intensity and population; CMI-guided stopping was only studied in a specific subgroup (R+ kidney recipients given antithymocyte globulin). International guidelines are cited as endorsing both prophylaxis and preemptive therapy, generally preferring prophylaxis in high-risk lung and intestinal recipients and leaving the choice to local practice elsewhere. — No numeric risk score or point system drives this stratification — it is a qualitative, population-based choice, not a calculator. — The figure has no dedicated branch for lung, intestinal, D−/R−, HIV-prevention, or other non-transplant prevention, despite the broader at-risk population named at entry. — Donor/recipient CMV serostatus (e.g. D+/R− = CMV-seropositive donor, CMV-seronegative recipient — the highest-risk pairing for primary CMV infection). — cell-mediated immunity — T-cell-based immune response; CMV-specific CMI testing can identify patients whose own immunity has recovered enough to safely stop antiviral prophylaxis."
+    },
+    {
+      "tool": "cmv-immunosuppressed-protocol",
+      "title": "Ganciclovir and Valganciclovir for CMV Infection in Immunosuppressed Patients",
+      "url": "https://satbuhan.github.io/cmv-immunosuppressed-protocol/",
+      "type": "node",
+      "nodeId": "sot_dr_neg",
+      "nodeLabel": "SOT D+/R−",
+      "text": "SOT D+/R− — • Kidney: VGC prophylaxis 200 d\n• Liver: VGC prophylaxis 100 d\n  or preemptive VGC (weekly PCR) — In CMV-seronegative SOT recipients of a seropositive donor (the highest-risk serostatus pairing), kidney recipients get extended (200-day) valganciclovir prophylaxis; liver recipients get either 100-day prophylaxis or weekly-PCR-guided preemptive valganciclovir. — IMPACT (318 D+/R− kidney recipients) found 200 days of prophylaxis roughly halved 2-year CMV disease versus 100 days (21.3% vs 38.7%), without a difference in rejection, graft loss, or survival. In liver recipients, CAPSIL (n=205) found weekly-PCR-guided preemptive valganciclovir for 100 days reduced 12-month CMV disease versus 100 days of fixed prophylaxis (9% vs 19%), attributed largely to preventing delayed-onset disease after prophylaxis ends; mortality did not differ between strategies. — Kidney (D+/R−) — Valganciclovir prophylaxis, 200 days — Liver (D+/R−) — Valganciclovir prophylaxis, 100 days — or preemptive valganciclovir guided by weekly PCR — The figure gives no prophylaxis dose, renal-adjustment schedule, preemptive viral-load trigger, or preemptive-course duration — only the strategy and duration are specified. — solid organ transplantation — Transplantation of a solid organ (e.g. kidney, liver, lung) as opposed to haematopoietic stem cells. — polymerase chain reaction — The molecular test used to quantify CMV viral load (DNAemia) in blood."
+    },
+    {
+      "tool": "cmv-immunosuppressed-protocol",
+      "title": "Ganciclovir and Valganciclovir for CMV Infection in Immunosuppressed Patients",
+      "url": "https://satbuhan.github.io/cmv-immunosuppressed-protocol/",
+      "type": "node",
+      "nodeId": "sot_r_pos",
+      "nodeLabel": "SOT R+",
+      "text": "SOT R+ — • VGC prophylaxis ~3 months\n  or preemptive therapy\n• Consider CMI-guided stopping — In CMV-seropositive SOT recipients, either roughly 3 months of valganciclovir prophylaxis or preemptive therapy is reasonable, with cell-mediated-immunity (CMI)-guided discontinuation a further option. — VIPP found 100 days of prophylaxis reduced 12-month CMV infection and, at 84 months, CMV disease (4.7% vs 15.9%) versus preemptive therapy, without differences in graft loss, death, rejection, or renal function; OVERT found similar (4%) CMV disease in both arms, with prophylaxis costing more drug exposure and neutropenia — so the review leaves the choice dependent on patient risk and monitoring capacity rather than naming one preferred strategy. For CMI-guided stopping, a trial in 150 R+ kidney recipients given antithymocyte globulin found stopping prophylaxis once CMV-specific CMI was detected was non-inferior to 90 fixed days and roughly quartered neutropenia; a separate trial in 150 R+ lung recipients found an immunoguided strategy non-inferior to 6 months of standard prophylaxis and reduced valganciclovir exposure, though CMV disease occurred earlier with that strategy. — The figure's generic '~3 months' does not distinguish the organ-specific durations actually studied (100 days, 90 days, 3 months, 6 months in different trials) — these are not interchangeable universal numbers. — No CMI assay name, positivity threshold, assay timing, or preemptive PCR trigger is specified; CMI-guided stopping is not a named, weighted clinical score. — solid organ transplantation — Transplantation of a solid organ (e.g. kidney, liver, lung) as opposed to haematopoietic stem cells. — cell-mediated immunity — T-cell-based immune response; CMV-specific CMI testing can identify patients whose own immunity has recovered enough to safely stop antiviral prophylaxis. — polymerase chain reaction — The molecular test used to quantify CMV viral load (DNAemia) in blood."
+    },
+    {
+      "tool": "cmv-immunosuppressed-protocol",
+      "title": "Ganciclovir and Valganciclovir for CMV Infection in Immunosuppressed Patients",
+      "url": "https://satbuhan.github.io/cmv-immunosuppressed-protocol/",
+      "type": "node",
+      "nodeId": "hct_r_pos",
+      "nodeLabel": "HCT R+",
+      "text": "HCT R+ — • Letermovir prophylaxis\n• Preemptive (V)GC if infection — In CMV-seropositive HCT recipients, letermovir is used for prevention; (val)ganciclovir is reserved for preemptive treatment if infection occurs. — A matched cohort found primary letermovir prophylaxis associated with markedly less clinically significant CMV infection than preemptive (val)ganciclovir-based therapy in both high-risk (20.4% vs 70.4%) and standard-risk (2.9% vs 35.3%) recipients, with fewer CMV-related readmissions and lower costs, though no survival difference. Separately, AURORA (first asymptomatic HCT CMV infection) found valganciclovir achieved higher week-8 viraemia clearance than maribavir (77.4% vs 69.6%), at the cost of more neutropenia (52.9% vs 16.1%) — supporting valganciclovir's continued preemptive-therapy role even as letermovir displaces it from primary prophylaxis. — No letermovir dose/duration, PCR surveillance interval, viral-load trigger, or (val)ganciclovir dose is given in this box. — The manuscript does not define what counts as 'letermovir breakthrough', the point at which valganciclovir is said to become the preferred preemptive agent. — haematopoietic cell transplantation — Transplantation of blood-forming stem cells, typically after myeloablative or reduced-intensity conditioning. — polymerase chain reaction — The molecular test used to quantify CMV viral load (DNAemia) in blood."
+    },
+    {
+      "tool": "cmv-immunosuppressed-protocol",
+      "title": "Ganciclovir and Valganciclovir for CMV Infection in Immunosuppressed Patients",
+      "url": "https://satbuhan.github.io/cmv-immunosuppressed-protocol/",
+      "type": "node",
+      "nodeId": "leukopenia_neutropenia",
+      "nodeLabel": "Leukopenia/neutropenia on VGC?",
+      "text": "Leukopenia/neutropenia on VGC? — • Kidney D+/R−: switch to letermovir\n• Kidney: consider 450 mg/day\n• Check renal dose adjustment — If leukopenia or neutropenia develops during valganciclovir prophylaxis: switch D+/R− kidney recipients to letermovir, consider a reduced 450 mg/day dose in kidney recipients generally, and check the renal dose adjustment. — In the 601-patient D+/R− kidney letermovir trial, letermovir was non-inferior to valganciclovir for CMV disease (10.4% vs 11.8%) with far less leukopenia/neutropenia (26% vs 64%) and fewer adverse-event discontinuations — direct comparative support for the switch-to-letermovir option, though that trial compared the two drugs head-to-head rather than specifically re-randomising patients after cytopenia developed (actual post-intolerance switching comes from separate observational lung cohorts). For the reduced dose, a trial in 196 intermediate-risk kidney recipients found 450 mg/day as effective as 900 mg/day with less leukopenia and less need for G-CSF, and a retrospective study in 237 high-risk D+/R− kidney recipients found similar unadjusted CMV disease and a lower adjusted risk with the low dose, less leukopenia, and no excess resistance. — GRADE rates certainty for low-dose vs standard-dose prophylaxis as low, and the manuscript cautions these data are mostly from kidney recipients and retrospective cohorts — they should not be extrapolated to lung or D+/R− liver recipients without caution. — An international survey cited in the manuscript found valganciclovir was often dosed below recommendations and neutropenia commonly managed by dose reduction or withdrawal — practices that may promote resistance — so '450 mg/day' is a kidney-specific option, not a manuscript-wide instruction to reduce doses generally. — No ANC/leukocyte trigger is given in this box, and no renal-function formula or creatinine-clearance table is supplied for the 'check renal dose adjustment' instruction. — absolute neutrophil count — A blood count measuring circulating neutrophils. Ganciclovir and valganciclovir's dose-limiting toxicity is neutropenia, tracked via ANC. — granulocyte colony-stimulating factor — A growth factor given to stimulate neutrophil production, used to manage ganciclovir-related neutropenia. — A standardised framework (high / moderate / low / very low) for rating how confident reviewers are in an effect estimate."
+    },
+    {
+      "tool": "cmv-immunosuppressed-protocol",
+      "title": "Ganciclovir and Valganciclovir for CMV Infection in Immunosuppressed Patients",
+      "url": "https://satbuhan.github.io/cmv-immunosuppressed-protocol/",
+      "type": "node",
+      "nodeId": "evidence_box",
+      "nodeLabel": "Evidence (this review)",
+      "text": "Evidence (this review) — • Oral VGC ≈ IV GCV for non-severe\n  disease (moderate certainty)\n• Prophylaxis vs preemptive: similar\n  mortality (moderate certainty)\n• 200 vs 100 days of VGC: less CMV\n  disease (moderate certainty)\n• Letermovir ≈ VGC, less myelotoxicity\n  (high certainty for safety)\n• Maribavir > (V)GC-containing therapy\n  in refractory CMV (moderate certainty) — A standalone evidence summary — no incoming or outgoing arrow — giving the review's own headline comparative findings and their GRADE certainty, as a quick-reference panel rather than a treatment step. — Each bullet reflects the review's own synthesis: VICTOR supports oral valganciclovir ≈ IV ganciclovir for non-severe disease (moderate certainty, limited by few severe/life-threatening cases); prophylaxis and preemptive therapy show similar mortality (moderate certainty), though CMV-disease pooling was too heterogeneous for a reliable pooled estimate; IMPACT supports 200 over 100 days of valganciclovir in D+/R− kidney recipients (moderate certainty); letermovir matches valganciclovir efficacy with substantially less myelotoxicity (high certainty for that safety finding specifically); and SOLSTICE supports maribavir over (val)ganciclovir-containing therapy in refractory CMV (moderate certainty, open-label, heterogeneous comparator). — 'Maribavir > (V)GC-containing therapy' compresses a heterogeneous comparator — SOLSTICE's comparison arm was investigator-assigned therapy with valganciclovir/ganciclovir, foscarnet, or cidofovir, not a pure two-drug maribavir-vs-ganciclovir trial. — This box is deliberately disconnected in the diagram — a reference summary, not a step to act on in sequence. — A standardised framework (high / moderate / low / very low) for rating how confident reviewers are in an effect estimate."
+    },
+    {
+      "tool": "cmv-immunosuppressed-protocol",
+      "title": "Ganciclovir and Valganciclovir for CMV Infection in Immunosuppressed Patients",
+      "url": "https://satbuhan.github.io/cmv-immunosuppressed-protocol/",
+      "type": "node",
+      "nodeId": "treatment_severity",
+      "nodeLabel": "TREATMENT: assess severity\nLife- or sight-threatening disease,\nhigh viral load, malabsorption?",
+      "text": "TREATMENT: assess severity\nLife- or sight-threatening disease,\nhigh viral load, malabsorption? — For patients with active CMV infection or disease, the next step is assessing severity: life- or sight-threatening disease, a high viral load, or malabsorption push toward intravenous treatment (YES); otherwise oral treatment is an option (NO). — The manuscript explicitly attributes this route-selection approach to current guidelines. Supporting trial evidence (VICTOR) showing oral valganciclovir is non-inferior to IV ganciclovir was itself studied only in non-life-threatening SOT disease, so it does not by itself establish equivalence in severe disease. — No numerical definition of 'high viral load', a formal severity score, or a specific malabsorption test is given, and the manuscript does not state whether the three listed conditions are individually sufficient or must occur together. — GRADE rates the oral-vs-IV comparison only moderate certainty, downgraded for indirectness, because few of the comparison's patients had severe or life-threatening disease, or were lung/intestinal transplant recipients. — solid organ transplantation — Transplantation of a solid organ (e.g. kidney, liver, lung) as opposed to haematopoietic stem cells. — A standardised framework (high / moderate / low / very low) for rating how confident reviewers are in an effect estimate."
+    },
+    {
+      "tool": "cmv-immunosuppressed-protocol",
+      "title": "Ganciclovir and Valganciclovir for CMV Infection in Immunosuppressed Patients",
+      "url": "https://satbuhan.github.io/cmv-immunosuppressed-protocol/",
+      "type": "node",
+      "nodeId": "iv_ganciclovir",
+      "nodeLabel": "YES",
+      "text": "YES — IV ganciclovir\n5 mg/kg q12h\n(renal dosing) — The intravenous route, used when the severity assessment is YES: ganciclovir 5 mg/kg every 12 hours, adjusted for renal function. — This is the regimen VICTOR itself used for its IV arm — 5 mg/kg twice daily for 21 days, with valganciclovir maintenance to day 49 in both study arms — alongside the broader guideline-based rationale that severe or life-threatening disease, high viral load, or questionable gastrointestinal absorption favour the IV route over oral. — IV ganciclovir — 5 mg/kg every 12 hours (renal dosing) — No creatinine-clearance bands, adjusted doses, or dialysis schedule are given for 'renal dosing' — flagged as an unresolved implementation detail, not a complete dosing calculator."
+    },
+    {
+      "tool": "cmv-immunosuppressed-protocol",
+      "title": "Ganciclovir and Valganciclovir for CMV Infection in Immunosuppressed Patients",
+      "url": "https://satbuhan.github.io/cmv-immunosuppressed-protocol/",
+      "type": "node",
+      "nodeId": "oral_valganciclovir",
+      "nodeLabel": "NO",
+      "text": "NO — Oral VGC\n900 mg q12h\n(renal dosing) — The oral route, used when the severity assessment is NO: valganciclovir 900 mg every 12 hours, adjusted for renal function. — VICTOR's oral arm used 900 mg twice daily for 21 days, then valganciclovir maintenance to day 49; day-49 investigator-assessed treatment success was statistically equivalent to the IV arm (85.4% vs 84.1%; Cohen's d = −0.09, trivial and non-significant), and one-year mortality did not differ (11 vs 9 deaths among 321 patients). — Oral valganciclovir — 900 mg every 12 hours (renal dosing) — These findings come from VICTOR's non-life-threatening SOT population — GRADE rates the comparison moderate certainty, downgraded for indirectness to more severe disease and to lung/intestinal transplantation. — solid organ transplantation — Transplantation of a solid organ (e.g. kidney, liver, lung) as opposed to haematopoietic stem cells. — A standardised framework (high / moderate / low / very low) for rating how confident reviewers are in an effect estimate."
+    },
+    {
+      "tool": "cmv-immunosuppressed-protocol",
+      "title": "Ganciclovir and Valganciclovir for CMV Infection in Immunosuppressed Patients",
+      "url": "https://satbuhan.github.io/cmv-immunosuppressed-protocol/",
+      "type": "node",
+      "nodeId": "immunosuppression_art_retinitis",
+      "nodeLabel": "Reduce immunosuppression if possible",
+      "text": "Reduce immunosuppression if possible — HIV: start or optimise ART; retinitis:\nsystemic (V)GC ± intravitreal GCV — Both treatment routes lead here: consider reducing immunosuppression if feasible, start or optimise antiretroviral therapy in HIV-related CMV, and for retinitis give systemic (val)ganciclovir, with intravitreal ganciclovir added if needed. — In the LSOCA cohort of 250 patients with AIDS-related CMV retinitis, systemic anti-CMV regimens (chiefly ganciclovir/valganciclovir) were associated with roughly half the mortality, a 90% reduction in new visceral CMV disease, and an 80% reduction in second-eye involvement, compared with intraocular therapy alone — intraocular-only regimens were associated with more retinitis progression and visual-field loss. — The manuscript does not specify the indication, extent, or timing for reducing immunosuppression as a CMV treatment adjunct, nor an ART initiation/optimisation regimen or timing. — No dose, injection frequency, or duration is given for the optional intravitreal ganciclovir addition, and GRADE rates the LSOCA mortality evidence only low certainty (observational). — antiretroviral therapy — Treatment for HIV infection. Optimising ART improves immune control of CMV in people living with HIV. — A standardised framework (high / moderate / low / very low) for rating how confident reviewers are in an effect estimate."
+    },
+    {
+      "tool": "cmv-immunosuppressed-protocol",
+      "title": "Ganciclovir and Valganciclovir for CMV Infection in Immunosuppressed Patients",
+      "url": "https://satbuhan.github.io/cmv-immunosuppressed-protocol/",
+      "type": "node",
+      "nodeId": "weekly_monitoring",
+      "nodeLabel": "Weekly CMV viral load, CBC, creatinine;\nswitch IV to oral when improving",
+      "text": "Weekly CMV viral load, CBC, creatinine;\nswitch IV to oral when improving — During treatment: weekly CMV viral load, complete blood count, and creatinine; switch from IV to oral once the patient is improving. — Persistent DNAemia predicts recurrence and resistance in the review's VICTOR-linked follow-up analyses, haematological toxicity is the dominant treatment-limiting adverse effect, and impaired renal function at treatment start is associated with ganciclovir-related neutropenia — reasons to track viral load, counts, and renal function together during treatment. — No source in the manuscript states a weekly cadence for all three measures together during treatment — the manuscript's explicit 'weekly plasma PCR for 100 days' belongs to CAPSIL's liver-transplant preemptive prevention strategy, a different context. — 'When improving' has no specified viral-load decline, clinical measure, or time interval attached to it in the source text. — polymerase chain reaction — The molecular test used to quantify CMV viral load (DNAemia) in blood. — Detectable CMV DNA in the blood — the surveillance marker used to trigger preemptive therapy and to track treatment response."
+    },
+    {
+      "tool": "cmv-immunosuppressed-protocol",
+      "title": "Ganciclovir and Valganciclovir for CMV Infection in Immunosuppressed Patients",
+      "url": "https://satbuhan.github.io/cmv-immunosuppressed-protocol/",
+      "type": "node",
+      "nodeId": "anc_check",
+      "nodeLabel": "ANC < 1.0 × 10⁹/L?",
+      "text": "ANC < 1.0 × 10⁹/L? — • G-CSF; review myelotoxic co-drugs\n• HCT: maribavir or foscarnet\n• SOT: foscarnet — If absolute neutrophil count falls below 1.0 × 10⁹/L during treatment: give G-CSF and review other myelotoxic drugs; in HCT recipients consider switching to maribavir or foscarnet, in SOT recipients to foscarnet. — Neutropenia affects roughly half to two-thirds of valganciclovir recipients in recent RCTs (e.g. 52.9% with valganciclovir vs 16.1% with maribavir in AURORA, with more discontinuations for neutropenia too); foscarnet is presented as a ganciclovir-sparing alternative when neutropenia precludes continued ganciclovir, at the cost of renal and electrolyte toxicity. — The ANC < 1.0 × 10⁹/L threshold is not attached to a specific primary study or guideline citation in the supporting text — it is a figure-only cutoff. — The figure draws this as a double-bordered, single-arrow checkpoint rather than a labelled Yes/No branch, and does not state what happens when ANC is at or above the threshold, or whether the three listed actions are simultaneous, sequential, or alternatives. — Maribavir is listed here for HCT neutropenia specifically; its strongest trial evidence (SOLSTICE) was for refractory CMV in both HCT and SOT, a different indication — these populations should not be conflated. — solid organ transplantation — Transplantation of a solid organ (e.g. kidney, liver, lung) as opposed to haematopoietic stem cells. — haematopoietic cell transplantation — Transplantation of blood-forming stem cells, typically after myeloablative or reduced-intensity conditioning. — absolute neutrophil count — A blood count measuring circulating neutrophils. Ganciclovir and valganciclovir's dose-limiting toxicity is neutropenia, tracked via ANC. — granulocyte colony-stimulating factor — A growth factor given to stimulate neutrophil production, used to manage ganciclovir-related neutropenia."
+    },
+    {
+      "tool": "cmv-immunosuppressed-protocol",
+      "title": "Ganciclovir and Valganciclovir for CMV Infection in Immunosuppressed Patients",
+      "url": "https://satbuhan.github.io/cmv-immunosuppressed-protocol/",
+      "type": "node",
+      "nodeId": "resistance_check",
+      "nodeLabel": "Viral load not falling after ≥ 2 weeks?",
+      "text": "Viral load not falling after ≥ 2 weeks? — • Genotypic resistance testing\n  (UL97/UL54)\n• Maribavir, foscarnet, or cidofovir — If viral load is not falling after at least 2 weeks of treatment: send genotypic resistance testing (UL97/UL54) and consider maribavir, foscarnet, or cidofovir. — Prolonged or subtherapeutic ganciclovir exposure is linked to UL97/UL54 resistance mutations, and persistent DNAemia is linked to emergent resistance in the review's VICTOR-derived analysis; the manuscript calls for early genotypic testing when viral load fails to decline rather than prolonging ganciclovir empirically. In SOLSTICE, maribavir achieved higher week-8 clearance than investigator-assigned therapy (valganciclovir/ganciclovir, foscarnet, or cidofovir) in refractory infection (55.7% vs 23.9%), including patients with baseline resistance in 56–68% of cases. — The '≥ 2 weeks' threshold is not tied to a specific primary-study or guideline source in the supporting text — a figure-only cutoff, distinct from VICTOR's separately reported day-21 persistence finding. — The figure draws this as a double-bordered, single-arrow checkpoint with no labelled Yes/No branch or loop back to monitoring; no viral-load minimum for ordering testing, mutation-interpretation rule, drug-selection-by-genotype rule, or dose is given for the three listed alternatives. — The two CMV genes most often mutated in drug-resistant CMV: UL97 (the viral kinase needed to activate ganciclovir) and UL54 (the viral DNA polymerase ganciclovir inhibits once activated). — Detectable CMV DNA in the blood — the surveillance marker used to trigger preemptive therapy and to track treatment response."
+    },
+    {
+      "tool": "cmv-immunosuppressed-protocol",
+      "title": "Ganciclovir and Valganciclovir for CMV Infection in Immunosuppressed Patients",
+      "url": "https://satbuhan.github.io/cmv-immunosuppressed-protocol/",
+      "type": "node",
+      "nodeId": "response_endpoint",
+      "nodeLabel": "Response: continue until DNAemia\nis undetectable (minimum 2 weeks);\nconsider secondary prophylaxis by risk",
+      "text": "Response: continue until DNAemia\nis undetectable (minimum 2 weeks);\nconsider secondary prophylaxis by risk — The treatment endpoint: continue therapy until DNAemia is undetectable, for a minimum of 2 weeks, then consider secondary prophylaxis based on the patient's risk. — VICTOR's own follow-up linked failure to eradicate DNAemia by day 21 with later recurrence, supporting continuation of therapy until DNAemia is undetectable to reduce the risk of recurrence and resistance. — The 'minimum 2 weeks' duration is not separately derived in the supporting prose or tied to a specific guideline source, and the figure does not clarify whether it means total treatment duration or a required period of confirmed-undetectable DNAemia. — The risk factors that should trigger secondary prophylaxis, and its drug, dose, and duration, are not specified anywhere in the source material. — Detectable CMV DNA in the blood — the surveillance marker used to trigger preemptive therapy and to track treatment response."
+    },
+    {
+      "tool": "semaglutide-overdose-protocol",
+      "title": "Semaglutide Overdose",
+      "url": "https://satbuhan.github.io/semaglutide-overdose-protocol/",
+      "type": "tool",
+      "nodeId": null,
+      "nodeLabel": null,
+      "text": "Semaglutide Overdose Recognition & Management"
+    },
+    {
+      "tool": "semaglutide-overdose-protocol",
+      "title": "Semaglutide Overdose",
+      "url": "https://satbuhan.github.io/semaglutide-overdose-protocol/",
+      "type": "node",
+      "nodeId": "entry",
+      "nodeLabel": "SUSPECTED SEMAGLUTIDE OVERDOSE",
+      "text": "SUSPECTED SEMAGLUTIDE OVERDOSE — Recognition rests on exposure history, inspecting the product itself, and the clinical pattern, because there is no routinely available assay to confirm a semaglutide concentration. Onset can be delayed enough after an injection that the association isn't obvious, and a patient who looks fine at first can still deteriorate later — the long half-life means this stays true for days. The syndrome itself is dominated by nausea, repeated vomiting, abdominal pain and loss of appetite, with diarrhoea or constipation present less consistently. — Starting every pathway here, before any branching, keeps the absence of a confirmatory test from becoming an excuse to wait for one — the history and the product are what's actually available at the bedside, and an initially well-looking patient is exactly the presentation the algorithm is built to not dismiss. — No diagnostic semaglutide blood concentration is supplied anywhere in the manuscript; recognition is by history and pattern alone."
+    },
+    {
+      "tool": "semaglutide-overdose-protocol",
+      "title": "Semaglutide Overdose",
+      "url": "https://satbuhan.github.io/semaglutide-overdose-protocol/",
+      "type": "node",
+      "nodeId": "step1",
+      "nodeLabel": "STEP 1 — IMMEDIATE PRIORITIES",
+      "text": "STEP 1 — IMMEDIATE PRIORITIES — • Capillary glucose in EVERY case\n• Airway, breathing, circulation; conscious level\n• Volume status, ongoing vomiting, urine output — Capillary glucose is checked in every patient regardless of how well they look, alongside the standard physiological assessment and a specific look at how much fluid has been lost to vomiting. Protracted vomiting with suppressed appetite and thirst is the main route to hypovolaemia, electrolyte disturbance and pre-renal acute kidney injury in this syndrome. Isolated semaglutide overdose usually does not itself cause hypoglycaemia — its insulin-releasing effect is glucose-dependent — but that changes with concomitant insulin or sulfonylurea therapy, in a patient without diabetes who has taken a large dose, or if the product itself turns out to be falsified. — Checking glucose in every case rather than only in patients who seem unwell is what lets the next decision (falsified product versus straightforward overdose) actually be made on data instead of appearance. — \"Conscious level\" is listed as an assessment but no scoring system (e.g. Glasgow Coma Scale) is named for it. — No numeric glucose cutoff, blood-pressure threshold, urine-output target or monitoring interval is given for this step. — A counterfeit medication sold as semaglutide. Confirmed cases have actually contained insulin, which is why severe or recurrent hypoglycaemia is the trigger that specifically raises this possibility rather than a straightforward semaglutide overdose."
+    },
+    {
+      "tool": "semaglutide-overdose-protocol",
+      "title": "Semaglutide Overdose",
+      "url": "https://satbuhan.github.io/semaglutide-overdose-protocol/",
+      "type": "node",
+      "nodeId": "hypo_decision",
+      "nodeLabel": "Severe or recurrent hypoglycaemia?",
+      "text": "Severe or recurrent hypoglycaemia? — This question exists to catch a specific, high-stakes possibility: a counterfeit pen that actually contains insulin rather than semaglutide. Confirmed falsified-product cases have produced severe hypoglycaemia, seizures and coma, while hypoglycaemia was absent in most published isolated GLP-1 receptor agonist overdoses. The same question is also how concomitant insulin or sulfonylurea use, a large exposure in someone without diabetes, or prolonged vomiting on an empty stomach would first show up. — Routing on hypoglycaemia first, before anything else, reflects that a falsified insulin-containing product changes the whole clinical problem — the patient is no longer primarily a semaglutide-overdose case, and recognising that immediately changes what happens next. — The manuscript does not define \"severe\" or \"recurrent\" numerically. — glucagon-like peptide-1 — The hormone class semaglutide mimics. Native GLP-1 increases glucose-dependent insulin secretion, suppresses glucagon, delays gastric emptying and promotes satiety, but is itself degraded within one to two minutes — semaglutide is engineered to resist that breakdown."
+    },
+    {
+      "tool": "semaglutide-overdose-protocol",
+      "title": "Semaglutide Overdose",
+      "url": "https://satbuhan.github.io/semaglutide-overdose-protocol/",
+      "type": "node",
+      "nodeId": "falsified_product",
+      "nodeLabel": "SUSPECT FALSIFIED PRODUCT",
+      "text": "SUSPECT FALSIFIED PRODUCT — • Confirmed counterfeit pens have contained insulin, not semaglutide\n• Manage as insulin overdose\n• Titrated dextrose infusion\n• Retain device, packaging, batch\n• Notify the national regulator — A positive answer changes the working diagnosis to a possible insulin overdose, with management and observation duration to match the suspected insulin analogue rather than semaglutide's own week-long half-life. Where the exposure is large, drawing a paired insulin and C-peptide level before giving dextrose is worth considering, since an exogenous (injected) insulin source suppresses the body's own C-peptide while an elevated insulin level persists — a pattern that can later help confirm what actually happened. Recurrent hypoglycaemia in this setting may need a continuous dextrose infusion and critical care rather than a single bolus. Retaining the pen, packaging, batch number and purchase information supports both the immediate clinical reasoning and a regulatory investigation, and confirmed or suspected falsification should be reported to the relevant regulator. — Keeping the dextrose and retention/reporting instructions in the same box as the falsified-product recognition reflects that this is a single, time-critical response, not two separate later tasks. — The figure draws no outgoing connection from this box — no return to exposure characterisation, risk stratification, investigation, management or disposition is shown, even though the manuscript's own prose describes those steps as applying generally. This page follows the figure literally. — No dextrose concentration, dose, infusion rate, numerical glucose target or fixed observation duration is given; the manuscript does not reproduce a formal insulin-overdose protocol. — A byproduct of the body's own insulin production, co-secreted with endogenous insulin but not present in injected insulin products. Pairing an insulin level with a C-peptide level can help distinguish a patient's own insulin secretion from an exogenous (injected) source."
+    },
+    {
+      "tool": "semaglutide-overdose-protocol",
+      "title": "Semaglutide Overdose",
+      "url": "https://satbuhan.github.io/semaglutide-overdose-protocol/",
+      "type": "node",
+      "nodeId": "step2",
+      "nodeLabel": "STEP 2 — CHARACTERISE THE EXPOSURE",
+      "text": "STEP 2 — CHARACTERISE THE EXPOSURE — • Product, brand and source (photograph device)\n• Intended vs actual dose; formulation\n• Time since injection; titration stage\n• Concomitant insulin or sulfonylurea; intent — Four things are established together: provenance of the product (distinguishing a pen-dialling error from a compounded-vial unit-conversion error, and flagging uncertain product content), the intended-versus-actual dose and formulation, timing and titration stage (since tolerance to gastrointestinal effects builds with repeated dosing, so a treatment-naive patient can be disproportionately affected by the same nominal error), and concomitant insulin/sulfonylurea use and intent. Intent specifically drives whether formal psychiatric assessment and co-ingestant screening are needed. — Photographing the device and confirming the actual delivered dose, rather than accepting a patient's or carer's verbal account, is what catches the two error patterns the manuscript repeatedly identifies as dangerous: a misread pen dial, and a millilitre/milligram/insulin-\"unit\" conversion error with a compounded vial. — No general conversion formula between syringe \"units\", millilitres and milligrams is given anywhere in the manuscript."
+    },
+    {
+      "tool": "semaglutide-overdose-protocol",
+      "title": "Semaglutide Overdose",
+      "url": "https://satbuhan.github.io/semaglutide-overdose-protocol/",
+      "type": "node",
+      "nodeId": "step3",
+      "nodeLabel": "STEP 3 — RISK STRATIFY",
+      "text": "STEP 3 — RISK STRATIFY — The intensity of everything that follows — how much is investigated, and how closely the patient is watched — is set here, based on prior tolerance, the size of the error, current symptoms, product reliability, age and concomitant glucose-lowering treatment. — Splitting patients into two intensities of workup, rather than investigating everyone to the same degree, is what keeps an asymptomatic, tolerant patient with a small dosing error from being put through a full laboratory and imaging workup that a higher-risk exposure genuinely needs. — The manuscript's own figure draws this as a plain fork, not a decision diamond — neither branch carries a YES/NO label, and no complete AND/OR rule is given for a patient whose features split across both lower- and higher-risk criteria."
+    },
+    {
+      "tool": "semaglutide-overdose-protocol",
+      "title": "Semaglutide Overdose",
+      "url": "https://satbuhan.github.io/semaglutide-overdose-protocol/",
+      "type": "node",
+      "nodeId": "lower_risk",
+      "nodeLabel": "LOWER RISK",
+      "text": "LOWER RISK — • Established therapy, tolerant\n• Small-magnitude error\n• Asymptomatic, tolerating fluids\n• No insulin or sulfonylurea\n• Normal glucose and renal function — An asymptomatic patient already established and tolerant on semaglutide, with only a small dosing error, no insulin or sulfonylurea on board, and normal glucose and renal function, can be managed with a limited evaluation rather than the fuller higher-risk workup. — This is the branch that lets a patient who made a modest, well-tolerated dosing error avoid an admission and a full laboratory panel they don't need — established tachyphylaxis to the gastrointestinal effects is the physiological reason tolerance alone is allowed to carry this much weight. — The manuscript's own prose describes this group more broadly as having \"no diabetes therapy\", while the figure box narrows this to \"No insulin or sulfonylurea\" specifically. — The manuscript does not explain how normal renal function is confirmed when only capillary glucose measurement is being performed at this tier. — A rapid reduction in a drug's effect with continued or repeated dosing. Semaglutide's gastrointestinal side effects show this, which is why an established, tolerant patient can take a dosing error that would make a treatment-naive patient acutely unwell."
+    },
+    {
+      "tool": "semaglutide-overdose-protocol",
+      "title": "Semaglutide Overdose",
+      "url": "https://satbuhan.github.io/semaglutide-overdose-protocol/",
+      "type": "node",
+      "nodeId": "higher_risk",
+      "nodeLabel": "HIGHER RISK",
+      "text": "HIGHER RISK — • Treatment-naive or early titration\n• ≥10-fold error; deliberate overdose\n• Compounded or unverified product\n• Child; insulin or sulfonylurea\n• Symptomatic, vomiting, hypovolaemic — Treatment-naive patients lack the gastrointestinal tolerance an established user has built up. Compounded products carry a specific unit-conversion hazard and uncertain actual concentration. A large deliberate overdose has been linked to pancreatitis and euglycaemic ketoacidosis. Children receive a greater weight-adjusted exposure from the same nominal adult dose. Concomitant insulin or sulfonylurea raises hypoglycaemia risk, and vomiting with hypovolaemia signals possible renal, electrolyte and acid-base complications already in progress. — Any one of these features — not all of them together — is enough to move a patient into the fuller investigation and closer observation pathway, because each reflects a genuinely different mechanism of added risk rather than gradations of the same one. — The \"≥10-fold error\" cutoff is the figure's own number but is not explicitly attributed to an external guideline or to a specific cited study — the manuscript describes ten-fold dosing errors in its case material without identifying that case material as the source of this triage threshold. — The manuscript's prose describes \"large-magnitude errors\" warranting investigation without equating that phrase to the figure's specific \"≥10-fold error\" wording. — euglycaemic diabetic ketoacidosis — Ketoacidosis with a normal or only mildly raised blood glucose, which is what makes it easy to miss if ketones aren't checked independently of the glucose reading."
+    },
+    {
+      "tool": "semaglutide-overdose-protocol",
+      "title": "Semaglutide Overdose",
+      "url": "https://satbuhan.github.io/semaglutide-overdose-protocol/",
+      "type": "node",
+      "nodeId": "step4",
+      "nodeLabel": "STEP 4 — INVESTIGATIONS (higher risk)",
+      "text": "STEP 4 — INVESTIGATIONS (higher risk) — • Laboratory glucose; urea, creatinine, electrolytes\n• Venous gas: bicarbonate, anion gap; β-hydroxybutyrate\n• Serum lipase if abdominal pain; liver function tests\n• Lithium level if prescribed; ECG if electrolytes deranged — Glucose, renal function, electrolytes and acid-base status pick up hypoglycaemia, dehydration-related acute kidney injury and the biochemical consequences of prolonged vomiting. Bicarbonate, anion gap and beta-hydroxybutyrate can detect ketoacidosis even when the plasma glucose itself looks normal. Lipase (with imaging where appropriate) investigates pancreatitis, and liver tests with ultrasonography investigate biliary complications. A lithium level matters specifically because vomiting, reduced intake, volume depletion and altered clearance have each been reported to precipitate lithium toxicity after starting or switching GLP-1 receptor agonist therapy. — Testing for euglycaemic ketoacidosis unconditionally, rather than only when the glucose is already high, is the point of this whole panel — this is exactly the complication a clinician anchored on glucose alone would miss. — No numerical laboratory cutoff, anion-gap formula, ketone threshold, lithium threshold or ECG criterion is supplied for any of these tests. — The condition for ordering beta-hydroxybutyrate is worded two different ways in the source material (\"where oral intake has been minimal\" versus \"if poor intake\"), and the figure box itself lists the test with no condition attached. — The condition for ordering serum lipase is similarly worded two different ways (\"if abdominal pain\" in the figure versus \"where abdominal pain is prominent\" and a longer severity-based description elsewhere in the manuscript), and these are not reconciled. — glucagon-like peptide-1 — The hormone class semaglutide mimics. Native GLP-1 increases glucose-dependent insulin secretion, suppresses glucagon, delays gastric emptying and promotes satiety, but is itself degraded within one to two minutes — semaglutide is engineered to resist that breakdown. — euglycaemic diabetic ketoacidosis — Ketoacidosis with a normal or only mildly raised blood glucose, which is what makes it easy to miss if ketones aren't checked independently of the glucose reading. — β-hydroxybutyrate — The dominant ketone body produced in ketoacidosis, measurable directly from a blood sample rather than inferred from urine ketone strips. — A calculated gap between measured blood electrolytes. A raised gap is consistent with an unmeasured acid — such as ketones — being present."
+    },
+    {
+      "tool": "semaglutide-overdose-protocol",
+      "title": "Semaglutide Overdose",
+      "url": "https://satbuhan.github.io/semaglutide-overdose-protocol/",
+      "type": "node",
+      "nodeId": "step5",
+      "nodeLabel": "STEP 5 — MANAGEMENT — SUPPORTIVE; THERE IS NO ANTIDOTE",
+      "text": "STEP 5 — MANAGEMENT — SUPPORTIVE; THERE IS NO ANTIDOTE — • Scheduled antiemesis, not as-required; monitor QT if electrolytes deranged\n• Isotonic crystalloid; replace potassium, magnesium and chloride\n• Withhold metformin and SGLT2 inhibitor during severe vomiting\n• Hypoglycaemia: titrated dextrose INFUSION, not repeated boluses\n• NO charcoal, haemodialysis or lipid emulsion (>99% albumin bound)\n• Airway or procedure: treat as FULL STOMACH regardless of fasting time — Vomiting is both the main source of distress and a proximate cause of the serious complications, so antiemesis is scheduled rather than given only on request, with QT monitoring when electrolyte derangement is significant, alongside isotonic crystalloid and potassium/magnesium/chloride replacement. Metformin is held during severe or prolonged vomiting for lactic-acidosis risk, and an SGLT2 inhibitor is held alongside it in acute kidney injury or severe vomiting. Where hypoglycaemia occurs, an initial dextrose correction is followed by a continuous infusion titrated to euglycaemia rather than repeated boluses, because recurrence is characteristic and can persist for many hours — critical care admission is appropriate at that point. Decontamination and enhanced elimination are all futile here: activated charcoal has no role for an injected drug, and semaglutide's extensive albumin binding (>99%) means hemodialysis, haemoperfusion and lipid-emulsion therapy cannot meaningfully remove it either. Because semaglutide delays gastric emptying, any patient taken for procedural sedation, rapid sequence intubation or endoscopy is managed as a full stomach irrespective of how long they have actually fasted, with gastric point-of-care ultrasonography used where available. — Naming \"no antidote\" directly in this box's own title, alongside the explicit decontamination-is-futile instruction, heads off the two most tempting but wrong reflexes in an overdose presentation — reaching for charcoal or dialysis — before a clinician gets that far down the page. — The severe-vomiting trigger for withholding metformin is stated for metformin specifically in one place and for both metformin and the SGLT2 inhibitor together in the figure and in Table 3; the manuscript does not fully reconcile whether the SGLT2-inhibitor trigger is severe vomiting specifically or acute kidney injury generally. — The figure's \"NO charcoal\" line omits the qualification, stated elsewhere in the manuscript, that this is specifically because the drug is injected rather than ingested. — No antiemetic dose, crystalloid volume or rate, electrolyte replacement dose, QT threshold, initial dextrose correction regimen, or numerical glucose target is given anywhere in the manuscript. — The \"24-hour clear liquid diet\" recommendation that appears alongside this topic in the source material comes from elective-procedure guidance and is not an overdose-observation duration; it is not reproduced as a specific instruction in this box."
+    },
+    {
+      "tool": "semaglutide-overdose-protocol",
+      "title": "Semaglutide Overdose",
+      "url": "https://satbuhan.github.io/semaglutide-overdose-protocol/",
+      "type": "node",
+      "nodeId": "step6",
+      "nodeLabel": "STEP 6 — DISPOSITION — driven by symptoms and physiology, not by a fixed observation interval",
+      "text": "STEP 6 — DISPOSITION — driven by symptoms and physiology, not by a fixed observation interval — A conventional six- to eight-hour toxicology observation window is described as inadequate for this drug: symptoms and complications can evolve over days to weeks, consistent with a terminal elimination half-life of roughly 165 hours (about seven days) — after a ten-fold overdose, roughly half the excess is still estimated to remain after one week and a quarter after two weeks. Disposition is therefore decided on the patient's actual symptoms and physiology at the time, with poison-centre consultation and planned follow-up, rather than by holding everyone for a fixed number of hours. — Naming the conventional observation window as inadequate, rather than simply omitting it, is what stops a clinician from defaulting to a standard toxicology discharge time that this specific drug's pharmacokinetics make unsafe. — No replacement fixed observation interval is supplied — the manuscript explicitly declines to give one, in favour of a symptom- and physiology-driven decision."
+    },
+    {
+      "tool": "semaglutide-overdose-protocol",
+      "title": "Semaglutide Overdose",
+      "url": "https://satbuhan.github.io/semaglutide-overdose-protocol/",
+      "type": "node",
+      "nodeId": "discharge",
+      "nodeLabel": "DISCHARGE",
+      "text": "DISCHARGE — Tolerating oral fluids; normal glucose and renal function; support available.\nSupply antiemetic, rehydration advice, return criteria and planned review. — Discharge requires tolerated oral fluids, normal glucose and renal function, and adequate support at home. Because symptoms can continue for days, written advice covers oral rehydration, what to expect over the following days, and clear return criteria, typically with a course of oral antiemetic. Follow-up is planned across at least two half-lives, rechecking renal function and pancreatic enzymes where relevant. — Building \"at least two half-lives\" of follow-up into the discharge plan itself, rather than a single fixed recheck date, is what matches the plan to this drug's actual persistence rather than to typical toxicology discharge timing. — No numerical definition of normal glucose/renal function, fixed discharge time, exact antiemetic duration, or a fully enumerated return-criteria list is given. — \"At least two half-lives\" is the manuscript's own framework recommendation, not a value drawn from a cited guideline."
+    },
+    {
+      "tool": "semaglutide-overdose-protocol",
+      "title": "Semaglutide Overdose",
+      "url": "https://satbuhan.github.io/semaglutide-overdose-protocol/",
+      "type": "node",
+      "nodeId": "admit",
+      "nodeLabel": "ADMIT",
+      "text": "ADMIT — Intractable vomiting; hypovolaemia; AKI; hypoglycaemia; pancreatitis or ketoacidosis; suspected insulin-containing product; deliberate self-harm; paediatric exposure. — Admission is for the patient who cannot maintain hydration, has a renal or metabolic complication in progress, may have been exposed to an insulin-containing falsified product, needs psychiatric assessment after deliberate self-harm, or is a child with a significant exposure. — Listing \"suspected insulin-containing product\" and \"deliberate self-harm\" as admission criteria in their own right, alongside the medical complications, keeps the falsified-product and psychiatric-risk branches from being discharged early just because the metabolic picture alone looks stable. — No numerical admission cutoff (a lab value, a vital sign, a volume of vomiting) is stated for any of these criteria. — The figure's \"paediatric exposure\" is broader than the manuscript's own narrower phrase (\"inadvertent paediatric injection of a substantial adult dose\"), and the figure's \"pancreatitis or ketoacidosis\" omits the qualifier \"suspected\" that the manuscript's text and Table 3 both retain. — A counterfeit medication sold as semaglutide. Confirmed cases have actually contained insulin, which is why severe or recurrent hypoglycaemia is the trigger that specifically raises this possibility rather than a straightforward semaglutide overdose."
     }
   ]
 }

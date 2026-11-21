@@ -80,6 +80,7 @@ REPOS = [
     "beta-lactam-infusion-protocol",
     "peramivir-oseltamivir-protocol",
     "cmv-immunosuppressed-protocol",
+    "semaglutide-overdose-protocol",
 ]
 
 # Reviewed by hand: (repo, lowercased term) pairs that share a GLOSSARY

@@ -349,5 +349,16 @@ const TOOLS = [
     repo: "https://github.com/satbuhan/cmv-immunosuppressed-protocol",
     thumb: "assets/thumbs/cmv-immunosuppressed.png",
     added: "2026-11-17"
+  },
+  {
+    id: "semaglutide-overdose",
+    title: "Semaglutide Overdose",
+    subtitle: "Recognition & Management",
+    specialty: "tox",
+    summary: "Interactive, referenced walkthrough of the algorithm for suspected semaglutide overdose or intoxication — falsified-product recognition ahead of everything else, risk stratification into a limited versus a fuller workup, and why decontamination, dialysis and a fixed toxicology observation window all fail for this drug. All 74 references in the source manuscript's bibliography independently re-verified from scratch, with zero fabrications found.",
+    url: "https://satbuhan.github.io/semaglutide-overdose-protocol/",
+    repo: "https://github.com/satbuhan/semaglutide-overdose-protocol",
+    thumb: "assets/thumbs/semaglutide-overdose.png",
+    added: "2026-11-21"
   }
 ];

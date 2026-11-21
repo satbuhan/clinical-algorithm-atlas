@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-17",
+  "generated": "2026-11-21",
   "terms": {
     "cyp2d6": [
       {
@@ -97,6 +97,16 @@
         "full": "acute kidney injury",
         "def": "A sudden decline in kidney function. For beta-lactams dosed on the assumption of normal clearance, AKI works in the opposite direction from augmented renal clearance — it can cause drug to accumulate toward neurotoxic concentrations, particularly with cefepime or high-concentration piperacillin or meropenem.",
         "nodeId": "entry"
+      },
+      {
+        "tool": "semaglutide-overdose-protocol",
+        "title": "Semaglutide Overdose",
+        "subtitle": "Recognition & Management",
+        "url": "https://satbuhan.github.io/semaglutide-overdose-protocol/",
+        "match": "AKI",
+        "full": "acute kidney injury",
+        "def": "A sudden decline in kidney function. Here it is most often driven by volume depletion from protracted vomiting rather than by a direct toxic effect of the drug on the kidney.",
+        "nodeId": null
       }
     ],
     "rass": [
@@ -557,6 +567,72 @@
         "full": "rapid sequence intubation",
         "def": "Near-simultaneous administration of an induction agent and a paralytic to secure the airway quickly, minimising aspiration risk; ketamine's role as an RSI induction agent is substantially revised by the 2025 RSI Trial covered in this tool.",
         "nodeId": "strengths_weaknesses"
+      }
+    ],
+    "glp-1": [
+      {
+        "tool": "obesity-critical-care-protocol",
+        "title": "The Adult with Obesity",
+        "subtitle": "In Emergency and Critical Care",
+        "url": "https://satbuhan.github.io/obesity-critical-care-protocol/",
+        "match": "GLP-1",
+        "full": "glucagon-like peptide-1",
+        "def": "A hormone class targeted by drugs (receptor agonists) that slow gastric emptying — the reason patients taking one are managed as having a full stomach regardless of reported fasting time.",
+        "nodeId": "trigger"
+      },
+      {
+        "tool": "semaglutide-overdose-protocol",
+        "title": "Semaglutide Overdose",
+        "subtitle": "Recognition & Management",
+        "url": "https://satbuhan.github.io/semaglutide-overdose-protocol/",
+        "match": "GLP-1",
+        "full": "glucagon-like peptide-1",
+        "def": "The hormone class semaglutide mimics. Native GLP-1 increases glucose-dependent insulin secretion, suppresses glucagon, delays gastric emptying and promotes satiety, but is itself degraded within one to two minutes — semaglutide is engineered to resist that breakdown.",
+        "nodeId": "hypo_decision"
+      }
+    ],
+    "beta-hydroxybutyrate": [
+      {
+        "tool": "dapagliflozin-overdose-protocol",
+        "title": "Dapagliflozin / SGLT2 Inhibitor",
+        "subtitle": "Overdose & Acute Illness Management",
+        "url": "https://satbuhan.github.io/dapagliflozin-overdose-protocol/",
+        "match": "beta-hydroxybutyrate",
+        "full": "β-hydroxybutyrate",
+        "def": "The dominant ketone body produced in ketoacidosis, measurable directly from a blood sample (point-of-care or laboratory) rather than inferred from urine ketone strips, which detect a different, minor ketone and lag behind the true picture.",
+        "nodeId": "workup"
+      },
+      {
+        "tool": "semaglutide-overdose-protocol",
+        "title": "Semaglutide Overdose",
+        "subtitle": "Recognition & Management",
+        "url": "https://satbuhan.github.io/semaglutide-overdose-protocol/",
+        "match": "beta-hydroxybutyrate",
+        "full": "β-hydroxybutyrate",
+        "def": "The dominant ketone body produced in ketoacidosis, measurable directly from a blood sample rather than inferred from urine ketone strips.",
+        "nodeId": "step4"
+      }
+    ],
+    "anion gap": [
+      {
+        "tool": "dapagliflozin-overdose-protocol",
+        "title": "Dapagliflozin / SGLT2 Inhibitor",
+        "subtitle": "Overdose & Acute Illness Management",
+        "url": "https://satbuhan.github.io/dapagliflozin-overdose-protocol/",
+        "match": "anion gap",
+        "full": "",
+        "def": "A calculated gap between measured positive and negative blood electrolytes. A raised gap is consistent with an unmeasured acid — such as ketones — being present, but is treated as a supportive finding alongside ketones and acidosis rather than a stand-alone diagnostic criterion.",
+        "nodeId": "workup"
+      },
+      {
+        "tool": "semaglutide-overdose-protocol",
+        "title": "Semaglutide Overdose",
+        "subtitle": "Recognition & Management",
+        "url": "https://satbuhan.github.io/semaglutide-overdose-protocol/",
+        "match": "anion gap",
+        "full": "",
+        "def": "A calculated gap between measured blood electrolytes. A raised gap is consistent with an unmeasured acid — such as ketones — being present.",
+        "nodeId": "step4"
       }
     ],
     "co-oximetry": [
