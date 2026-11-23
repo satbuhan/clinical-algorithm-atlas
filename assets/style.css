@@ -159,6 +159,38 @@ a { color: inherit; }
 .masthead p.doi-line a:hover { color: var(--accent); }
 .masthead p.byline strong { color: var(--ink-soft); font-weight: 600; }
 
+.play-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 16px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 9px 16px;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  transition: background 0.15s ease;
+}
+.play-badge:hover { background: var(--accent-soft); }
+.play-badge__tri {
+  width: 0; height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 10px solid #fff;
+  flex: none;
+}
+.play-badge__lines { display: flex; flex-direction: column; }
+.play-badge__lines small {
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  opacity: 0.8;
+}
+
 /* ---------- Toolbar: search + filter chips ---------- */
 .toolbar {
   max-width: 980px;
